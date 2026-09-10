@@ -1,0 +1,511 @@
+{
+  "titel": "Prüfungsrelevante Fachbegriffe C-01 bis C-08",
+  "thema": "CI/CD - kompakte Prüfungsvorbereitung",
+  "anzahl_kernbegriffe": 112,
+  "bereiche": [
+    {
+      "id": "C-01",
+      "titel": "Warum CI/CD? - Von manuellen Deployments zur Automatisierung",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "CI/CD",
+          "bedeutung": "Sammelbegriff für die Automatisierung vom Code-Ändern über Build und Tests bis zur Bereitstellung oder zum Deployment."
+        },
+        {
+          "fachbegriff": "Continuous Integration (CI)",
+          "bedeutung": "Codeänderungen werden häufig zusammengeführt und bei jeder Änderung automatisch gebaut und getestet."
+        },
+        {
+          "fachbegriff": "Continuous Delivery",
+          "bedeutung": "Software wird automatisch bis zu einer produktionsreifen Version gebracht. Das Deployment in Produktion wird aber bewusst manuell freigegeben."
+        },
+        {
+          "fachbegriff": "Continuous Deployment",
+          "bedeutung": "Jede Änderung, die alle automatischen Prüfungen besteht, wird ohne manuelle Freigabe direkt in Produktion deployed."
+        },
+        {
+          "fachbegriff": "CI/CD-Pipeline",
+          "bedeutung": "Automatisierte Kette von Schritten, die eine Codeänderung prüft, baut, testet und bis zur Zielumgebung transportiert."
+        },
+        {
+          "fachbegriff": "Pipeline Stage",
+          "bedeutung": "Abgegrenzter Abschnitt einer Pipeline, zum Beispiel Build, Test, Security oder Deployment."
+        },
+        {
+          "fachbegriff": "Quality Gate",
+          "bedeutung": "Prüfpunkt, den eine Änderung bestehen muss, bevor sie in die nächste Stufe oder nach Produktion darf."
+        },
+        {
+          "fachbegriff": "Build",
+          "bedeutung": "Aus Quellcode wird ein ausführbares oder deploybares Ergebnis erzeugt, zum Beispiel ein Binary oder Docker-Image."
+        },
+        {
+          "fachbegriff": "Staging",
+          "bedeutung": "Produktionsnahe Testumgebung, in der eine neue Version vor dem echten Produktivbetrieb geprüft wird."
+        },
+        {
+          "fachbegriff": "Production / Produktion",
+          "bedeutung": "Live-Umgebung, die von echten Benutzern oder Geschäftsprozessen verwendet wird."
+        },
+        {
+          "fachbegriff": "Automatisierung",
+          "bedeutung": "Wiederholbare Arbeitsschritte werden durch Werkzeuge oder Pipelines ausgeführt statt jedes Mal manuell."
+        },
+        {
+          "fachbegriff": "DevOps",
+          "bedeutung": "Zusammenarbeit von Entwicklung und Betrieb mit gemeinsamer Verantwortung, Automatisierung und schnellem Feedback."
+        },
+        {
+          "fachbegriff": "Shift Left",
+          "bedeutung": "Tests und Sicherheitsprüfungen werden möglichst früh durchgeführt, damit Fehler früher und günstiger gefunden werden."
+        },
+        {
+          "fachbegriff": "Reproduzierbarkeit",
+          "bedeutung": "Der gleiche Prozess liefert bei gleichen Voraussetzungen immer ein nachvollziehbares und möglichst identisches Ergebnis."
+        }
+      ]
+    },
+    {
+      "id": "C-02",
+      "titel": "Versionskontrolle mit Git - Branching und Workflows",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Versionskontrolle",
+          "bedeutung": "System zur nachvollziehbaren Verwaltung von Änderungen an Dateien und Quellcode, zum Beispiel Git."
+        },
+        {
+          "fachbegriff": "Branch",
+          "bedeutung": "Eigener Entwicklungszweig in Git, auf dem Änderungen unabhängig vom Hauptstand bearbeitet werden können."
+        },
+        {
+          "fachbegriff": "Main Branch",
+          "bedeutung": "Zentraler Hauptzweig eines Repositorys. In einem sauberen CI/CD-Prozess soll er stabil und deploybar bleiben."
+        },
+        {
+          "fachbegriff": "Feature Branch",
+          "bedeutung": "Kurzlebiger Branch für eine konkrete Änderung oder Funktion, der später wieder in main gemergt wird."
+        },
+        {
+          "fachbegriff": "Git Flow",
+          "bedeutung": "Branching-Modell mit main, develop, feature-, release- und hotfix-Branches. Geeignet für komplexere Release-Zyklen."
+        },
+        {
+          "fachbegriff": "GitHub Flow",
+          "bedeutung": "Einfaches Modell mit main und kurzen Feature-Branches. Änderungen gelangen über Pull Requests und CI nach main."
+        },
+        {
+          "fachbegriff": "Trunk-Based Development",
+          "bedeutung": "Entwickler integrieren sehr häufig kleine Änderungen in einen gemeinsamen Hauptbranch und vermeiden langlebige Branches."
+        },
+        {
+          "fachbegriff": "Pull Request (PR)",
+          "bedeutung": "Anfrage, eine Änderung in einen anderen Branch zu übernehmen. Sie dient gleichzeitig für Review, Diskussion und automatische Prüfungen."
+        },
+        {
+          "fachbegriff": "Code Review",
+          "bedeutung": "Andere Teammitglieder prüfen eine Codeänderung vor dem Merge auf Qualität, Fehler, Verständlichkeit und Risiken."
+        },
+        {
+          "fachbegriff": "Branch Protection",
+          "bedeutung": "Regeln, die einen wichtigen Branch schützen, zum Beispiel durch verpflichtende Reviews und erfolgreiche Status-Checks."
+        },
+        {
+          "fachbegriff": "Status Check",
+          "bedeutung": "Automatisches Prüfergebnis einer Pipeline, das zum Beispiel zeigt, ob Build, Tests oder Security-Scans erfolgreich waren."
+        },
+        {
+          "fachbegriff": "Merge",
+          "bedeutung": "Zusammenführen der Änderungen eines Branches mit einem anderen Branch."
+        },
+        {
+          "fachbegriff": "Merge-Konflikt",
+          "bedeutung": "Git kann Änderungen nicht automatisch zusammenführen, weil dieselben Stellen unterschiedlich verändert wurden."
+        },
+        {
+          "fachbegriff": "Audit-Trail",
+          "bedeutung": "Nachvollziehbare Historie darüber, wer welche Änderung erstellt, geprüft und freigegeben hat."
+        }
+      ]
+    },
+    {
+      "id": "C-03",
+      "titel": "GitHub Actions - Erste Pipeline aufbauen",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "GitHub Actions",
+          "bedeutung": "In GitHub integrierte Plattform zum automatischen Ausführen von CI/CD-Workflows."
+        },
+        {
+          "fachbegriff": "Workflow",
+          "bedeutung": "Gesamte automatisierte Pipeline in GitHub Actions, die normalerweise als YAML-Datei im Repository liegt."
+        },
+        {
+          "fachbegriff": "YAML",
+          "bedeutung": "Menschenlesbares Textformat, mit dem unter anderem CI/CD-Workflows deklarativ beschrieben werden."
+        },
+        {
+          "fachbegriff": "Event / Trigger",
+          "bedeutung": "Ereignis, das einen Workflow startet, zum Beispiel ein Push, Pull Request oder Zeitplan."
+        },
+        {
+          "fachbegriff": "push",
+          "bedeutung": "Trigger, der einen Workflow startet, wenn Commits in einen Branch oder ein Repository gepusht werden."
+        },
+        {
+          "fachbegriff": "pull_request",
+          "bedeutung": "Trigger, der bei Erstellung oder Änderung eines Pull Requests automatische Prüfungen starten kann."
+        },
+        {
+          "fachbegriff": "schedule",
+          "bedeutung": "Zeitgesteuerter Trigger für regelmäßig laufende Workflows, zum Beispiel nächtliche Security-Scans."
+        },
+        {
+          "fachbegriff": "workflow_dispatch",
+          "bedeutung": "Manueller Trigger, über den ein GitHub-Actions-Workflow bewusst gestartet werden kann."
+        },
+        {
+          "fachbegriff": "Job",
+          "bedeutung": "Gruppe von Steps, die auf einem Runner ausgeführt wird. Verschiedene Jobs können parallel laufen."
+        },
+        {
+          "fachbegriff": "Step",
+          "bedeutung": "Ein einzelner Arbeitsschritt innerhalb eines Jobs, zum Beispiel ein Shell-Befehl oder eine fertige Action."
+        },
+        {
+          "fachbegriff": "Runner",
+          "bedeutung": "Rechner oder virtuelle Maschine, auf der die Jobs eines CI/CD-Workflows tatsächlich ausgeführt werden."
+        },
+        {
+          "fachbegriff": "GitHub-hosted Runner",
+          "bedeutung": "Von GitHub bereitgestellter, temporärer Runner, der nach einem Job wieder verworfen wird."
+        },
+        {
+          "fachbegriff": "Self-hosted Runner",
+          "bedeutung": "Eigener Runner des Unternehmens, der mehr Kontrolle bietet, aber selbst betrieben und abgesichert werden muss."
+        },
+        {
+          "fachbegriff": "Marketplace Action",
+          "bedeutung": "Wiederverwendbarer fertiger Baustein für GitHub Actions, zum Beispiel Checkout, Setup oder Artifact Upload."
+        }
+      ]
+    },
+    {
+      "id": "C-04",
+      "titel": "Build-Automatisierung und Artefakte",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Reproduzierbarer Build",
+          "bedeutung": "Bei gleichem Quellcode und gleichen Abhängigkeiten entsteht unabhängig von Zeitpunkt und Umgebung dasselbe Build-Ergebnis."
+        },
+        {
+          "fachbegriff": "Deterministische Abhängigkeiten",
+          "bedeutung": "Es werden genau festgelegte Paketversionen installiert und nicht zufällig neuere kompatible Versionen."
+        },
+        {
+          "fachbegriff": "Lock-Datei",
+          "bedeutung": "Datei wie package-lock.json, die die exakt verwendeten Versionen von Abhängigkeiten festhält."
+        },
+        {
+          "fachbegriff": "npm ci",
+          "bedeutung": "Installiert Node.js-Abhängigkeiten exakt nach package-lock.json und ist deshalb für CI/CD besonders geeignet."
+        },
+        {
+          "fachbegriff": "npm install",
+          "bedeutung": "Installiert Abhängigkeiten und kann Versionsauflösungen oder die Lock-Datei verändern. Deshalb ist es in Pipelines weniger strikt als npm ci."
+        },
+        {
+          "fachbegriff": "Dependency-Caching",
+          "bedeutung": "Bereits geladene Abhängigkeiten werden zwischengespeichert, damit spätere Pipeline-Läufe schneller sind."
+        },
+        {
+          "fachbegriff": "Cache Hit",
+          "bedeutung": "Der benötigte Cache wurde gefunden und kann wiederverwendet werden."
+        },
+        {
+          "fachbegriff": "Cache Miss",
+          "bedeutung": "Kein passender Cache wurde gefunden, deshalb müssen Abhängigkeiten oder Build-Daten neu erzeugt werden."
+        },
+        {
+          "fachbegriff": "Build-Artefakt",
+          "bedeutung": "Fertiges Ergebnis eines Builds, zum Beispiel ein Binary, ZIP-Paket oder Docker-Image."
+        },
+        {
+          "fachbegriff": "Artefakt-Management",
+          "bedeutung": "Build-Ergebnisse werden zentral, versioniert und nachvollziehbar gespeichert, damit sie später wiederverwendet werden können."
+        },
+        {
+          "fachbegriff": "Build once, deploy many",
+          "bedeutung": "Ein Artefakt wird genau einmal gebaut und danach unverändert in Staging, Test und Produktion eingesetzt."
+        },
+        {
+          "fachbegriff": "Semantic Versioning (SemVer)",
+          "bedeutung": "Versionsschema MAJOR.MINOR.PATCH: große inkompatible Änderung, neues kompatibles Feature, kleiner Bugfix."
+        },
+        {
+          "fachbegriff": "Git Tag",
+          "bedeutung": "Fester Name für einen bestimmten Commit, häufig zur Kennzeichnung eines Releases wie v1.4.2."
+        },
+        {
+          "fachbegriff": "Git SHA",
+          "bedeutung": "Eindeutige Kennung eines Commits. Sie eignet sich zum eindeutigen Taggen und Zurückverfolgen von Build-Artefakten."
+        }
+      ]
+    },
+    {
+      "id": "C-05",
+      "titel": "Testautomatisierung in der Pipeline",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Testautomatisierung",
+          "bedeutung": "Tests werden automatisch ausgeführt, zum Beispiel bei jedem Push oder Pull Request, statt manuell gestartet zu werden."
+        },
+        {
+          "fachbegriff": "Testpyramide",
+          "bedeutung": "Modell mit vielen schnellen Unit Tests, weniger Integration Tests und wenigen langsamen End-to-End Tests."
+        },
+        {
+          "fachbegriff": "Unit Test",
+          "bedeutung": "Prüft eine einzelne Funktion oder Klasse isoliert von externen Abhängigkeiten."
+        },
+        {
+          "fachbegriff": "Integration Test",
+          "bedeutung": "Prüft, ob mehrere Komponenten wie Anwendung, Datenbank oder API korrekt zusammenarbeiten."
+        },
+        {
+          "fachbegriff": "End-to-End Test (E2E)",
+          "bedeutung": "Prüft einen vollständigen Ablauf durch das gesamte System aus Sicht eines Benutzers oder Clients."
+        },
+        {
+          "fachbegriff": "Test Double",
+          "bedeutung": "Ersatz für eine echte externe Abhängigkeit in einem Test, zum Beispiel Mock, Stub oder Fake."
+        },
+        {
+          "fachbegriff": "Mock",
+          "bedeutung": "Nachgebildete Abhängigkeit, bei der zusätzlich geprüft werden kann, wie sie vom getesteten Code aufgerufen wurde."
+        },
+        {
+          "fachbegriff": "Stub",
+          "bedeutung": "Ersatzobjekt, das für Tests fest definierte Antworten liefert."
+        },
+        {
+          "fachbegriff": "Fake",
+          "bedeutung": "Vereinfachte, aber funktionierende Ersatzimplementierung, zum Beispiel eine In-Memory-Datenbank."
+        },
+        {
+          "fachbegriff": "Code Coverage",
+          "bedeutung": "Kennzahl dafür, welcher Anteil des Codes während der Tests tatsächlich ausgeführt wurde."
+        },
+        {
+          "fachbegriff": "Line Coverage",
+          "bedeutung": "Misst, welcher Anteil der ausführbaren Codezeilen durch Tests ausgeführt wurde."
+        },
+        {
+          "fachbegriff": "Branch Coverage",
+          "bedeutung": "Misst, ob unterschiedliche Entscheidungswege wie if/else-Zweige durch Tests abgedeckt wurden."
+        },
+        {
+          "fachbegriff": "Coverage Threshold",
+          "bedeutung": "Mindestwert für die Testabdeckung. Wird er unterschritten, kann die Pipeline fehlschlagen."
+        },
+        {
+          "fachbegriff": "Test Report",
+          "bedeutung": "Automatisch erzeugte Übersicht über bestandene, fehlgeschlagene oder übersprungene Tests und ihre Ergebnisse."
+        }
+      ]
+    },
+    {
+      "id": "C-06",
+      "titel": "Container-Images in der CI/CD-Pipeline",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Container Image",
+          "bedeutung": "Unveränderliche Vorlage mit Anwendung und benötigter Laufzeitumgebung, aus der Container gestartet werden."
+        },
+        {
+          "fachbegriff": "Docker Build in der Pipeline",
+          "bedeutung": "Ein Docker-Image wird reproduzierbar durch die CI/CD-Pipeline statt manuell auf einem Entwicklerrechner gebaut."
+        },
+        {
+          "fachbegriff": "Image Tagging",
+          "bedeutung": "Ein Image erhält eine Kennzeichnung wie Versionsnummer oder Commit-ID, damit eindeutig erkennbar ist, welcher Stand enthalten ist."
+        },
+        {
+          "fachbegriff": "Container Registry",
+          "bedeutung": "Zentrale Ablage zum Speichern, Versionieren und Verteilen von Container-Images."
+        },
+        {
+          "fachbegriff": "GHCR",
+          "bedeutung": "GitHub Container Registry. Container-Registry von GitHub, die sich direkt mit GitHub Actions integrieren lässt."
+        },
+        {
+          "fachbegriff": "Image Scanning",
+          "bedeutung": "Automatische Prüfung eines Container-Images auf bekannte Schwachstellen in Betriebssystempaketen und Abhängigkeiten."
+        },
+        {
+          "fachbegriff": "CVE",
+          "bedeutung": "Common Vulnerabilities and Exposures. Eindeutige Kennung für eine öffentlich bekannte Sicherheitslücke."
+        },
+        {
+          "fachbegriff": "Severity",
+          "bedeutung": "Einstufung der Kritikalität einer Schwachstelle, zum Beispiel LOW, MEDIUM, HIGH oder CRITICAL."
+        },
+        {
+          "fachbegriff": "Trivy",
+          "bedeutung": "Open-Source-Scanner, der Container-Images, Abhängigkeiten und Konfigurationen auf Schwachstellen prüfen kann."
+        },
+        {
+          "fachbegriff": "Security Gate",
+          "bedeutung": "Automatische Regel, die eine Pipeline stoppt, wenn definierte Sicherheitsanforderungen nicht erfüllt sind."
+        },
+        {
+          "fachbegriff": "Multi-Stage Build",
+          "bedeutung": "Docker-Build mit mehreren Stufen, sodass Build-Werkzeuge nicht in das schlanke finale Runtime-Image übernommen werden."
+        },
+        {
+          "fachbegriff": "Distroless Image",
+          "bedeutung": "Sehr minimales Container-Image ohne unnötige Shell oder Paketmanager. Das reduziert Größe und Angriffsfläche."
+        },
+        {
+          "fachbegriff": "Multi-Arch Build",
+          "bedeutung": "Erzeugt Images für mehrere Prozessorarchitekturen, zum Beispiel amd64 und arm64."
+        },
+        {
+          "fachbegriff": "Attack Surface / Angriffsfläche",
+          "bedeutung": "Alle enthaltenen Komponenten und Funktionen, die potenziell angreifbar sind. Weniger unnötige Pakete bedeuten meist weniger Angriffsfläche."
+        }
+      ]
+    },
+    {
+      "id": "C-07",
+      "titel": "Deployment-Strategien und Environments",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Deployment-Strategie",
+          "bedeutung": "Festgelegtes Verfahren, wie eine neue Anwendungsversion sicher in eine Zielumgebung ausgerollt wird."
+        },
+        {
+          "fachbegriff": "Blue/Green Deployment",
+          "bedeutung": "Alte und neue Version laufen parallel. Der Traffic wird erst nach erfolgreicher Prüfung auf die neue Version umgeschaltet."
+        },
+        {
+          "fachbegriff": "Canary Deployment",
+          "bedeutung": "Zunächst erhält nur ein kleiner Teil der Benutzer oder Requests die neue Version. Bei Erfolg wird der Anteil schrittweise erhöht."
+        },
+        {
+          "fachbegriff": "Rolling Deployment",
+          "bedeutung": "Instanzen werden nacheinander durch die neue Version ersetzt, sodass während des Rollouts alte und neue Versionen parallel laufen können."
+        },
+        {
+          "fachbegriff": "GitHub Environment",
+          "bedeutung": "Geschütztes Deployment-Ziel wie Staging oder Production mit eigenen Regeln, Freigaben und Secrets."
+        },
+        {
+          "fachbegriff": "Approval Gate",
+          "bedeutung": "Manuelle Freigabe vor einem kritischen Deployment, zum Beispiel bevor eine neue Version nach Produktion darf."
+        },
+        {
+          "fachbegriff": "Environment Secret",
+          "bedeutung": "Geheimer Wert, der nur für eine bestimmte Umgebung verfügbar ist, zum Beispiel Produktions-Zugangsdaten."
+        },
+        {
+          "fachbegriff": "Smoke Test",
+          "bedeutung": "Kurzer Funktionstest direkt nach dem Deployment, der prüft, ob die wichtigsten Funktionen grundsätzlich arbeiten."
+        },
+        {
+          "fachbegriff": "Health Check",
+          "bedeutung": "Technische Prüfung, ob eine Anwendung erreichbar und betriebsbereit ist."
+        },
+        {
+          "fachbegriff": "Rollback",
+          "bedeutung": "Rückkehr zur vorherigen funktionierenden Version, wenn die neue Version Probleme verursacht."
+        },
+        {
+          "fachbegriff": "Roll-Forward",
+          "bedeutung": "Ein Fehler wird durch eine neue korrigierte Version behoben, statt auf die vorherige Version zurückzugehen."
+        },
+        {
+          "fachbegriff": "Zero Downtime",
+          "bedeutung": "Deployment ohne wahrnehmbare Unterbrechung des Dienstes für Benutzer."
+        },
+        {
+          "fachbegriff": "Traffic Switching",
+          "bedeutung": "Gezieltes Umschalten oder Verteilen von Anfragen zwischen alter und neuer Version."
+        },
+        {
+          "fachbegriff": "Datenbankmigration",
+          "bedeutung": "Geplante Änderung des Datenbankschemas oder der Daten. Sie muss bei Deployments besonders auf Kompatibilität und Rückrollbarkeit geprüft werden."
+        }
+      ]
+    },
+    {
+      "id": "C-08",
+      "titel": "Pipeline-Security, GitOps und Gesamtreflexion",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "SAST",
+          "bedeutung": "Static Application Security Testing. Quellcode wird auf Sicherheitsprobleme untersucht, ohne die Anwendung auszuführen."
+        },
+        {
+          "fachbegriff": "DAST",
+          "bedeutung": "Dynamic Application Security Testing. Eine laufende Anwendung wird von außen wie durch einen Angreifer auf Schwachstellen getestet."
+        },
+        {
+          "fachbegriff": "CodeQL",
+          "bedeutung": "SAST-Werkzeug von GitHub, das Quellcode und Datenflüsse analysiert und Sicherheitsprobleme erkennen kann."
+        },
+        {
+          "fachbegriff": "OWASP ZAP",
+          "bedeutung": "DAST-Werkzeug, das laufende Webanwendungen automatisch auf typische Sicherheitsprobleme prüfen kann."
+        },
+        {
+          "fachbegriff": "Secrets Management",
+          "bedeutung": "Sichere Verwaltung von Passwörtern, Tokens, Zertifikaten und Schlüsseln außerhalb des Quellcodes."
+        },
+        {
+          "fachbegriff": "GitHub Encrypted Secrets",
+          "bedeutung": "Verschlüsselt gespeicherte Secrets, die GitHub Actions einem Workflow nur zur Laufzeit bereitstellt."
+        },
+        {
+          "fachbegriff": "HashiCorp Vault",
+          "bedeutung": "Zentrales System zum sicheren Speichern und dynamischen Bereitstellen von Secrets und kurzlebigen Zugangsdaten."
+        },
+        {
+          "fachbegriff": "Software Supply Chain",
+          "bedeutung": "Gesamte Lieferkette einer Software von Quellcode und Abhängigkeiten über Build-Werkzeuge bis zum fertigen Artefakt."
+        },
+        {
+          "fachbegriff": "Supply-Chain-Angriff",
+          "bedeutung": "Angriff auf einen Bestandteil der Software-Lieferkette, zum Beispiel eine Abhängigkeit, Build-Action oder ein externes Tool."
+        },
+        {
+          "fachbegriff": "GitOps",
+          "bedeutung": "Deployment-Prinzip, bei dem der gewünschte Systemzustand in Git liegt und automatisch mit der Zielumgebung synchronisiert wird."
+        },
+        {
+          "fachbegriff": "ArgoCD",
+          "bedeutung": "GitOps-Werkzeug für Kubernetes, das Git-Repositories überwacht und den Cluster mit dem dort beschriebenen Soll-Zustand synchronisiert."
+        },
+        {
+          "fachbegriff": "Push-Modell",
+          "bedeutung": "Die CI/CD-Pipeline verbindet sich aktiv mit der Zielumgebung und führt dort das Deployment aus."
+        },
+        {
+          "fachbegriff": "Pull-Modell",
+          "bedeutung": "Ein Agent oder Operator in der Zielumgebung holt den gewünschten Zustand selbst aus Git und setzt ihn um."
+        },
+        {
+          "fachbegriff": "Single Source of Truth",
+          "bedeutung": "Eine zentrale verbindliche Quelle für den gewünschten Zustand. Bei GitOps ist das normalerweise das Git-Repository."
+        }
+      ]
+    }
+  ]
+}

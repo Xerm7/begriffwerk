@@ -1,0 +1,511 @@
+{
+  "titel": "Prüfungsrelevante Fachbegriffe CL-01 bis CL-08",
+  "thema": "Cloud Computing - kompakte Prüfungsvorbereitung",
+  "anzahl_kernbegriffe": 112,
+  "bereiche": [
+    {
+      "id": "CL-01",
+      "titel": "Cloud Computing Grundlagen und Service-Modelle",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Cloud Computing",
+          "bedeutung": "IT-Ressourcen wie Server, Speicher oder Anwendungen werden über ein Netzwerk flexibel bereitgestellt und nach Bedarf genutzt."
+        },
+        {
+          "fachbegriff": "On-Demand Self-Service",
+          "bedeutung": "Cloud-Ressourcen können vom Kunden selbstständig und automatisch bereitgestellt werden, ohne dass der Anbieter manuell eingreifen muss."
+        },
+        {
+          "fachbegriff": "Broad Network Access",
+          "bedeutung": "Cloud-Dienste sind über standardisierte Netzwerkverbindungen und Protokolle von verschiedenen Geräten und Standorten erreichbar."
+        },
+        {
+          "fachbegriff": "Resource Pooling",
+          "bedeutung": "Der Cloud-Anbieter bündelt seine Hardware und verteilt sie dynamisch auf viele Kunden und deren Workloads."
+        },
+        {
+          "fachbegriff": "Multi-Tenancy",
+          "bedeutung": "Mehrere Kunden nutzen dieselbe physische Infrastruktur, sind aber logisch voneinander getrennt und können nicht auf die Daten der anderen zugreifen."
+        },
+        {
+          "fachbegriff": "Rapid Elasticity",
+          "bedeutung": "Ressourcen können sehr schnell vergrößert oder verkleinert werden, damit sie sich an die aktuelle Last anpassen."
+        },
+        {
+          "fachbegriff": "Measured Service",
+          "bedeutung": "Die Nutzung von CPU, Speicher, Netzwerk und anderen Ressourcen wird gemessen und entsprechend abgerechnet."
+        },
+        {
+          "fachbegriff": "IaaS (Infrastructure as a Service)",
+          "bedeutung": "Der Anbieter stellt virtuelle Server, Speicher und Netzwerk bereit. Betriebssystem, Anwendungen und Daten verwaltet der Kunde selbst."
+        },
+        {
+          "fachbegriff": "PaaS (Platform as a Service)",
+          "bedeutung": "Der Anbieter betreibt zusätzlich Betriebssystem und Laufzeitumgebung. Der Kunde konzentriert sich hauptsächlich auf Anwendung und Daten."
+        },
+        {
+          "fachbegriff": "SaaS (Software as a Service)",
+          "bedeutung": "Eine fertige Anwendung wird als Dienst genutzt. Betrieb und technische Plattform übernimmt vollständig der Anbieter."
+        },
+        {
+          "fachbegriff": "Shared-Responsibility-Modell",
+          "bedeutung": "Cloud-Anbieter und Kunde teilen sich die Verantwortung für Sicherheit. Der Anbieter schützt die Cloud, der Kunde seine Daten, Zugriffe und Konfigurationen."
+        },
+        {
+          "fachbegriff": "Public Cloud",
+          "bedeutung": "Cloud-Infrastruktur eines externen Providers, die von vielen Kunden genutzt wird, zum Beispiel AWS, Azure oder Google Cloud."
+        },
+        {
+          "fachbegriff": "Private Cloud",
+          "bedeutung": "Cloud-Umgebung, die ausschließlich für eine einzelne Organisation betrieben wird, zum Beispiel im eigenen Rechenzentrum."
+        },
+        {
+          "fachbegriff": "Hybrid Cloud",
+          "bedeutung": "Kombination aus eigener Infrastruktur und Public Cloud, die miteinander verbunden und gemeinsam genutzt werden."
+        }
+      ]
+    },
+    {
+      "id": "CL-02",
+      "titel": "Virtualisierung und Cloud-Infrastruktur",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Virtualisierung",
+          "bedeutung": "Ein physischer Server wird so aufgeteilt, dass mehrere voneinander isolierte virtuelle Systeme darauf betrieben werden können."
+        },
+        {
+          "fachbegriff": "Hypervisor",
+          "bedeutung": "Software oder Technik, die virtuelle Maschinen erstellt, voneinander trennt und ihnen CPU, RAM und andere Ressourcen zuweist."
+        },
+        {
+          "fachbegriff": "Typ-1-Hypervisor",
+          "bedeutung": "Hypervisor, der direkt auf der Hardware läuft. Er wird typischerweise in Rechenzentren und Cloud-Umgebungen eingesetzt."
+        },
+        {
+          "fachbegriff": "Typ-2-Hypervisor",
+          "bedeutung": "Hypervisor, der auf einem normalen Betriebssystem läuft, zum Beispiel VirtualBox auf einem Arbeitsplatzrechner."
+        },
+        {
+          "fachbegriff": "Virtuelle Maschine (VM)",
+          "bedeutung": "Virtuell bereitgestellter Rechner mit eigenem Betriebssystem, virtuellem Prozessor, Arbeitsspeicher und Netzwerk."
+        },
+        {
+          "fachbegriff": "Container",
+          "bedeutung": "Leichtgewichtige, isolierte Laufzeitumgebung für Anwendungen, die den Kernel des Host-Betriebssystems mit anderen Containern teilt."
+        },
+        {
+          "fachbegriff": "Cloud-Instanz / Instanztyp",
+          "bedeutung": "Virtuelle Recheneinheit in der Cloud. Der Instanztyp legt unter anderem CPU, RAM, Netzwerkleistung und teilweise Speicher fest."
+        },
+        {
+          "fachbegriff": "Instanzfamilie",
+          "bedeutung": "Gruppe von Cloud-Instanzen für bestimmte Anforderungen, zum Beispiel ausgewogen, CPU-optimiert, RAM-optimiert oder Storage-optimiert."
+        },
+        {
+          "fachbegriff": "Sizing",
+          "bedeutung": "Auswahl einer passenden Größe und Anzahl von Ressourcen für einen Workload, damit Leistung und Kosten sinnvoll zusammenpassen."
+        },
+        {
+          "fachbegriff": "Auto-Scaling",
+          "bedeutung": "Automatisches Anpassen der Anzahl oder Größe von Cloud-Ressourcen abhängig von Last oder definierten Regeln."
+        },
+        {
+          "fachbegriff": "Horizontales Scaling (Scale Out/In)",
+          "bedeutung": "Leistung wird erhöht oder reduziert, indem zusätzliche Instanzen hinzugefügt oder wieder entfernt werden."
+        },
+        {
+          "fachbegriff": "Vertikales Scaling (Scale Up/Down)",
+          "bedeutung": "Leistung wird verändert, indem eine bestehende Instanz mehr oder weniger CPU und RAM erhält."
+        },
+        {
+          "fachbegriff": "Managed Kubernetes",
+          "bedeutung": "Kubernetes-Dienst, bei dem der Cloud-Anbieter wichtige Teile wie die Control Plane betreibt und aktualisiert."
+        },
+        {
+          "fachbegriff": "Serverless Container",
+          "bedeutung": "Container werden ausgeführt, ohne dass der Kunde die darunterliegenden Server oder virtuellen Maschinen selbst verwalten muss."
+        }
+      ]
+    },
+    {
+      "id": "CL-03",
+      "titel": "Cloud-Netzwerk und Sicherheitsarchitektur",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Virtual Private Cloud (VPC)",
+          "bedeutung": "Logisch isoliertes Netzwerk in einer Public Cloud mit eigenem IP-Bereich, Subnetzen, Routing und Sicherheitsregeln."
+        },
+        {
+          "fachbegriff": "CIDR-Block",
+          "bedeutung": "Schreibweise für einen IP-Adressbereich, zum Beispiel 10.0.0.0/16. Er legt fest, welche Adressen ein Netzwerk oder Subnetz enthält."
+        },
+        {
+          "fachbegriff": "Subnetz",
+          "bedeutung": "Teilbereich eines größeren IP-Netzes, in dem Cloud-Ressourcen logisch gruppiert und voneinander getrennt werden."
+        },
+        {
+          "fachbegriff": "Public Subnet",
+          "bedeutung": "Subnetz mit einer Route zum Internet Gateway. Geeignete Ressourcen können dadurch direkt aus dem Internet erreichbar sein."
+        },
+        {
+          "fachbegriff": "Private Subnet",
+          "bedeutung": "Subnetz ohne direkten eingehenden Internetzugriff. Systeme darin werden nur über interne Wege oder kontrollierte Gateways erreicht."
+        },
+        {
+          "fachbegriff": "Route Table",
+          "bedeutung": "Routing-Tabelle, die bestimmt, wohin Netzwerkverkehr aus einem Subnetz weitergeleitet wird."
+        },
+        {
+          "fachbegriff": "Internet Gateway",
+          "bedeutung": "Cloud-Gateway, das eine VPC mit dem öffentlichen Internet verbindet."
+        },
+        {
+          "fachbegriff": "NAT Gateway",
+          "bedeutung": "Ermöglicht Systemen in privaten Subnetzen ausgehende Internetverbindungen, ohne sie direkt aus dem Internet erreichbar zu machen."
+        },
+        {
+          "fachbegriff": "Security Group",
+          "bedeutung": "Virtuelle, zustandsbehaftete Firewall für Cloud-Ressourcen. Sie erlaubt nur den explizit freigegebenen Netzwerkverkehr."
+        },
+        {
+          "fachbegriff": "Network ACL (NACL)",
+          "bedeutung": "Regelliste auf Subnetzebene, die ein- und ausgehenden Verkehr erlaubt oder blockiert und dabei zustandslos arbeitet."
+        },
+        {
+          "fachbegriff": "Stateful / Stateless",
+          "bedeutung": "Stateful merkt sich bestehende Verbindungen und erlaubt Antworten automatisch. Stateless bewertet jede Richtung des Verkehrs separat."
+        },
+        {
+          "fachbegriff": "Region / Availability Zone",
+          "bedeutung": "Eine Region ist ein geografischer Cloud-Standort. Availability Zones sind getrennte Rechenzentren innerhalb einer Region."
+        },
+        {
+          "fachbegriff": "Multi-AZ",
+          "bedeutung": "Ressourcen werden über mehrere Availability Zones verteilt, damit ein Ausfall eines Rechenzentrums nicht das gesamte System stoppt."
+        },
+        {
+          "fachbegriff": "Site-to-Site VPN / Direct Connect",
+          "bedeutung": "Möglichkeiten zur Verbindung von On-Premise und Cloud: VPN verschlüsselt über das Internet, Direct Connect über eine dedizierte private Verbindung."
+        }
+      ]
+    },
+    {
+      "id": "CL-04",
+      "titel": "Cloud-Speicherlösungen und Managed Services",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Object Storage",
+          "bedeutung": "Speichert Daten als einzelne Objekte in Buckets. Geeignet für Backups, Archive, Images und große Datenmengen."
+        },
+        {
+          "fachbegriff": "Block Storage",
+          "bedeutung": "Speicher wird wie eine virtuelle Festplatte an eine Instanz angebunden. Er eignet sich besonders für Datenbanken und niedrige Latenzen."
+        },
+        {
+          "fachbegriff": "File Storage",
+          "bedeutung": "Netzwerk-Dateisystem, auf das mehrere Systeme gleichzeitig über Dateien und Verzeichnisse zugreifen können."
+        },
+        {
+          "fachbegriff": "Storage Class",
+          "bedeutung": "Speicherklasse mit bestimmten Eigenschaften für Kosten, Zugriffsgeschwindigkeit und Häufigkeit der Nutzung."
+        },
+        {
+          "fachbegriff": "Lifecycle Management",
+          "bedeutung": "Automatische Regeln verschieben oder löschen Daten abhängig von Alter oder Nutzung, um Speicher und Kosten zu optimieren."
+        },
+        {
+          "fachbegriff": "Archivspeicher",
+          "bedeutung": "Sehr günstiger Speicher für Daten, die lange aufbewahrt und nur selten abgerufen werden, zum Beispiel S3 Glacier."
+        },
+        {
+          "fachbegriff": "Backup",
+          "bedeutung": "Zusätzliche Kopie von Daten, mit der diese nach Verlust, Beschädigung oder einem Ausfall wiederhergestellt werden können."
+        },
+        {
+          "fachbegriff": "3-2-1-Backup-Regel",
+          "bedeutung": "Mindestens drei Datenkopien auf zwei unterschiedlichen Speichertypen, davon mindestens eine Kopie an einem anderen Standort."
+        },
+        {
+          "fachbegriff": "Snapshot",
+          "bedeutung": "Zeitpunktbezogene Kopie eines Datenträgers oder Systems, die für Wiederherstellung und Backups genutzt werden kann."
+        },
+        {
+          "fachbegriff": "RPO (Recovery Point Objective)",
+          "bedeutung": "Maximal akzeptabler Datenverlust gemessen in Zeit. Ein RPO von einer Stunde bedeutet höchstens eine Stunde Datenverlust."
+        },
+        {
+          "fachbegriff": "RTO (Recovery Time Objective)",
+          "bedeutung": "Maximal akzeptierte Zeit, bis ein ausgefallener Dienst wieder verfügbar sein muss."
+        },
+        {
+          "fachbegriff": "Disaster Recovery",
+          "bedeutung": "Geplanter Prozess zur Wiederherstellung von IT-Systemen und Daten nach einem schweren Ausfall oder einer Katastrophe."
+        },
+        {
+          "fachbegriff": "Managed Service",
+          "bedeutung": "Dienst, bei dem der Cloud-Anbieter Betrieb, Patches, Backups oder Hochverfügbarkeit weitgehend übernimmt."
+        },
+        {
+          "fachbegriff": "Self-Managed",
+          "bedeutung": "Der Kunde betreibt und wartet den Dienst selbst und ist damit auch für Updates, Backups, Monitoring und Ausfallsicherheit verantwortlich."
+        }
+      ]
+    },
+    {
+      "id": "CL-05",
+      "titel": "Cloud-Migration - Strategie und Durchführung",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Cloud-Migration",
+          "bedeutung": "Geplanter Umzug von Anwendungen, Daten oder Infrastruktur aus einer bestehenden Umgebung in eine Cloud-Umgebung."
+        },
+        {
+          "fachbegriff": "6 R's der Cloud-Migration",
+          "bedeutung": "Entscheidungsmodell mit sechs Strategien: Rehost, Replatform, Refactor, Repurchase, Retire und Retain."
+        },
+        {
+          "fachbegriff": "Rehost (Lift & Shift)",
+          "bedeutung": "Ein bestehender Dienst wird weitgehend unverändert auf Cloud-Infrastruktur verschoben."
+        },
+        {
+          "fachbegriff": "Replatform",
+          "bedeutung": "Ein Dienst wird mit begrenzten Änderungen migriert, um Vorteile von Cloud-Diensten zu nutzen, ohne ihn komplett neu zu entwickeln."
+        },
+        {
+          "fachbegriff": "Refactor / Re-Architect",
+          "bedeutung": "Eine Anwendung wird grundlegend angepasst oder neu aufgebaut, damit sie Cloud-Funktionen optimal nutzen kann."
+        },
+        {
+          "fachbegriff": "Repurchase",
+          "bedeutung": "Eine bestehende Anwendung wird durch eine andere, häufig als SaaS angebotene Lösung ersetzt."
+        },
+        {
+          "fachbegriff": "Retire",
+          "bedeutung": "Ein nicht mehr benötigter Dienst wird abgeschaltet und deshalb nicht in die Cloud migriert."
+        },
+        {
+          "fachbegriff": "Retain",
+          "bedeutung": "Ein Dienst bleibt bewusst in der bisherigen Umgebung, zum Beispiel aus technischen, wirtschaftlichen oder regulatorischen Gründen."
+        },
+        {
+          "fachbegriff": "FMEA",
+          "bedeutung": "Fehlermöglichkeits- und Einflussanalyse. Risiken werden systematisch identifiziert, bewertet und mit Gegenmaßnahmen versehen."
+        },
+        {
+          "fachbegriff": "RPZ (Risikoprioritätszahl)",
+          "bedeutung": "Kennzahl der FMEA aus Bedeutung x Auftreten x Entdeckbarkeit. Eine hohe RPZ zeigt ein besonders wichtiges Risiko."
+        },
+        {
+          "fachbegriff": "Rollback",
+          "bedeutung": "Geplanter Rückweg auf den vorherigen funktionierenden Zustand, wenn eine Migration oder Umstellung fehlschlägt."
+        },
+        {
+          "fachbegriff": "Cutover",
+          "bedeutung": "Zeitpunkt oder Vorgang, an dem Nutzer oder Datenverkehr vom alten auf das neue System umgeschaltet werden."
+        },
+        {
+          "fachbegriff": "Parallel Run",
+          "bedeutung": "Altes und neues System laufen zeitweise gleichzeitig, damit Ergebnisse verglichen und Risiken vor der endgültigen Umschaltung reduziert werden."
+        },
+        {
+          "fachbegriff": "Blue/Green Migration",
+          "bedeutung": "Zwei nahezu identische Umgebungen werden parallel betrieben. Der Traffic wird erst nach erfolgreichem Test auf die neue Umgebung umgeschaltet."
+        }
+      ]
+    },
+    {
+      "id": "CL-06",
+      "titel": "Hybrid-Cloud und Multi-Cloud-Strategien",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Hybrid Cloud",
+          "bedeutung": "On-Premise-Systeme und Cloud-Ressourcen werden bewusst zu einer gemeinsamen Architektur verbunden."
+        },
+        {
+          "fachbegriff": "Multi-Cloud",
+          "bedeutung": "Mehrere Public-Cloud-Anbieter werden parallel genutzt, zum Beispiel AWS und Azure."
+        },
+        {
+          "fachbegriff": "Cloud Bursting",
+          "bedeutung": "Normalbetrieb läuft lokal, zusätzliche Last wird bei Bedarf vorübergehend in die Public Cloud ausgelagert."
+        },
+        {
+          "fachbegriff": "Tiered Hybrid",
+          "bedeutung": "Unterschiedliche Schichten eines Systems laufen an verschiedenen Orten, zum Beispiel Edge lokal und Auswertung in der Cloud."
+        },
+        {
+          "fachbegriff": "Partitioned Services",
+          "bedeutung": "Services werden bewusst auf On-Premise und Cloud verteilt, abhängig von Anforderungen wie Latenz, Sicherheit oder Skalierung."
+        },
+        {
+          "fachbegriff": "Vendor Lock-in",
+          "bedeutung": "Starke Abhängigkeit von einem Anbieter, wodurch ein späterer Wechsel technisch schwierig oder teuer wird."
+        },
+        {
+          "fachbegriff": "Portabilität",
+          "bedeutung": "Fähigkeit, Anwendungen und Daten mit möglichst wenig Änderungen zwischen Plattformen oder Cloud-Anbietern zu verschieben."
+        },
+        {
+          "fachbegriff": "Cloud-agnostisch",
+          "bedeutung": "Architektur oder Anwendung, die nicht eng an die proprietären Dienste eines einzelnen Cloud-Anbieters gebunden ist."
+        },
+        {
+          "fachbegriff": "Failover",
+          "bedeutung": "Geplanter oder automatischer Wechsel auf eine Ersatzumgebung, wenn die primäre Umgebung ausfällt."
+        },
+        {
+          "fachbegriff": "Multi-AZ",
+          "bedeutung": "Ausfallsicherheit innerhalb einer Region durch Verteilung auf mehrere getrennte Availability Zones."
+        },
+        {
+          "fachbegriff": "Multi-Region",
+          "bedeutung": "Verteilung von Systemen oder Daten über mehrere geografische Cloud-Regionen, um auch Regionenausfälle abzufangen."
+        },
+        {
+          "fachbegriff": "Best-of-Breed",
+          "bedeutung": "Für unterschiedliche Aufgaben wird jeweils der am besten passende Dienst oder Anbieter gewählt, auch wenn dadurch mehrere Clouds genutzt werden."
+        },
+        {
+          "fachbegriff": "Datensynchronisation",
+          "bedeutung": "Abgleich von Daten zwischen verschiedenen Standorten oder Clouds, damit die benötigten Informationen konsistent verfügbar bleiben."
+        },
+        {
+          "fachbegriff": "Abstraktionsschicht",
+          "bedeutung": "Technische Zwischenschicht, die anbieterspezifische Dienste versteckt und dadurch einen späteren Plattformwechsel erleichtert."
+        }
+      ]
+    },
+    {
+      "id": "CL-07",
+      "titel": "Cloud-Sicherheit, IAM und Compliance",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "IAM (Identity and Access Management)",
+          "bedeutung": "System zur Verwaltung digitaler Identitäten und ihrer Berechtigungen auf Cloud-Ressourcen."
+        },
+        {
+          "fachbegriff": "Authentifizierung",
+          "bedeutung": "Prüfung der Identität: Das System stellt fest, wer ein Benutzer oder Dienst ist."
+        },
+        {
+          "fachbegriff": "Autorisierung",
+          "bedeutung": "Prüfung der Berechtigung: Das System entscheidet, was eine bereits identifizierte Person oder Anwendung tun darf."
+        },
+        {
+          "fachbegriff": "IAM User",
+          "bedeutung": "Benutzeridentität für eine Person oder einen technischen Zugriff innerhalb des Cloud-Accounts."
+        },
+        {
+          "fachbegriff": "IAM Group",
+          "bedeutung": "Gruppe von Benutzern, denen gemeinsame Berechtigungen zugewiesen werden können."
+        },
+        {
+          "fachbegriff": "IAM Role",
+          "bedeutung": "Temporär übernehmbare Rolle mit definierten Berechtigungen, zum Beispiel für eine CI/CD-Pipeline oder einen Cloud-Dienst."
+        },
+        {
+          "fachbegriff": "IAM Policy",
+          "bedeutung": "Regelwerk, das beschreibt, welche Aktionen auf welchen Cloud-Ressourcen erlaubt oder verboten sind."
+        },
+        {
+          "fachbegriff": "Least-Privilege-Prinzip",
+          "bedeutung": "Jeder Benutzer und jeder Dienst erhält nur die Berechtigungen, die für seine konkrete Aufgabe wirklich notwendig sind."
+        },
+        {
+          "fachbegriff": "MFA (Multi-Factor Authentication)",
+          "bedeutung": "Anmeldung mit mindestens zwei unabhängigen Faktoren, zum Beispiel Passwort und Authenticator-App."
+        },
+        {
+          "fachbegriff": "Encryption at Rest",
+          "bedeutung": "Verschlüsselung gespeicherter Daten auf Datenträgern, in Datenbanken oder Object Storage."
+        },
+        {
+          "fachbegriff": "Encryption in Transit",
+          "bedeutung": "Verschlüsselung von Daten während der Übertragung, zum Beispiel mit TLS oder einem VPN."
+        },
+        {
+          "fachbegriff": "KMS (Key Management Service)",
+          "bedeutung": "Zentraler Cloud-Dienst zum Erstellen, Verwalten und kontrollierten Verwenden von Verschlüsselungsschlüsseln."
+        },
+        {
+          "fachbegriff": "Auftragsverarbeitungsvertrag (AVV)",
+          "bedeutung": "Vertrag nach DSGVO, der festlegt, wie ein externer Dienstleister personenbezogene Daten im Auftrag verarbeitet und schützt."
+        },
+        {
+          "fachbegriff": "Datenresidenz",
+          "bedeutung": "Festlegung, in welchem Land oder welcher Region Daten gespeichert und verarbeitet werden dürfen."
+        }
+      ]
+    },
+    {
+      "id": "CL-08",
+      "titel": "Cloud-Kosten, FinOps und Gesamtreflexion",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "TCO (Total Cost of Ownership)",
+          "bedeutung": "Gesamtkosten einer IT-Lösung über ihren gesamten Nutzungszeitraum, einschließlich direkter und indirekter Kosten."
+        },
+        {
+          "fachbegriff": "CapEx",
+          "bedeutung": "Capital Expenditure: Investitionskosten, zum Beispiel für den Kauf eigener Server, Storage oder Netzwerkhardware."
+        },
+        {
+          "fachbegriff": "OpEx",
+          "bedeutung": "Operational Expenditure: laufende Betriebskosten, zum Beispiel monatliche Cloud-Gebühren, Strom oder Support."
+        },
+        {
+          "fachbegriff": "FinOps",
+          "bedeutung": "Zusammenarbeit von Technik, Finanzen und Fachbereichen, um Cloud-Kosten transparent zu machen, zu optimieren und dauerhaft zu steuern."
+        },
+        {
+          "fachbegriff": "Inform / Optimize / Operate",
+          "bedeutung": "Drei FinOps-Phasen: Kosten sichtbar machen, Ressourcen optimieren und die Kostensteuerung dauerhaft in den Betrieb integrieren."
+        },
+        {
+          "fachbegriff": "Tagging",
+          "bedeutung": "Cloud-Ressourcen erhalten Kennzeichnungen wie Team, Umgebung oder Kostenstelle, damit Nutzung und Kosten eindeutig zugeordnet werden können."
+        },
+        {
+          "fachbegriff": "Budget Alert",
+          "bedeutung": "Automatische Warnung, wenn Cloud-Ausgaben ein festgelegtes Budget oder einen Schwellenwert erreichen."
+        },
+        {
+          "fachbegriff": "Right-Sizing",
+          "bedeutung": "Anpassen von Größe und Leistung einer Cloud-Ressource an den tatsächlichen Bedarf, um Überdimensionierung und unnötige Kosten zu vermeiden."
+        },
+        {
+          "fachbegriff": "On-Demand",
+          "bedeutung": "Preismodell ohne langfristige Bindung. Sehr flexibel, dafür meist teurer als Modelle mit längerem Commitment."
+        },
+        {
+          "fachbegriff": "Reserved Instances",
+          "bedeutung": "Längerfristige Reservierung oder Verpflichtung für planbare Workloads, die im Gegenzug deutliche Preisnachlässe ermöglicht."
+        },
+        {
+          "fachbegriff": "Savings Plans",
+          "bedeutung": "Rabattmodell mit längerfristiger Ausgabenverpflichtung, das flexibler als klassische Reserved Instances eingesetzt werden kann."
+        },
+        {
+          "fachbegriff": "Spot Instances",
+          "bedeutung": "Sehr günstige überschüssige Cloud-Kapazität, die vom Anbieter kurzfristig wieder entzogen werden kann. Geeignet für unterbrechbare Workloads."
+        },
+        {
+          "fachbegriff": "Ressourcen-Scheduling",
+          "bedeutung": "Cloud-Ressourcen werden zeitgesteuert gestartet und gestoppt, damit ungenutzte Systeme außerhalb der benötigten Zeiten keine Kosten verursachen."
+        },
+        {
+          "fachbegriff": "Well-Architected Framework",
+          "bedeutung": "Leitfaden zur Bewertung guter Cloud-Architekturen. Er betrachtet unter anderem Sicherheit, Zuverlässigkeit, Leistung, Betrieb, Nachhaltigkeit und Kostenoptimierung."
+        }
+      ]
+    }
+  ]
+}

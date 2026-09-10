@@ -1,0 +1,495 @@
+{
+  "titel": "Prüfungsrelevante Fachbegriffe I-01 bis I-08",
+  "thema": "IoT - kompakte Prüfungsvorbereitung",
+  "anzahl_kernbegriffe": 108,
+  "bereiche": [
+    {
+      "id": "I-01",
+      "titel": "Was ist IoT? - Von isolierten Maschinen zur vernetzten Fabrik",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Internet of Things (IoT)",
+          "bedeutung": "Vernetzung physischer Geräte und Maschinen, damit sie Daten erfassen, austauschen und darauf reagieren können."
+        },
+        {
+          "fachbegriff": "Industrial Internet of Things (IIoT)",
+          "bedeutung": "IoT im industriellen Umfeld, zum Beispiel vernetzte Maschinen, Sensoren und Produktionsanlagen mit hohen Anforderungen an Verfügbarkeit und Sicherheit."
+        },
+        {
+          "fachbegriff": "Industrie 4.0",
+          "bedeutung": "Vernetzte und intelligente Produktion, bei der Maschinen, IT-Systeme und Daten miteinander kommunizieren und Prozesse zunehmend automatisiert werden."
+        },
+        {
+          "fachbegriff": "Cyber-Physical System (CPS)",
+          "bedeutung": "Physisches System wie eine Maschine, das durch Sensoren, Software und Netzwerkverbindung digital überwacht oder gesteuert wird."
+        },
+        {
+          "fachbegriff": "Information Technology (IT)",
+          "bedeutung": "Technik zur Verarbeitung, Speicherung und Übertragung von Informationen, zum Beispiel Server, Anwendungen und Unternehmensnetzwerke."
+        },
+        {
+          "fachbegriff": "Operational Technology (OT)",
+          "bedeutung": "Technik zur Überwachung und Steuerung physischer Prozesse und Maschinen, zum Beispiel SPS, Sensoren und Produktionsanlagen."
+        },
+        {
+          "fachbegriff": "IT/OT-Konvergenz",
+          "bedeutung": "Zusammenführung von klassischer Unternehmens-IT und industrieller Steuerungs- und Produktionstechnik."
+        },
+        {
+          "fachbegriff": "IoT-Referenzarchitektur",
+          "bedeutung": "Schichtenmodell, das ein IoT-System vom Sensor über Netzwerk und Verarbeitung bis zur Anwendung strukturiert."
+        },
+        {
+          "fachbegriff": "Wahrnehmungsschicht (Perception Layer)",
+          "bedeutung": "Unterste IoT-Schicht, in der Sensoren physische Größen erfassen und Aktoren auf die reale Welt einwirken."
+        },
+        {
+          "fachbegriff": "Netzwerkschicht (Network Layer)",
+          "bedeutung": "Schicht, die Messdaten und Steuerinformationen zwischen Geräten, Gateways und zentralen Systemen überträgt."
+        },
+        {
+          "fachbegriff": "Verarbeitungsschicht (Processing Layer)",
+          "bedeutung": "Schicht, in der Daten gefiltert, aggregiert, gespeichert und analysiert werden."
+        },
+        {
+          "fachbegriff": "Anwendungsschicht (Application Layer)",
+          "bedeutung": "Oberste Schicht mit Dashboards, Alarmen, Automatisierung und Geschäftslogik für die Anwender."
+        },
+        {
+          "fachbegriff": "OPC UA",
+          "bedeutung": "Industrieprotokoll für einen standardisierten und sicheren Datenaustausch zwischen Maschinen, Steuerungen und IT-Systemen."
+        },
+        {
+          "fachbegriff": "Predictive Maintenance",
+          "bedeutung": "Vorausschauende Wartung: Sensordaten werden ausgewertet, um Verschleiß und mögliche Ausfälle frühzeitig zu erkennen."
+        }
+      ]
+    },
+    {
+      "id": "I-02",
+      "titel": "Sensoren und Aktoren - Die Sinne der Maschine",
+      "anzahl_kernbegriffe": 13,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Sensor",
+          "bedeutung": "Bauteil, das eine physikalische Größe wie Temperatur, Druck oder Vibration misst und in ein auswertbares Signal umwandelt."
+        },
+        {
+          "fachbegriff": "Aktor",
+          "bedeutung": "Bauteil, das ein elektrisches Steuersignal in eine physische Aktion umsetzt, zum Beispiel einen Motor, ein Ventil oder eine Pumpe schaltet."
+        },
+        {
+          "fachbegriff": "Analoges Signal",
+          "bedeutung": "Kontinuierliches Signal, bei dem viele Zwischenwerte möglich sind, zum Beispiel eine Spannung von 0 bis 10 Volt."
+        },
+        {
+          "fachbegriff": "Digitales Signal",
+          "bedeutung": "Signal mit diskreten Zuständen oder digital codierten Messwerten, die direkt von einem Rechner verarbeitet werden können."
+        },
+        {
+          "fachbegriff": "ADC (Analog-Digital-Converter)",
+          "bedeutung": "Wandler, der ein analoges Sensorsignal in einen digitalen Zahlenwert umsetzt."
+        },
+        {
+          "fachbegriff": "Auflösung eines ADC",
+          "bedeutung": "Anzahl der unterscheidbaren Messstufen eines Analog-Digital-Wandlers. Mehr Bit bedeuten feinere Messschritte."
+        },
+        {
+          "fachbegriff": "GPIO",
+          "bedeutung": "General Purpose Input/Output. Programmierbare Ein- und Ausgänge, über die ein Raspberry Pi Sensoren lesen oder Aktoren ansteuern kann."
+        },
+        {
+          "fachbegriff": "I2C",
+          "bedeutung": "Busprotokoll für mehrere Geräte über zwei Leitungen. Geräte werden über Adressen unterschieden."
+        },
+        {
+          "fachbegriff": "SPI",
+          "bedeutung": "Schnelles Busprotokoll für kurze Verbindungen zwischen Controller und Sensoren oder anderen Bausteinen."
+        },
+        {
+          "fachbegriff": "UART",
+          "bedeutung": "Serielle Punkt-zu-Punkt-Kommunikation über Sende- und Empfangsleitung, häufig für Geräte oder Mikrocontroller."
+        },
+        {
+          "fachbegriff": "1-Wire",
+          "bedeutung": "Einfaches Busprotokoll mit einer Datenleitung, das sich zum Beispiel für mehrere Temperatursensoren eignet."
+        },
+        {
+          "fachbegriff": "Relais",
+          "bedeutung": "Elektrisch gesteuerter Schalter, mit dem ein schwaches Steuersignal einen größeren Laststrom sicher schalten kann."
+        },
+        {
+          "fachbegriff": "Regelkreis",
+          "bedeutung": "Geschlossener Ablauf aus Messen, Auswerten und Handeln: Sensor erfasst einen Zustand, Logik entscheidet und Aktor reagiert."
+        }
+      ]
+    },
+    {
+      "id": "I-03",
+      "titel": "Kommunikationsprotokolle - MQTT, CoAP und HTTP",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "MQTT",
+          "bedeutung": "Leichtgewichtiges Nachrichtenprotokoll für IoT, das nach dem Publish/Subscribe-Prinzip arbeitet und wenig Bandbreite benötigt."
+        },
+        {
+          "fachbegriff": "Publish/Subscribe",
+          "bedeutung": "Kommunikationsmodell, bei dem Sender Nachrichten veröffentlichen und Empfänger bestimmte Themen abonnieren. Beide sind über einen Broker entkoppelt."
+        },
+        {
+          "fachbegriff": "Request/Response",
+          "bedeutung": "Kommunikationsmodell wie bei HTTP: Ein Client sendet eine Anfrage direkt an einen Server und erhält eine Antwort."
+        },
+        {
+          "fachbegriff": "MQTT-Broker",
+          "bedeutung": "Zentrale Vermittlungsstelle, die veröffentlichte MQTT-Nachrichten empfängt und an passende Subscriber weiterleitet."
+        },
+        {
+          "fachbegriff": "MQTT-Client",
+          "bedeutung": "Gerät oder Anwendung, die sich mit einem MQTT-Broker verbindet und Nachrichten senden oder empfangen kann."
+        },
+        {
+          "fachbegriff": "Topic",
+          "bedeutung": "Hierarchischer Name in MQTT, über den Nachrichten thematisch eingeordnet und abonniert werden."
+        },
+        {
+          "fachbegriff": "Topic-Wildcard",
+          "bedeutung": "Platzhalter in MQTT-Abonnements. + steht für genau eine Ebene, # für alle darunterliegenden Ebenen."
+        },
+        {
+          "fachbegriff": "QoS 0 - At most once",
+          "bedeutung": "Nachricht wird ohne Zustellbestätigung gesendet. Sie kann verloren gehen, verursacht aber den geringsten Aufwand."
+        },
+        {
+          "fachbegriff": "QoS 1 - At least once",
+          "bedeutung": "Nachricht wird bestätigt und bei Bedarf erneut gesendet. Sie kommt mindestens einmal an, kann aber doppelt eintreffen."
+        },
+        {
+          "fachbegriff": "QoS 2 - Exactly once",
+          "bedeutung": "Höchste MQTT-Zuverlässigkeit mit mehrstufiger Bestätigung. Die Nachricht wird genau einmal zugestellt."
+        },
+        {
+          "fachbegriff": "Retained Message",
+          "bedeutung": "Der Broker speichert den letzten Wert eines Topics und liefert ihn neuen Subscribern sofort nach dem Abonnieren."
+        },
+        {
+          "fachbegriff": "Last Will and Testament (LWT)",
+          "bedeutung": "Vom MQTT-Client hinterlegte Nachricht, die der Broker veröffentlicht, wenn der Client unerwartet die Verbindung verliert."
+        },
+        {
+          "fachbegriff": "CoAP",
+          "bedeutung": "Constrained Application Protocol. Leichtgewichtiges Request/Response-Protokoll für sehr ressourcenarme IoT-Geräte."
+        },
+        {
+          "fachbegriff": "Mosquitto",
+          "bedeutung": "Weit verbreiteter Open-Source-MQTT-Broker zum Empfangen und Verteilen von MQTT-Nachrichten."
+        }
+      ]
+    },
+    {
+      "id": "I-04",
+      "titel": "Edge Computing - Datenverarbeitung vor Ort",
+      "anzahl_kernbegriffe": 13,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Edge Computing",
+          "bedeutung": "Daten werden möglichst nah an ihrer Quelle verarbeitet, zum Beispiel direkt auf einem Gateway an der Maschine."
+        },
+        {
+          "fachbegriff": "Cloud Computing",
+          "bedeutung": "Daten und Anwendungen werden in zentralen Rechenzentren oder Cloud-Plattformen verarbeitet und gespeichert."
+        },
+        {
+          "fachbegriff": "Latenz",
+          "bedeutung": "Zeitverzögerung zwischen einem Ereignis und der Reaktion darauf. Kleine Latenz ist bei zeitkritischen Steuerungen wichtig."
+        },
+        {
+          "fachbegriff": "Echtzeitfähigkeit",
+          "bedeutung": "Fähigkeit eines Systems, innerhalb einer vorhersehbaren und ausreichend kurzen Zeit auf ein Ereignis zu reagieren."
+        },
+        {
+          "fachbegriff": "Bandbreite",
+          "bedeutung": "Menge an Daten, die in einer bestimmten Zeit über eine Netzwerkverbindung übertragen werden kann."
+        },
+        {
+          "fachbegriff": "Offline-Fähigkeit",
+          "bedeutung": "Ein System kann wichtige Funktionen auch dann weiter ausführen, wenn die Verbindung zu zentralen Diensten ausfällt."
+        },
+        {
+          "fachbegriff": "Edge-Gateway",
+          "bedeutung": "Rechner zwischen Maschinen/Sensoren und zentraler IT, der Daten sammelt, verarbeitet, übersetzt und weiterleitet."
+        },
+        {
+          "fachbegriff": "Sampling / Abtastrate",
+          "bedeutung": "Festlegung, wie häufig ein Sensorwert gemessen oder verarbeitet wird."
+        },
+        {
+          "fachbegriff": "Aggregation",
+          "bedeutung": "Mehrere Einzelmesswerte werden zu verdichteten Werten wie Durchschnitt, Minimum oder Maximum zusammengefasst."
+        },
+        {
+          "fachbegriff": "Dead-Band-Filterung",
+          "bedeutung": "Ein neuer Messwert wird nur übertragen, wenn er sich um mehr als einen festgelegten Schwellenwert verändert hat."
+        },
+        {
+          "fachbegriff": "Anomalie-Erkennung",
+          "bedeutung": "Erkennung ungewöhnlicher Messwerte oder Muster, die auf Fehler, Verschleiß oder einen kritischen Zustand hinweisen können."
+        },
+        {
+          "fachbegriff": "Lokale Pufferung",
+          "bedeutung": "Daten werden vorübergehend am Edge gespeichert, wenn die zentrale Verbindung nicht verfügbar ist."
+        },
+        {
+          "fachbegriff": "Store-and-Forward",
+          "bedeutung": "Daten werden bei Verbindungsproblemen lokal gespeichert und nach Wiederherstellung der Verbindung automatisch nachgesendet."
+        }
+      ]
+    },
+    {
+      "id": "I-05",
+      "titel": "IoT-Plattformen und Datenströme",
+      "anzahl_kernbegriffe": 13,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Daten-Pipeline",
+          "bedeutung": "Kette von Komponenten, die Daten von der Quelle über Verarbeitung und Speicherung bis zur Nutzung transportiert."
+        },
+        {
+          "fachbegriff": "Zeitreihendatenbank (TSDB)",
+          "bedeutung": "Datenbank, die für große Mengen zeitgestempelter Messwerte und zeitbasierte Abfragen optimiert ist."
+        },
+        {
+          "fachbegriff": "InfluxDB",
+          "bedeutung": "Zeitreihendatenbank, die sich besonders für Sensor-, Monitoring- und IoT-Daten eignet."
+        },
+        {
+          "fachbegriff": "Measurement",
+          "bedeutung": "Logische Gruppe ähnlicher Messwerte in InfluxDB, vergleichbar mit dem Namen einer Messreihe."
+        },
+        {
+          "fachbegriff": "Tag",
+          "bedeutung": "Indizierte Metadaten in InfluxDB, nach denen häufig und schnell gefiltert werden kann, zum Beispiel Maschine oder Standort."
+        },
+        {
+          "fachbegriff": "Field",
+          "bedeutung": "Eigentlicher Messwert in InfluxDB, zum Beispiel Temperatur oder Stromstärke. Fields sind für Berechnungen und Aggregationen gedacht."
+        },
+        {
+          "fachbegriff": "Timestamp",
+          "bedeutung": "Zeitstempel, der angibt, wann ein Messwert entstanden ist. Er ist zentral für Zeitreihendaten."
+        },
+        {
+          "fachbegriff": "Retention Policy",
+          "bedeutung": "Regel, die festlegt, wie lange bestimmte Daten gespeichert werden, bevor sie automatisch gelöscht oder verdichtet werden."
+        },
+        {
+          "fachbegriff": "Telegraf",
+          "bedeutung": "Plugin-basierter Daten-Kollektor, der Daten aus Quellen wie MQTT einliest, verarbeitet und zum Beispiel in InfluxDB schreibt."
+        },
+        {
+          "fachbegriff": "Input-Plugin",
+          "bedeutung": "Telegraf-Erweiterung, die Daten aus einer bestimmten Quelle einliest, zum Beispiel MQTT oder Systemmetriken."
+        },
+        {
+          "fachbegriff": "Output-Plugin",
+          "bedeutung": "Telegraf-Erweiterung, die gesammelte Daten an ein Ziel wie InfluxDB weitergibt."
+        },
+        {
+          "fachbegriff": "Node-RED",
+          "bedeutung": "Browserbasierte visuelle Programmierumgebung, mit der Datenflüsse und IoT-Logik durch verbundene Bausteine erstellt werden."
+        },
+        {
+          "fachbegriff": "Flow",
+          "bedeutung": "In Node-RED eine Kette verbundener Nodes, die Daten empfängt, verarbeitet und an weitere Systeme weiterleitet."
+        }
+      ]
+    },
+    {
+      "id": "I-06",
+      "titel": "IoT-Sicherheit - Geräte und Netzwerke absichern",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Angriffsvektor",
+          "bedeutung": "Weg oder Schwachstelle, über die ein Angreifer ein IoT-Gerät, Netzwerk oder System kompromittieren kann."
+        },
+        {
+          "fachbegriff": "Authentifizierung",
+          "bedeutung": "Prüfung, ob ein Gerät oder Benutzer wirklich die behauptete Identität besitzt."
+        },
+        {
+          "fachbegriff": "TLS (Transport Layer Security)",
+          "bedeutung": "Protokoll, das Netzwerkkommunikation verschlüsselt und die Identität der Kommunikationspartner prüfen kann."
+        },
+        {
+          "fachbegriff": "Digitales Zertifikat",
+          "bedeutung": "Elektronischer Identitätsnachweis, der einen öffentlichen Schlüssel mit einer Identität verbindet."
+        },
+        {
+          "fachbegriff": "Certificate Authority (CA)",
+          "bedeutung": "Vertrauenswürdige Stelle, die digitale Zertifikate ausstellt und signiert."
+        },
+        {
+          "fachbegriff": "Client-Zertifikat",
+          "bedeutung": "Zertifikat, mit dem sich ein Gerät oder Client gegenüber einem Server eindeutig ausweisen kann."
+        },
+        {
+          "fachbegriff": "Mutual TLS (mTLS)",
+          "bedeutung": "TLS-Verbindung, bei der sich Server und Client gegenseitig mit Zertifikaten authentifizieren."
+        },
+        {
+          "fachbegriff": "Netzwerksegmentierung",
+          "bedeutung": "Aufteilung eines Netzwerks in getrennte Bereiche, damit Zugriffe kontrolliert und Angriffe begrenzt werden."
+        },
+        {
+          "fachbegriff": "Purdue-Modell",
+          "bedeutung": "Schichtenmodell für industrielle Netzwerke, das Produktions- und Unternehmenssysteme in Sicherheitszonen trennt."
+        },
+        {
+          "fachbegriff": "IT/OT-DMZ",
+          "bedeutung": "Abgeschottete Übergangszone zwischen Unternehmens-IT und Produktionsnetz, über die nur ausdrücklich erlaubte Kommunikation läuft."
+        },
+        {
+          "fachbegriff": "VLAN",
+          "bedeutung": "Virtuelles LAN zur logischen Trennung von Netzwerkbereichen auf gemeinsamer physischer Infrastruktur."
+        },
+        {
+          "fachbegriff": "Firewall-Regel",
+          "bedeutung": "Festlegung, welcher Netzwerkverkehr zwischen Zonen erlaubt oder blockiert wird, zum Beispiel nur MQTT über TLS."
+        },
+        {
+          "fachbegriff": "IEC 62443",
+          "bedeutung": "Normenreihe für die Cybersicherheit industrieller Automatisierungs- und Steuerungssysteme."
+        },
+        {
+          "fachbegriff": "OTA-Update (Over-the-Air)",
+          "bedeutung": "Software- oder Firmware-Update, das Geräte zentral über das Netzwerk erhalten, ohne sie manuell vor Ort aktualisieren zu müssen."
+        }
+      ]
+    },
+    {
+      "id": "I-07",
+      "titel": "Datenanalyse und Visualisierung mit Grafana",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Grafana",
+          "bedeutung": "Open-Source-Plattform zur Visualisierung und Überwachung von Daten aus verschiedenen Quellen in Dashboards."
+        },
+        {
+          "fachbegriff": "Dashboard",
+          "bedeutung": "Übersicht aus Diagrammen, Kennzahlen und Statusanzeigen, die wichtige Informationen für eine bestimmte Nutzergruppe zusammenfasst."
+        },
+        {
+          "fachbegriff": "Datenquelle",
+          "bedeutung": "System, aus dem Grafana Messwerte abfragt, zum Beispiel InfluxDB oder Prometheus."
+        },
+        {
+          "fachbegriff": "Time Series Panel",
+          "bedeutung": "Grafana-Diagramm für die Darstellung von Messwertverläufen über die Zeit."
+        },
+        {
+          "fachbegriff": "Gauge",
+          "bedeutung": "Anzeige eines aktuellen Wertes auf einer Skala mit Bereichen oder Schwellenwerten, zum Beispiel grün, gelb und rot."
+        },
+        {
+          "fachbegriff": "Stat Panel",
+          "bedeutung": "Kompakte Anzeige einer einzelnen Kennzahl, zum Beispiel Maschinenverfügbarkeit oder Anzahl aktiver Alarme."
+        },
+        {
+          "fachbegriff": "Heatmap",
+          "bedeutung": "Darstellung vieler Werte über Zeit und Intensität, bei der Unterschiede über Flächen oder Farbstufen sichtbar werden."
+        },
+        {
+          "fachbegriff": "KPI (Key Performance Indicator)",
+          "bedeutung": "Kennzahl, mit der ein wichtiges Ziel oder eine Leistung messbar gemacht wird, zum Beispiel Verfügbarkeit oder Ausfallzeit."
+        },
+        {
+          "fachbegriff": "Progressive Detailtiefe",
+          "bedeutung": "Dashboard-Prinzip: zuerst Gesamtübersicht, dann bei Bedarf Gruppen- und Detailansicht bis zur einzelnen Maschine."
+        },
+        {
+          "fachbegriff": "Alerting",
+          "bedeutung": "Automatische Überwachung von Bedingungen und Benachrichtigung, wenn definierte Grenzwerte oder Zustände eintreten."
+        },
+        {
+          "fachbegriff": "Alert Rule",
+          "bedeutung": "Regel, die festlegt, welche Daten geprüft werden und wann daraus ein Alarm entsteht."
+        },
+        {
+          "fachbegriff": "Schwellenwert",
+          "bedeutung": "Festgelegter Grenzwert, dessen Über- oder Unterschreitung eine Warnung oder Aktion auslösen kann."
+        },
+        {
+          "fachbegriff": "For-Periode",
+          "bedeutung": "Zeitspanne, über die eine Alert-Bedingung ununterbrochen erfüllt sein muss, bevor der Alarm ausgelöst wird."
+        },
+        {
+          "fachbegriff": "Benachrichtigungskanal",
+          "bedeutung": "Weg, über den ein Alarm weitergegeben wird, zum Beispiel E-Mail, Slack, Webhook oder PagerDuty."
+        }
+      ]
+    },
+    {
+      "id": "I-08",
+      "titel": "IoT-Architektur und Gesamtintegration - Reflexion",
+      "anzahl_kernbegriffe": 13,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Skalierbarkeit",
+          "bedeutung": "Fähigkeit einer Architektur, mehr Geräte, Daten oder Last zu verarbeiten, ohne dass sie grundlegend neu gebaut werden muss."
+        },
+        {
+          "fachbegriff": "Engpass (Bottleneck)",
+          "bedeutung": "Komponente, deren begrenzte Leistung die Geschwindigkeit oder Skalierbarkeit des Gesamtsystems einschränkt."
+        },
+        {
+          "fachbegriff": "Horizontale Skalierung",
+          "bedeutung": "Kapazität wird erhöht, indem zusätzliche gleichartige Instanzen oder Server hinzugefügt werden."
+        },
+        {
+          "fachbegriff": "Cluster",
+          "bedeutung": "Mehrere Systeme arbeiten gemeinsam als eine logische Einheit, um Last zu verteilen oder Ausfälle besser abzufangen."
+        },
+        {
+          "fachbegriff": "Replikation",
+          "bedeutung": "Daten oder Dienste werden auf mehreren Systemen mehrfach vorgehalten, um Verfügbarkeit und Ausfallsicherheit zu erhöhen."
+        },
+        {
+          "fachbegriff": "Failover",
+          "bedeutung": "Automatische oder geplante Übernahme durch ein Ersatzsystem, wenn das aktive System ausfällt."
+        },
+        {
+          "fachbegriff": "Device Management",
+          "bedeutung": "Zentrale Verwaltung vieler IoT-Geräte, zum Beispiel für Konfiguration, Status, Zertifikate und Software-Updates."
+        },
+        {
+          "fachbegriff": "Provisionierung",
+          "bedeutung": "Automatisierter Prozess, mit dem ein neues Gerät eingerichtet, registriert und mit den benötigten Konfigurationen und Zugängen versorgt wird."
+        },
+        {
+          "fachbegriff": "Digital Twin",
+          "bedeutung": "Virtuelles Abbild einer realen Maschine oder eines Prozesses, das mit Echtzeitdaten aktualisiert wird und Verhalten simulieren oder vorhersagen kann."
+        },
+        {
+          "fachbegriff": "Machine Learning (ML)",
+          "bedeutung": "Verfahren, bei denen Modelle aus vorhandenen Daten Muster lernen und daraus zum Beispiel Prognosen oder Anomalien ableiten."
+        },
+        {
+          "fachbegriff": "Simulation",
+          "bedeutung": "Nachbildung des Verhaltens eines realen Systems, um Auswirkungen von Änderungen oder zukünftige Zustände zu untersuchen."
+        },
+        {
+          "fachbegriff": "Zielarchitektur",
+          "bedeutung": "Geplanter technischer Soll-Zustand eines Systems mit Komponenten, Verbindungen, Sicherheitszonen und Verantwortlichkeiten."
+        },
+        {
+          "fachbegriff": "Smart Factory",
+          "bedeutung": "Stark vernetzte Produktionsumgebung, in der Maschinen, Sensoren, IT-Systeme und Daten automatisiert zusammenarbeiten."
+        }
+      ]
+    }
+  ]
+}

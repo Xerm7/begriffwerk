@@ -1,0 +1,511 @@
+{
+  "titel": "Prüfungsrelevante Fachbegriffe A-01 bis A-08",
+  "thema": "IT-Infrastruktur & Architektur - kompakte Prüfungsvorbereitung",
+  "anzahl_kernbegriffe": 112,
+  "bereiche": [
+    {
+      "id": "A-01",
+      "titel": "IT-Infrastruktur-Analyse: Fallstudie",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "IT-Infrastruktur",
+          "bedeutung": "Die Gesamtheit der technischen Grundlagen eines Unternehmens, zum Beispiel Hardware, Netzwerk, Software, Speicher, Lizenzen und Verträge."
+        },
+        {
+          "fachbegriff": "IST-Analyse",
+          "bedeutung": "Systematische Aufnahme des aktuellen Zustands. Sie zeigt, welche Systeme vorhanden sind, wie sie genutzt werden und wo Probleme bestehen."
+        },
+        {
+          "fachbegriff": "Hardware-Infrastruktur",
+          "bedeutung": "Physische Komponenten wie Server, Storage, Switches, Router, Firewalls, Endgeräte, Racks, USV und Verkabelung."
+        },
+        {
+          "fachbegriff": "Netzwerk-Infrastruktur",
+          "bedeutung": "Logischer und technischer Aufbau des Netzes, zum Beispiel IP-Bereiche, VLANs, Routing, DNS, DHCP, VPN und Firewall-Regeln."
+        },
+        {
+          "fachbegriff": "Software-Infrastruktur",
+          "bedeutung": "Betriebssysteme, Middleware, Datenbanken, Anwendungen, Sicherheitssoftware und Werkzeuge, die für den IT-Betrieb benötigt werden."
+        },
+        {
+          "fachbegriff": "Inventarisierung",
+          "bedeutung": "Strukturierte Erfassung vorhandener IT-Komponenten mit wichtigen Daten wie Typ, Version, Standort, Zustand und Verantwortlichem."
+        },
+        {
+          "fachbegriff": "Befragung / Interview",
+          "bedeutung": "Methode der IST-Aufnahme, bei der Verantwortliche und Anwender befragt werden, um Wissen, Probleme und Hintergründe zu erfassen."
+        },
+        {
+          "fachbegriff": "Beobachtung",
+          "bedeutung": "Direkte Prüfung der realen Umgebung vor Ort, um Zustände zu erkennen, die in Dokumentationen oder Inventarlisten fehlen."
+        },
+        {
+          "fachbegriff": "Automatisierte Discovery",
+          "bedeutung": "Automatisches Erkennen von Geräten, Diensten und Software, zum Beispiel durch Netzwerk-Scanner oder Asset-Management-Werkzeuge."
+        },
+        {
+          "fachbegriff": "Schwachstellenanalyse",
+          "bedeutung": "Bewertung der Infrastruktur auf Probleme wie veraltete Systeme, hohe Komplexität, schlechte Wartbarkeit oder Sicherheitsrisiken."
+        },
+        {
+          "fachbegriff": "End of Life / End of Support",
+          "bedeutung": "Zeitpunkt, ab dem ein Produkt nicht mehr weiterentwickelt oder vom Hersteller nicht mehr unterstützt wird. Dadurch steigen Betriebs- und Sicherheitsrisiken."
+        },
+        {
+          "fachbegriff": "Heterogenität",
+          "bedeutung": "Hohe Vielfalt unterschiedlicher Systeme, Versionen oder Hersteller. Das erhöht meist Aufwand, Kosten und Komplexität."
+        },
+        {
+          "fachbegriff": "Heat-Map",
+          "bedeutung": "Übersicht, die den Zustand von Komponenten farblich bewertet, zum Beispiel grün, gelb und rot, damit Handlungsbedarf schnell sichtbar wird."
+        },
+        {
+          "fachbegriff": "Homogenisierung",
+          "bedeutung": "Bewusste Reduzierung der technischen Vielfalt durch Standards. Dadurch werden Betrieb, Wartung, Schulung und Automatisierung einfacher."
+        }
+      ]
+    },
+    {
+      "id": "A-02",
+      "titel": "Sollkonzeption und Anforderungsmanagement",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Sollkonzept",
+          "bedeutung": "Beschreibung des gewünschten zukünftigen Zustands. Es wird aus den Anforderungen abgeleitet und bildet die Grundlage für die Zielarchitektur."
+        },
+        {
+          "fachbegriff": "Anforderungsmanagement",
+          "bedeutung": "Systematisches Erfassen, Prüfen, Priorisieren, Dokumentieren und Nachverfolgen von Anforderungen über den gesamten Lebenszyklus."
+        },
+        {
+          "fachbegriff": "Funktionale Anforderung",
+          "bedeutung": "Beschreibt, was ein System konkret tun oder welche Funktion es bereitstellen soll."
+        },
+        {
+          "fachbegriff": "Nicht-funktionale Anforderung",
+          "bedeutung": "Beschreibt Qualitätseigenschaften wie Verfügbarkeit, Performance, Sicherheit, Skalierbarkeit oder Bedienbarkeit."
+        },
+        {
+          "fachbegriff": "Organisatorische Anforderung",
+          "bedeutung": "Vorgabe zu Abläufen, Rollen oder organisatorischen Regeln, zum Beispiel Vier-Augen-Prinzip oder Schulungsanforderungen."
+        },
+        {
+          "fachbegriff": "Rechtliche Anforderung",
+          "bedeutung": "Vorgabe, die aus Gesetzen, Normen oder anderen verbindlichen Regeln entsteht, zum Beispiel Datenschutz oder Aufbewahrungspflichten."
+        },
+        {
+          "fachbegriff": "Lastenheft",
+          "bedeutung": "Dokument des Auftraggebers. Es beschreibt, was erreicht und geliefert werden soll, möglichst ohne die technische Lösung vorzugeben."
+        },
+        {
+          "fachbegriff": "Pflichtenheft",
+          "bedeutung": "Dokument des Auftragnehmers. Es beschreibt, wie die Anforderungen aus dem Lastenheft technisch und organisatorisch umgesetzt werden."
+        },
+        {
+          "fachbegriff": "SMART-Regel",
+          "bedeutung": "Regel für gute Anforderungen: spezifisch, messbar, akzeptiert, realistisch und terminiert."
+        },
+        {
+          "fachbegriff": "Testbarkeit",
+          "bedeutung": "Eine Anforderung ist so formuliert, dass objektiv geprüft werden kann, ob sie erfüllt wurde."
+        },
+        {
+          "fachbegriff": "Nachverfolgbarkeit / Traceability",
+          "bedeutung": "Eine Anforderung kann von ihrer Entstehung über Umsetzung und Test bis zur Abnahme eindeutig verfolgt werden."
+        },
+        {
+          "fachbegriff": "Traceability-Matrix",
+          "bedeutung": "Tabelle, die Anforderungen mit Umsetzung, Testfällen und Status verknüpft. So wird sichtbar, ob etwas vergessen wurde."
+        },
+        {
+          "fachbegriff": "Anforderungskatalog",
+          "bedeutung": "Geordnete Sammlung aller funktionalen, nicht-funktionalen, organisatorischen und rechtlichen Anforderungen eines Vorhabens."
+        },
+        {
+          "fachbegriff": "Abnahmekriterium",
+          "bedeutung": "Messbare Bedingung, anhand der entschieden wird, ob eine Leistung oder Anforderung erfolgreich erfüllt wurde."
+        }
+      ]
+    },
+    {
+      "id": "A-03",
+      "titel": "IT-Dokumentation und CMDB",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Configuration Item (CI)",
+          "bedeutung": "Ein IT-Element, dessen Zustand und Konfiguration dokumentiert werden sollen, zum Beispiel Server, Anwendung, Switch, Lizenz oder Vertrag."
+        },
+        {
+          "fachbegriff": "CMDB",
+          "bedeutung": "Configuration Management Database. Zentrale Datenbank für relevante IT-Komponenten, ihre Eigenschaften und ihre Beziehungen untereinander."
+        },
+        {
+          "fachbegriff": "CMDB-Schema",
+          "bedeutung": "Festgelegte Struktur der CMDB. Sie definiert, welche CI-Typen, Felder und Beziehungen erfasst werden."
+        },
+        {
+          "fachbegriff": "CI-Typ",
+          "bedeutung": "Kategorie eines Configuration Items, zum Beispiel Server, Netzwerkgerät, Anwendung, Datenbank oder Vertrag."
+        },
+        {
+          "fachbegriff": "CI-Attribut",
+          "bedeutung": "Eigenschaft eines Configuration Items, zum Beispiel Hostname, IP-Adresse, Version, Standort, Status oder Verantwortlicher."
+        },
+        {
+          "fachbegriff": "CI-Beziehung",
+          "bedeutung": "Verknüpfung zwischen zwei Configuration Items, zum Beispiel „Anwendung läuft auf Server“ oder „Service nutzt Datenbank“."
+        },
+        {
+          "fachbegriff": "Asset Management",
+          "bedeutung": "Verwaltung von IT-Vermögenswerten mit Fokus auf Bestand, Besitz, Kosten und Lebenszyklus. Eine CMDB betrachtet zusätzlich Konfigurationen und Beziehungen."
+        },
+        {
+          "fachbegriff": "Single Source of Truth",
+          "bedeutung": "Eine zentrale, verlässliche Datenquelle, die als maßgeblicher Stand für Informationen verwendet wird."
+        },
+        {
+          "fachbegriff": "Discovery",
+          "bedeutung": "Automatisches Erfassen technischer Informationen über Geräte, Netze, Cloud-Ressourcen oder Software für die Dokumentation."
+        },
+        {
+          "fachbegriff": "Pflicht-Workflow",
+          "bedeutung": "Prozessregel, die sicherstellt, dass Änderungen nur zusammen mit einer Aktualisierung der CMDB durchgeführt werden."
+        },
+        {
+          "fachbegriff": "API-Pflege",
+          "bedeutung": "Automatische Aktualisierung der CMDB über Schnittstellen, zum Beispiel durch CI/CD-Pipelines oder Infrastruktur-Werkzeuge."
+        },
+        {
+          "fachbegriff": "NetBox",
+          "bedeutung": "Werkzeug zur Dokumentation von Netzwerken, IP-Adressen, Geräten, Racks und Verbindungen. Besonders stark bei Netzwerk- und IPAM-Themen."
+        },
+        {
+          "fachbegriff": "GLPI",
+          "bedeutung": "IT-Asset- und Service-Management-Werkzeug mit Funktionen für Inventar, Helpdesk, Verträge und Lizenzen."
+        },
+        {
+          "fachbegriff": "i-doit",
+          "bedeutung": "CMDB-Werkzeug mit starker ITIL-Ausrichtung zur Dokumentation von CIs, Beziehungen und IT-Services."
+        }
+      ]
+    },
+    {
+      "id": "A-04",
+      "titel": "Standardprotokolle im IT-Bereich (Vertiefung)",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "TCP",
+          "bedeutung": "Verbindungsorientiertes Transportprotokoll. Es sorgt für zuverlässige, geordnete Übertragung und sendet verlorene Daten erneut."
+        },
+        {
+          "fachbegriff": "UDP",
+          "bedeutung": "Verbindungsloses Transportprotokoll mit wenig Overhead und geringer Latenz. Es garantiert weder Zustellung noch Reihenfolge."
+        },
+        {
+          "fachbegriff": "Three-Way Handshake",
+          "bedeutung": "TCP-Verbindungsaufbau mit SYN, SYN-ACK und ACK. Damit prüfen beide Seiten, ob eine Verbindung möglich ist."
+        },
+        {
+          "fachbegriff": "ACK / Retransmission",
+          "bedeutung": "ACK bestätigt den Empfang von TCP-Daten. Fehlt die Bestätigung, können Daten erneut übertragen werden."
+        },
+        {
+          "fachbegriff": "MQTT",
+          "bedeutung": "Leichtgewichtiges Nachrichtenprotokoll für IoT- und Sensordaten, das nach dem Publish/Subscribe-Prinzip arbeitet und auf TCP aufsetzt."
+        },
+        {
+          "fachbegriff": "Publish / Subscribe",
+          "bedeutung": "Kommunikationsmodell, bei dem Sender Nachrichten veröffentlichen und Empfänger bestimmte Themen abonnieren. Beide müssen sich nicht direkt kennen."
+        },
+        {
+          "fachbegriff": "MQTT-Broker",
+          "bedeutung": "Zentrale Vermittlungsstelle bei MQTT. Sie empfängt Nachrichten von Publishern und verteilt sie an passende Subscriber."
+        },
+        {
+          "fachbegriff": "MQTT-Topic",
+          "bedeutung": "Hierarchischer Name, über den MQTT-Nachrichten thematisch zugeordnet und von Empfängern abonniert werden."
+        },
+        {
+          "fachbegriff": "MQTT QoS 0 / 1 / 2",
+          "bedeutung": "Zuverlässigkeitsstufen von MQTT: höchstens einmal, mindestens einmal oder genau einmal. Mehr Zuverlässigkeit bedeutet mehr Aufwand."
+        },
+        {
+          "fachbegriff": "Retained Message",
+          "bedeutung": "Vom MQTT-Broker gespeicherte letzte Nachricht eines Topics, die neue Subscriber sofort erhalten können."
+        },
+        {
+          "fachbegriff": "Last Will and Testament (LWT)",
+          "bedeutung": "MQTT-Nachricht, die der Broker automatisch veröffentlicht, wenn ein Client unerwartet die Verbindung verliert."
+        },
+        {
+          "fachbegriff": "TLS / HTTPS",
+          "bedeutung": "TLS verschlüsselt und authentifiziert Netzwerkverbindungen. HTTPS ist HTTP, das über eine TLS-geschützte Verbindung übertragen wird."
+        },
+        {
+          "fachbegriff": "OPC UA",
+          "bedeutung": "Industrieprotokoll für sicheren, standardisierten Datenaustausch zwischen Maschinen, Steuerungen und IT-Systemen mit eingebautem Informationsmodell."
+        },
+        {
+          "fachbegriff": "Wireshark / tshark",
+          "bedeutung": "Werkzeuge zur Paket- und Protokollanalyse. Wireshark arbeitet grafisch, tshark über die Kommandozeile."
+        }
+      ]
+    },
+    {
+      "id": "A-05",
+      "titel": "Netzwerkdesign für Maschinenkommunikation",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Operational Technology (OT)",
+          "bedeutung": "Systeme, die physische Prozesse überwachen oder steuern, zum Beispiel SPS, SCADA, HMI, Sensoren und Aktoren."
+        },
+        {
+          "fachbegriff": "IT/OT-Trennung",
+          "bedeutung": "Gezielte Trennung von Unternehmens-IT und Produktionsnetzen, damit Angriffe oder Störungen nicht unkontrolliert zwischen beiden Bereichen wirken."
+        },
+        {
+          "fachbegriff": "Purdue-Modell",
+          "bedeutung": "Schichtenmodell zur Strukturierung von Industrie-Netzwerken vom physischen Prozess bis zur Unternehmens-IT. Zwischen den Ebenen werden kontrollierte Übergänge vorgesehen."
+        },
+        {
+          "fachbegriff": "DMZ",
+          "bedeutung": "Demilitarisierte Zone zwischen zwei Sicherheitsbereichen. Sie dient als kontrollierter Puffer, zum Beispiel zwischen OT und IT."
+        },
+        {
+          "fachbegriff": "VLAN",
+          "bedeutung": "Virtuelles LAN. Es teilt ein physisches Netzwerk in getrennte logische Broadcast-Domänen und unterstützt die Netzwerksegmentierung."
+        },
+        {
+          "fachbegriff": "IEEE 802.1Q",
+          "bedeutung": "Standard für VLAN-Tagging in Ethernet-Frames. Damit können mehrere VLANs über dieselbe Verbindung transportiert werden."
+        },
+        {
+          "fachbegriff": "Access-Port",
+          "bedeutung": "Switch-Port für ein Endgerät, der normalerweise genau einem VLAN zugeordnet ist und Frames ungetaggt überträgt."
+        },
+        {
+          "fachbegriff": "Trunk-Port",
+          "bedeutung": "Switch-Verbindung, die mehrere VLANs gleichzeitig zwischen Netzwerkgeräten transportiert, normalerweise mit 802.1Q-Tags."
+        },
+        {
+          "fachbegriff": "SCADA",
+          "bedeutung": "System zur Überwachung und Steuerung industrieller Prozesse. Es sammelt Prozessdaten, zeigt Zustände an und kann Steuerbefehle weitergeben."
+        },
+        {
+          "fachbegriff": "SPS / PLC",
+          "bedeutung": "Speicherprogrammierbare Steuerung. Industriecomputer, der Maschinen und Anlagen nach einem festen Steuerungsprogramm kontrolliert."
+        },
+        {
+          "fachbegriff": "HMI",
+          "bedeutung": "Human Machine Interface. Bedienoberfläche, über die Menschen Maschinenzustände sehen und Prozesse bedienen können."
+        },
+        {
+          "fachbegriff": "Feldbus / Industrial Ethernet",
+          "bedeutung": "Kommunikationstechniken zwischen Steuerungen, Sensoren und Aktoren, zum Beispiel Profibus, Profinet, Modbus oder EtherCAT."
+        },
+        {
+          "fachbegriff": "Harte / weiche / feste Echtzeit",
+          "bedeutung": "Kategorien für zeitkritische Systeme. Bei harter Echtzeit darf eine Deadline nie verletzt werden, bei weicher sind einzelne Verzögerungen tolerierbar, bei fester wird ein verspätetes Ergebnis wertlos."
+        },
+        {
+          "fachbegriff": "Edge-Cloud-Hybrid / Store-and-Forward",
+          "bedeutung": "Wichtige Funktionen laufen lokal am Standort weiter. Daten werden bei vorhandener Verbindung in die Cloud übertragen und bei Ausfall zunächst lokal gepuffert."
+        }
+      ]
+    },
+    {
+      "id": "A-06",
+      "titel": "Datensammlung, Aggregation und Analyse",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Datenpipeline",
+          "bedeutung": "Technischer Ablauf, der Daten von der Quelle über Aufnahme, Speicherung und Verarbeitung bis zur Auswertung oder Visualisierung transportiert."
+        },
+        {
+          "fachbegriff": "Ingestion",
+          "bedeutung": "Erste Stufe einer Datenpipeline: Daten werden aus Quellen wie Sensoren, APIs, MQTT oder Dateien aufgenommen."
+        },
+        {
+          "fachbegriff": "Batch-Verarbeitung",
+          "bedeutung": "Daten werden gesammelt und zu festen Zeitpunkten in größeren Mengen verarbeitet, zum Beispiel stündlich oder nachts."
+        },
+        {
+          "fachbegriff": "Stream-Verarbeitung",
+          "bedeutung": "Daten werden direkt beim Eintreffen verarbeitet. Das eignet sich besonders für Echtzeitalarme und schnelle Reaktionen."
+        },
+        {
+          "fachbegriff": "Lambda-Architektur",
+          "bedeutung": "Datenarchitektur mit getrenntem Batch- und Echtzeitpfad. Sie verbindet schnelle Ergebnisse mit späterer vollständiger Verarbeitung."
+        },
+        {
+          "fachbegriff": "Kappa-Architektur",
+          "bedeutung": "Datenarchitektur mit nur einem Streaming-Pfad. Historische Daten können erneut durch den Datenstrom verarbeitet werden."
+        },
+        {
+          "fachbegriff": "Zeitreihendatenbank",
+          "bedeutung": "Datenbank, die für Werte mit Zeitstempel optimiert ist, zum Beispiel Messwerte, Metriken oder Sensordaten."
+        },
+        {
+          "fachbegriff": "InfluxDB",
+          "bedeutung": "Spezialisierte Zeitreihendatenbank für Messwerte und Metriken mit Funktionen für Aggregation und Datenaufbewahrung."
+        },
+        {
+          "fachbegriff": "TimescaleDB",
+          "bedeutung": "Zeitreihenerweiterung auf Basis von PostgreSQL. Sie verbindet SQL und relationale Daten mit optimierter Verarbeitung von Zeitreihen."
+        },
+        {
+          "fachbegriff": "Aggregation",
+          "bedeutung": "Verdichtung vieler Einzelwerte zu zusammengefassten Ergebnissen, zum Beispiel Stundenmittelwerten, Summen oder Maximalwerten."
+        },
+        {
+          "fachbegriff": "Datenretention",
+          "bedeutung": "Regel, wie lange Daten in welcher Detailstufe gespeichert und wann sie verdichtet, verschoben oder gelöscht werden."
+        },
+        {
+          "fachbegriff": "Data Lake",
+          "bedeutung": "Großer Speicher für viele rohe oder unterschiedlich strukturierte Daten, die später verarbeitet und analysiert werden können."
+        },
+        {
+          "fachbegriff": "Anomalieerkennung",
+          "bedeutung": "Erkennen von Messwerten oder Mustern, die deutlich vom normalen Verhalten abweichen."
+        },
+        {
+          "fachbegriff": "Predictive Maintenance",
+          "bedeutung": "Vorausschauende Wartung. Sensordaten werden analysiert, um mögliche Ausfälle zu erkennen, bevor die Maschine tatsächlich ausfällt."
+        }
+      ]
+    },
+    {
+      "id": "A-07",
+      "titel": "Speicherlösungen: Design und Konfiguration",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "DAS",
+          "bedeutung": "Direct Attached Storage. Speicher ist direkt an einen Server angeschlossen, zum Beispiel über SATA, SAS oder NVMe."
+        },
+        {
+          "fachbegriff": "NAS",
+          "bedeutung": "Network Attached Storage. Gemeinsamer Dateispeicher über das Netzwerk, typischerweise über NFS oder SMB."
+        },
+        {
+          "fachbegriff": "SAN",
+          "bedeutung": "Storage Area Network. Stellt performanten Blockspeicher über ein eigenes Speichernetz bereit, zum Beispiel über Fibre Channel oder iSCSI."
+        },
+        {
+          "fachbegriff": "Object Storage",
+          "bedeutung": "Speichert Daten als Objekte mit Metadaten und Zugriff über eine API, zum Beispiel S3 oder MinIO. Gut für Backups, Archive und große Datenmengen."
+        },
+        {
+          "fachbegriff": "Block Storage",
+          "bedeutung": "Speicher wird dem System als einzelne Blöcke beziehungsweise wie ein Laufwerk bereitgestellt. Geeignet für VMs und Datenbanken."
+        },
+        {
+          "fachbegriff": "File Storage",
+          "bedeutung": "Speicher wird als Dateien und Verzeichnisse bereitgestellt und von mehreren Clients über Dateiprotokolle genutzt."
+        },
+        {
+          "fachbegriff": "RAID 0",
+          "bedeutung": "Striping ohne Redundanz. Bietet hohe Leistung und volle Kapazität, aber der Ausfall einer Platte führt zum Datenverlust."
+        },
+        {
+          "fachbegriff": "RAID 1",
+          "bedeutung": "Mirroring. Daten werden gespiegelt. Das erhöht die Verfügbarkeit, halbiert aber bei zwei Platten die nutzbare Kapazität."
+        },
+        {
+          "fachbegriff": "RAID 5",
+          "bedeutung": "Striping mit einfacher Parität. Eine Platte darf ausfallen; bei großen Platten kann der lange Rebuild ein zusätzliches Risiko sein."
+        },
+        {
+          "fachbegriff": "RAID 6",
+          "bedeutung": "Striping mit doppelter Parität. Zwei Platten dürfen gleichzeitig ausfallen, dafür steht weniger Nutzkapazität zur Verfügung."
+        },
+        {
+          "fachbegriff": "RAID 10",
+          "bedeutung": "Kombination aus Spiegelung und Striping. Bietet hohe Performance und gute Redundanz, benötigt aber viel zusätzliche Kapazität."
+        },
+        {
+          "fachbegriff": "IOPS",
+          "bedeutung": "Input/Output Operations Per Second. Kennzahl dafür, wie viele Ein- und Ausgabeoperationen ein Speicher pro Sekunde bearbeiten kann."
+        },
+        {
+          "fachbegriff": "Hot / Warm / Cold Tiering",
+          "bedeutung": "Daten werden je nach Nutzung auf schnellen, mittleren oder günstigen langsamen Speicher verschoben. Das reduziert Kosten."
+        },
+        {
+          "fachbegriff": "Lifecycle-Policy",
+          "bedeutung": "Automatische Regel, wann Daten zwischen Speicherstufen verschoben, archiviert oder gelöscht werden."
+        }
+      ]
+    },
+    {
+      "id": "A-08",
+      "titel": "Ressourcenplanung für IT-Projekte",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Ressourcenplanung",
+          "bedeutung": "Ermittlung und Planung der benötigten Technik, Personen, Zeit und finanziellen Mittel für ein Projekt."
+        },
+        {
+          "fachbegriff": "Technische Ressourcen",
+          "bedeutung": "Benötigte Hardware, Software, Lizenzen, Cloud-Ressourcen, Netzwerkkomponenten und Werkzeuge."
+        },
+        {
+          "fachbegriff": "Personelle Ressourcen",
+          "bedeutung": "Benötigte Rollen, Kompetenzen, Personen und deren verfügbare Arbeitszeit beziehungsweise Auslastung."
+        },
+        {
+          "fachbegriff": "Zeitliche Ressourcen",
+          "bedeutung": "Planung von Dauer, Meilensteinen, Abhängigkeiten, kritischem Pfad und verfügbaren Zeitfenstern."
+        },
+        {
+          "fachbegriff": "Finanzielle Ressourcen",
+          "bedeutung": "Budget für Investitionen und laufende Kosten, einschließlich Reserven und erwarteter Folgekosten."
+        },
+        {
+          "fachbegriff": "CAPEX",
+          "bedeutung": "Capital Expenditure. Einmalige Investitionskosten, zum Beispiel für Server, Netzwerkhardware oder gekaufte Lizenzen."
+        },
+        {
+          "fachbegriff": "OPEX",
+          "bedeutung": "Operational Expenditure. Laufende Betriebskosten, zum Beispiel Cloud-Gebühren, Wartung, Strom oder Abonnements."
+        },
+        {
+          "fachbegriff": "Total Cost of Ownership (TCO)",
+          "bedeutung": "Gesamtkosten einer Lösung über ihren Lebenszyklus, nicht nur der Kaufpreis. Dazu zählen Betrieb, Wartung, Personal und Ablösung."
+        },
+        {
+          "fachbegriff": "Schätzung und Annahme",
+          "bedeutung": "Eine Planung basiert auf geschätzten Werten und Voraussetzungen. Diese müssen dokumentiert werden, damit Abweichungen später nachvollziehbar sind."
+        },
+        {
+          "fachbegriff": "Drei-Punkt-Schätzung / PERT",
+          "bedeutung": "Schätzverfahren mit optimistischem, realistischem und pessimistischem Wert. Dadurch wird Unsicherheit sichtbar und ein Erwartungswert kann berechnet werden."
+        },
+        {
+          "fachbegriff": "Pufferzeit",
+          "bedeutung": "Zusätzliche Zeitreserve im Projektplan, um normale Unsicherheiten und Verzögerungen abzufangen."
+        },
+        {
+          "fachbegriff": "Capacity Planning",
+          "bedeutung": "Planung, ob genügend technische und personelle Kapazität für die erwartete Last und die geplanten Aufgaben vorhanden ist."
+        },
+        {
+          "fachbegriff": "CO2-Bilanz",
+          "bedeutung": "Erfassung der verursachten Treibhausgasemissionen, zum Beispiel aus Stromverbrauch, Hardwareherstellung und Betrieb von IT-Infrastruktur."
+        },
+        {
+          "fachbegriff": "Hardware-Lifecycle / Nachhaltigkeit",
+          "bedeutung": "Betrachtung der gesamten Lebensdauer von Hardware von Beschaffung und Nutzung bis Wiederverwendung, Reparatur oder fachgerechter Entsorgung."
+        }
+      ]
+    }
+  ]
+}

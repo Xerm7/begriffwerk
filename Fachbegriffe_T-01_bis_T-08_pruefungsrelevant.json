@@ -1,0 +1,479 @@
+{
+  "titel": "Prüfungsrelevante Fachbegriffe T-01 bis T-08",
+  "thema": "Terraform - kompakte Prüfungsvorbereitung",
+  "anzahl_kernbegriffe": 104,
+  "bereiche": [
+    {
+      "id": "T-01",
+      "titel": "Infrastructure as Code - Grundlagen & Motivation",
+      "anzahl_kernbegriffe": 13,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Infrastructure as Code (IaC)",
+          "bedeutung": "Infrastruktur wird in Dateien als Code beschrieben und anschließend automatisch erstellt oder geändert, statt alles manuell anzuklicken."
+        },
+        {
+          "fachbegriff": "ClickOps",
+          "bedeutung": "Manuelle Verwaltung von Infrastruktur über eine grafische Cloud-Oberfläche. Das ist schnell für kleine Tests, aber schlecht nachvollziehbar und fehleranfällig."
+        },
+        {
+          "fachbegriff": "Konfigurationsdrift",
+          "bedeutung": "Zwei ursprünglich gleiche Umgebungen werden mit der Zeit unterschiedlich, weil Änderungen nicht überall gleich durchgeführt wurden."
+        },
+        {
+          "fachbegriff": "Reproduzierbarkeit",
+          "bedeutung": "Eine Umgebung kann mit derselben Definition jederzeit wieder gleich aufgebaut werden."
+        },
+        {
+          "fachbegriff": "Deklarativer Ansatz",
+          "bedeutung": "Du beschreibst, WAS am Ende existieren soll. Das Werkzeug entscheidet selbst, welche Schritte dafür nötig sind."
+        },
+        {
+          "fachbegriff": "Imperativer Ansatz",
+          "bedeutung": "Du beschreibst Schritt für Schritt, WIE etwas erstellt oder geändert werden soll."
+        },
+        {
+          "fachbegriff": "Idempotenz",
+          "bedeutung": "Ein Befehl kann mehrfach ausgeführt werden, ohne jedes Mal zusätzliche oder unerwünschte Änderungen zu erzeugen."
+        },
+        {
+          "fachbegriff": "Desired State (Soll-Zustand)",
+          "bedeutung": "Der Zustand, den du in deiner Konfiguration festgelegt hast und den Terraform herstellen soll."
+        },
+        {
+          "fachbegriff": "Current State (Ist-Zustand)",
+          "bedeutung": "Der Zustand, in dem sich die reale Infrastruktur momentan befindet."
+        },
+        {
+          "fachbegriff": "Terraform",
+          "bedeutung": "IaC-Werkzeug, mit dem Infrastruktur bei vielen verschiedenen Anbietern deklarativ beschrieben und verwaltet werden kann."
+        },
+        {
+          "fachbegriff": "HCL",
+          "bedeutung": "HashiCorp Configuration Language. Die Sprache, in der Terraform-Konfigurationen normalerweise geschrieben werden."
+        },
+        {
+          "fachbegriff": "Multi-Cloud",
+          "bedeutung": "Nutzung mehrerer Cloud-Anbieter. Terraform kann mit verschiedenen Providern arbeiten und eignet sich deshalb für solche Umgebungen."
+        },
+        {
+          "fachbegriff": "Audit-Trail",
+          "bedeutung": "Nachvollziehbare Historie darüber, wer wann welche Änderung durchgeführt oder freigegeben hat, zum Beispiel über Git und die Pipeline."
+        }
+      ]
+    },
+    {
+      "id": "T-02",
+      "titel": "Terraform-Installation & erste Ressourcen",
+      "anzahl_kernbegriffe": 13,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Provider",
+          "bedeutung": "Plugin, das Terraform mit einer Plattform oder API verbindet, zum Beispiel Azure, AWS oder Docker."
+        },
+        {
+          "fachbegriff": "Terraform Registry",
+          "bedeutung": "Zentrale Plattform, aus der Terraform Provider und öffentliche Module beziehen kann."
+        },
+        {
+          "fachbegriff": "Versionspinnung",
+          "bedeutung": "Festlegen einer erlaubten Provider- oder Modulversion, damit nicht plötzlich eine inkompatible neue Version verwendet wird."
+        },
+        {
+          "fachbegriff": "terraform init",
+          "bedeutung": "Initialisiert ein Terraform-Projekt, lädt Provider und Module und richtet das Backend ein."
+        },
+        {
+          "fachbegriff": "terraform plan",
+          "bedeutung": "Zeigt vorab, welche Ressourcen Terraform erstellen, ändern oder löschen würde, ohne die Änderungen auszuführen."
+        },
+        {
+          "fachbegriff": "terraform apply",
+          "bedeutung": "Führt die geplanten Änderungen an der Infrastruktur tatsächlich aus."
+        },
+        {
+          "fachbegriff": "terraform destroy",
+          "bedeutung": "Entfernt die von Terraform verwalteten Ressourcen einer Konfiguration."
+        },
+        {
+          "fachbegriff": "terraform fmt",
+          "bedeutung": "Formatiert Terraform-Code einheitlich und macht ihn dadurch besser lesbar."
+        },
+        {
+          "fachbegriff": "Resource",
+          "bedeutung": "Ein Infrastruktur-Objekt, das Terraform verwaltet, zum Beispiel eine VM, ein Netzwerk oder eine Firewall-Regel."
+        },
+        {
+          "fachbegriff": "Ressourcenreferenz",
+          "bedeutung": "Verweis von einer Ressource auf eine andere, zum Beispiel wenn ein Subnetz den Namen eines zuvor erstellten Netzwerks verwendet."
+        },
+        {
+          "fachbegriff": "Abhängigkeit",
+          "bedeutung": "Beziehung zwischen Ressourcen, durch die Terraform erkennt, welche Ressource zuerst erstellt werden muss."
+        },
+        {
+          "fachbegriff": "DAG",
+          "bedeutung": "Directed Acyclic Graph. Terraform stellt Abhängigkeiten als gerichteten Graphen dar und kann unabhängige Ressourcen parallel bearbeiten."
+        },
+        {
+          "fachbegriff": ".terraform.lock.hcl",
+          "bedeutung": "Lock-Datei, die festhält, welche Provider-Versionen verwendet werden, damit Team und Pipeline dieselben Versionen nutzen."
+        }
+      ]
+    },
+    {
+      "id": "T-03",
+      "titel": "HCL-Sprache im Detail",
+      "anzahl_kernbegriffe": 13,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Input Variable",
+          "bedeutung": "Eingabewert für Terraform-Code. Damit kann dieselbe Konfiguration für unterschiedliche Umgebungen wiederverwendet werden."
+        },
+        {
+          "fachbegriff": "Default-Wert",
+          "bedeutung": "Voreingestellter Wert einer Variable, der verwendet wird, wenn kein anderer Wert angegeben wurde."
+        },
+        {
+          "fachbegriff": "Validation",
+          "bedeutung": "Regel, die prüft, ob ein eingegebener Variablenwert erlaubt und sinnvoll ist."
+        },
+        {
+          "fachbegriff": "sensitive",
+          "bedeutung": "Kennzeichnung für vertrauliche Werte. Terraform blendet sie in vielen Ausgaben aus, speichert sie aber trotzdem im State."
+        },
+        {
+          "fachbegriff": ".tfvars-Datei",
+          "bedeutung": "Datei mit konkreten Werten für Terraform-Variablen, zum Beispiel unterschiedliche Werte für Dev, Staging und Prod."
+        },
+        {
+          "fachbegriff": "TF_VAR_",
+          "bedeutung": "Präfix für Umgebungsvariablen, über die Terraform Variablenwerte erhalten kann, zum Beispiel TF_VAR_db_password."
+        },
+        {
+          "fachbegriff": "Datentyp",
+          "bedeutung": "Legt fest, welche Art von Wert erlaubt ist, zum Beispiel string, number, bool, list, map oder object."
+        },
+        {
+          "fachbegriff": "Collection",
+          "bedeutung": "Sammlung mehrerer Werte, zum Beispiel eine list, map oder set, die Terraform gemeinsam verarbeiten kann."
+        },
+        {
+          "fachbegriff": "for_each",
+          "bedeutung": "Erstellt oder konfiguriert mehrere Ressourcen anhand der Elemente einer Collection."
+        },
+        {
+          "fachbegriff": "Locals",
+          "bedeutung": "Innerhalb der Terraform-Konfiguration berechnete oder wiederverwendete Werte, die nicht von außen übergeben werden."
+        },
+        {
+          "fachbegriff": "Output",
+          "bedeutung": "Ausgabewert einer Terraform-Konfiguration, zum Beispiel eine erzeugte IP-Adresse oder Ressourcen-ID."
+        },
+        {
+          "fachbegriff": "Ternärer Operator",
+          "bedeutung": "Kurze Bedingung nach dem Muster Bedingung ? Wert1 : Wert2, mit der abhängig von einer Bedingung ein Wert gewählt wird."
+        },
+        {
+          "fachbegriff": "terraform console",
+          "bedeutung": "Interaktive Konsole, in der Terraform-Ausdrücke und Built-in-Funktionen direkt getestet werden können."
+        }
+      ]
+    },
+    {
+      "id": "T-04",
+      "titel": "State-Management & Teamarbeit",
+      "anzahl_kernbegriffe": 13,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Terraform State",
+          "bedeutung": "Zustandsdatei, die Terraform mit der realen Infrastruktur verbindet und speichert, welche Ressourcen zu welchem Code gehören."
+        },
+        {
+          "fachbegriff": "terraform.tfstate",
+          "bedeutung": "Standarddatei für den Terraform State. Sie kann auch sensible Daten enthalten und gehört deshalb nicht in ein normales Git-Repository."
+        },
+        {
+          "fachbegriff": "Local State",
+          "bedeutung": "State, der nur lokal auf einem Rechner gespeichert wird. Für Teams ist das riskant, weil mehrere unterschiedliche Zustände entstehen können."
+        },
+        {
+          "fachbegriff": "Remote Backend",
+          "bedeutung": "Zentrale Ablage für den Terraform State, zum Beispiel Azure Blob Storage oder S3, auf die das Team gemeinsam zugreift."
+        },
+        {
+          "fachbegriff": "State Locking",
+          "bedeutung": "Sperrt den State während einer Änderung, damit nicht zwei Prozesse gleichzeitig hineinschreiben und ihn beschädigen."
+        },
+        {
+          "fachbegriff": "Blob Lease",
+          "bedeutung": "Azure-Mechanismus, mit dem ein Blob zeitweise exklusiv gesperrt werden kann und der für State Locking genutzt wird."
+        },
+        {
+          "fachbegriff": "State-Migration",
+          "bedeutung": "Verschieben eines bestehenden States, zum Beispiel von einer lokalen Datei in ein Remote Backend."
+        },
+        {
+          "fachbegriff": "terraform state list",
+          "bedeutung": "Zeigt alle Ressourcen, die aktuell im Terraform State verwaltet werden."
+        },
+        {
+          "fachbegriff": "terraform state show",
+          "bedeutung": "Zeigt die gespeicherten Details einer bestimmten Ressource im State."
+        },
+        {
+          "fachbegriff": "terraform state rm",
+          "bedeutung": "Entfernt eine Ressource nur aus dem State. Die reale Ressource bleibt dabei bestehen."
+        },
+        {
+          "fachbegriff": "terraform state mv",
+          "bedeutung": "Verschiebt oder benennt eine Ressource innerhalb des States um, ohne sie neu erstellen zu müssen."
+        },
+        {
+          "fachbegriff": "terraform import",
+          "bedeutung": "Nimmt eine bereits existierende Ressource in die Verwaltung von Terraform auf."
+        },
+        {
+          "fachbegriff": "State-Trennung",
+          "bedeutung": "Getrennte States für Dev, Staging und Prod verringern das Risiko, versehentlich Ressourcen der falschen Umgebung zu verändern."
+        }
+      ]
+    },
+    {
+      "id": "T-05",
+      "titel": "Terraform-Module & Wiederverwendung",
+      "anzahl_kernbegriffe": 13,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Terraform Module",
+          "bedeutung": "Wiederverwendbarer Baustein aus Terraform-Dateien, der eine bestimmte Infrastrukturaufgabe kapselt, zum Beispiel ein Netzwerk oder eine VM."
+        },
+        {
+          "fachbegriff": "Root Module",
+          "bedeutung": "Das Hauptmodul eines Terraform-Projekts. Es ist die Konfiguration im Verzeichnis, in dem Terraform ausgeführt wird."
+        },
+        {
+          "fachbegriff": "Child Module",
+          "bedeutung": "Ein Modul, das von einem anderen Modul aufgerufen wird, um wiederverwendbare Infrastruktur bereitzustellen."
+        },
+        {
+          "fachbegriff": "module-Block",
+          "bedeutung": "HCL-Block, mit dem ein anderes Terraform-Modul eingebunden und mit Eingabewerten versorgt wird."
+        },
+        {
+          "fachbegriff": "Module Source",
+          "bedeutung": "Angabe, wo Terraform ein Modul findet, zum Beispiel in einem lokalen Ordner, einem Git-Repository oder der Terraform Registry."
+        },
+        {
+          "fachbegriff": "Module Input",
+          "bedeutung": "Variable, über die ein Modul von außen konfiguriert wird, zum Beispiel Netzwerkbereich oder Umgebung."
+        },
+        {
+          "fachbegriff": "Module Output",
+          "bedeutung": "Wert, den ein Modul nach außen bereitstellt, damit andere Module oder die Hauptkonfiguration ihn verwenden können."
+        },
+        {
+          "fachbegriff": "Lokales Modul",
+          "bedeutung": "Modul, das direkt in einem Unterordner desselben Projekts gespeichert und über einen relativen Pfad eingebunden wird."
+        },
+        {
+          "fachbegriff": "Registry Module",
+          "bedeutung": "Veröffentlichtes Modul aus einer Registry, das andere Teams oder Projekte wiederverwenden können."
+        },
+        {
+          "fachbegriff": "Modulversionierung",
+          "bedeutung": "Festlegen und Verwalten definierter Modulversionen, damit Änderungen kontrolliert und reproduzierbar bleiben."
+        },
+        {
+          "fachbegriff": "DRY-Prinzip",
+          "bedeutung": "Don't Repeat Yourself. Wiederkehrende Infrastruktur wird als Modul einmal definiert statt mehrfach kopiert."
+        },
+        {
+          "fachbegriff": "Kapselung",
+          "bedeutung": "Ein Modul versteckt interne Details und stellt nur die benötigten Inputs und Outputs nach außen bereit."
+        },
+        {
+          "fachbegriff": "Modulkomposition",
+          "bedeutung": "Mehrere kleine Module werden kombiniert, um daraus eine größere Infrastruktur aufzubauen."
+        }
+      ]
+    },
+    {
+      "id": "T-06",
+      "titel": "Umgebungen & Workspaces",
+      "anzahl_kernbegriffe": 13,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Terraform Workspace",
+          "bedeutung": "Separater Terraform-State innerhalb derselben Konfiguration. Damit können mehrere Instanzen einer Infrastruktur verwaltet werden."
+        },
+        {
+          "fachbegriff": "default Workspace",
+          "bedeutung": "Workspace, der automatisch vorhanden ist und verwendet wird, solange kein anderer Workspace ausgewählt wurde."
+        },
+        {
+          "fachbegriff": "terraform workspace list",
+          "bedeutung": "Zeigt die verfügbaren Workspaces einer Terraform-Konfiguration an."
+        },
+        {
+          "fachbegriff": "terraform workspace new",
+          "bedeutung": "Erstellt einen neuen Workspace mit einem eigenen State."
+        },
+        {
+          "fachbegriff": "terraform workspace select",
+          "bedeutung": "Wechselt zu einem vorhandenen Workspace und damit zu dessen State."
+        },
+        {
+          "fachbegriff": "State-Isolation",
+          "bedeutung": "Trennung der Zustandsdaten zwischen Umgebungen, damit Änderungen in Dev nicht versehentlich Prod betreffen."
+        },
+        {
+          "fachbegriff": "Umgebungsparameter",
+          "bedeutung": "Werte, die je Umgebung unterschiedlich sind, zum Beispiel VM-Größe, Region oder Anzahl der Instanzen."
+        },
+        {
+          "fachbegriff": "Dev / Staging / Prod",
+          "bedeutung": "Typische getrennte Umgebungen für Entwicklung, Vorabtests und den produktiven Betrieb."
+        },
+        {
+          "fachbegriff": "terraform.workspace",
+          "bedeutung": "Terraform-Ausdruck, der den Namen des aktuell ausgewählten Workspaces liefert und im Code verwendet werden kann."
+        },
+        {
+          "fachbegriff": "Umgebungstrennung",
+          "bedeutung": "Bewusste technische Trennung von Entwicklungs-, Test- und Produktionsressourcen, um Risiken und gegenseitige Beeinflussung zu reduzieren."
+        },
+        {
+          "fachbegriff": "Separate Verzeichnisse",
+          "bedeutung": "Alternative zu Workspaces: Jede Umgebung erhält eine eigene Root-Konfiguration und meist ein eigenes Backend."
+        },
+        {
+          "fachbegriff": "Konfigurationswiederverwendung",
+          "bedeutung": "Gemeinsame Module oder derselbe Code werden mit unterschiedlichen Parametern für mehrere Umgebungen genutzt."
+        },
+        {
+          "fachbegriff": "Produktionsisolation",
+          "bedeutung": "Produktionsressourcen werden besonders streng von Testumgebungen getrennt, oft mit eigenem State, eigenen Berechtigungen oder sogar eigenem Account."
+        }
+      ]
+    },
+    {
+      "id": "T-07",
+      "titel": "Terraform in CI/CD & Automatisierung",
+      "anzahl_kernbegriffe": 13,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "CI/CD-Pipeline",
+          "bedeutung": "Automatisierter Ablauf, der Terraform-Code prüft, plant und nach Freigabe Änderungen ausführt."
+        },
+        {
+          "fachbegriff": "terraform fmt -check",
+          "bedeutung": "Prüft in der Pipeline, ob Terraform-Code korrekt formatiert ist, ohne ihn automatisch zu verändern."
+        },
+        {
+          "fachbegriff": "terraform validate",
+          "bedeutung": "Prüft Syntax und interne Struktur einer Terraform-Konfiguration, ohne Infrastruktur zu erstellen."
+        },
+        {
+          "fachbegriff": "Plan-Artefakt",
+          "bedeutung": "Gespeicherter Terraform-Plan, der geprüft und später exakt für den Apply verwendet werden kann."
+        },
+        {
+          "fachbegriff": "Pipeline Stage",
+          "bedeutung": "Abgegrenzter Abschnitt einer Pipeline, zum Beispiel Validate, Plan, Approval oder Apply."
+        },
+        {
+          "fachbegriff": "Approval Gate",
+          "bedeutung": "Manuelle Freigabe vor einer kritischen Aktion, zum Beispiel vor einem Apply auf Produktion."
+        },
+        {
+          "fachbegriff": "Automatisierter Apply",
+          "bedeutung": "Terraform-Änderungen werden durch die Pipeline statt von einem Administrator-Laptop ausgeführt."
+        },
+        {
+          "fachbegriff": "Non-Interactive Mode",
+          "bedeutung": "Pipeline-Ausführung ohne Rückfragen an einen Menschen. Entscheidungen müssen vorher durch Regeln und Freigaben festgelegt sein."
+        },
+        {
+          "fachbegriff": "Service Account",
+          "bedeutung": "Technisches Konto, das eine Pipeline zur Authentifizierung bei einem Cloud-Anbieter verwendet."
+        },
+        {
+          "fachbegriff": "Least Privilege",
+          "bedeutung": "Ein Konto erhält nur die Berechtigungen, die für seine Aufgabe wirklich benötigt werden."
+        },
+        {
+          "fachbegriff": "Pipeline Secret",
+          "bedeutung": "Geschützter Wert für die Automation, zum Beispiel Token oder Zugangsdaten, der nicht im Terraform-Code stehen soll."
+        },
+        {
+          "fachbegriff": "Merge Request / Pull Request",
+          "bedeutung": "Vorgang zur Prüfung einer Codeänderung vor dem Zusammenführen. Der Terraform-Plan kann dabei als Entscheidungsgrundlage dienen."
+        },
+        {
+          "fachbegriff": "Pipeline Locking",
+          "bedeutung": "Zusammen mit dem Remote Backend verhindert State Locking, dass parallele Pipeline-Läufe denselben State gleichzeitig verändern."
+        }
+      ]
+    },
+    {
+      "id": "T-08",
+      "titel": "Security, Qualität & produktionsreifer Betrieb",
+      "anzahl_kernbegriffe": 13,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "DevSecOps",
+          "bedeutung": "Sicherheit wird als fester Bestandteil in Entwicklung, Betrieb und automatisierte Pipelines eingebaut statt erst am Ende geprüft."
+        },
+        {
+          "fachbegriff": "Shift Left",
+          "bedeutung": "Fehler und Sicherheitsprobleme werden möglichst früh im Entwicklungsprozess erkannt, bevor sie teuer oder gefährlich werden."
+        },
+        {
+          "fachbegriff": "Linting",
+          "bedeutung": "Statische Prüfung des Terraform-Codes auf Qualitätsprobleme, Best Practices und mögliche Fehlkonfigurationen."
+        },
+        {
+          "fachbegriff": "TFLint",
+          "bedeutung": "Linter für Terraform, der unter anderem Qualitätsprobleme und providerbezogene Fehler erkennen kann."
+        },
+        {
+          "fachbegriff": "Checkov / tfsec",
+          "bedeutung": "Werkzeuge, die Infrastructure-as-Code auf bekannte unsichere Konfigurationen und Sicherheitsregeln prüfen."
+        },
+        {
+          "fachbegriff": "Policy as Code",
+          "bedeutung": "Sicherheits- und Unternehmensregeln werden maschinenlesbar definiert und automatisch in der Pipeline geprüft."
+        },
+        {
+          "fachbegriff": "OPA / Conftest",
+          "bedeutung": "Werkzeuge, mit denen eigene Policies automatisch gegen Konfigurationen oder Terraform-Pläne geprüft werden können."
+        },
+        {
+          "fachbegriff": "Secrets Management",
+          "bedeutung": "Sichere Verwaltung von Passwörtern, Tokens und Schlüsseln außerhalb des Terraform-Codes und des Git-Repositories."
+        },
+        {
+          "fachbegriff": "OIDC",
+          "bedeutung": "Authentifizierungsverfahren, mit dem eine Pipeline kurzlebige Zugangsdaten erhalten kann, ohne dauerhafte Cloud-Schlüssel zu speichern."
+        },
+        {
+          "fachbegriff": "Statische Credentials",
+          "bedeutung": "Länger gültige Zugangsdaten wie feste Access Keys. Sie sind riskanter als kurzlebige Tokens und sollten möglichst vermieden werden."
+        },
+        {
+          "fachbegriff": "Security Gate",
+          "bedeutung": "Automatische Prüfstufe, die eine Pipeline stoppt, wenn Sicherheitsanforderungen nicht erfüllt sind."
+        },
+        {
+          "fachbegriff": "Smoke Test",
+          "bedeutung": "Kurzer Funktionstest direkt nach einem Deployment, der prüft, ob die wichtigsten Funktionen tatsächlich erreichbar sind."
+        },
+        {
+          "fachbegriff": "Rollback",
+          "bedeutung": "Rückkehr zu einem vorherigen funktionierenden Stand, wenn eine Änderung in Produktion Probleme verursacht."
+        }
+      ]
+    }
+  ]
+}

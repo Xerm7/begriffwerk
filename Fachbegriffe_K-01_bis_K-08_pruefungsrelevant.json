@@ -1,0 +1,511 @@
+{
+  "titel": "Prüfungsrelevante Fachbegriffe K-01 bis K-08",
+  "thema": "Kubernetes - kompakte Prüfungsvorbereitung",
+  "anzahl_kernbegriffe": 112,
+  "bereiche": [
+    {
+      "id": "K-01",
+      "titel": "Container-Orchestrierung - Warum Kubernetes?",
+      "anzahl_kernbegriffe": 16,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Container-Orchestrierung",
+          "bedeutung": "Automatisierte Verwaltung vieler Container über mehrere Server hinweg. Sie übernimmt unter anderem Verteilung, Skalierung, Neustarts und Updates."
+        },
+        {
+          "fachbegriff": "Kubernetes (K8s)",
+          "bedeutung": "Open-Source-Plattform zur Orchestrierung von Containern. Kubernetes sorgt dafür, dass Anwendungen im gewünschten Zustand laufen."
+        },
+        {
+          "fachbegriff": "Kubernetes-Cluster",
+          "bedeutung": "Verbund aus mehreren Rechnern bzw. Nodes, die gemeinsam Container-Anwendungen ausführen und verwalten."
+        },
+        {
+          "fachbegriff": "Control Plane",
+          "bedeutung": "Die Steuerungsebene eines Kubernetes-Clusters. Sie entscheidet, was im Cluster passieren soll, und überwacht den gewünschten Zustand."
+        },
+        {
+          "fachbegriff": "Worker Node",
+          "bedeutung": "Rechner im Cluster, auf dem die eigentlichen Anwendungs-Pods laufen."
+        },
+        {
+          "fachbegriff": "API Server",
+          "bedeutung": "Zentrale Schnittstelle von Kubernetes. kubectl und andere Komponenten kommunizieren über den API Server mit dem Cluster."
+        },
+        {
+          "fachbegriff": "etcd",
+          "bedeutung": "Verteilte Key-Value-Datenbank, in der Kubernetes den gesamten Cluster-Zustand und seine Konfiguration speichert."
+        },
+        {
+          "fachbegriff": "Scheduler",
+          "bedeutung": "Komponente der Control Plane, die entscheidet, auf welchem Worker Node ein neuer Pod gestartet wird."
+        },
+        {
+          "fachbegriff": "Controller Manager",
+          "bedeutung": "Überwacht den aktuellen Zustand des Clusters und sorgt dafür, dass er wieder dem gewünschten Zustand entspricht."
+        },
+        {
+          "fachbegriff": "kubelet",
+          "bedeutung": "Dienst auf jedem Worker Node. Er sorgt dafür, dass die für diesen Node vorgesehenen Pods und Container tatsächlich laufen."
+        },
+        {
+          "fachbegriff": "kube-proxy",
+          "bedeutung": "Netzwerkkomponente auf den Nodes. Sie hilft dabei, Netzwerkverkehr zu Kubernetes Services und deren Pods weiterzuleiten."
+        },
+        {
+          "fachbegriff": "Container Runtime",
+          "bedeutung": "Software, die Container auf einem Node tatsächlich startet und ausführt, zum Beispiel containerd."
+        },
+        {
+          "fachbegriff": "Scheduling",
+          "bedeutung": "Automatische Auswahl eines geeigneten Nodes für einen Pod anhand von Ressourcen und Platzierungsregeln."
+        },
+        {
+          "fachbegriff": "Horizontale Skalierung",
+          "bedeutung": "Mehr oder weniger Instanzen einer Anwendung starten, um sich an die aktuelle Last anzupassen."
+        },
+        {
+          "fachbegriff": "Self-Healing",
+          "bedeutung": "Kubernetes erkennt ausgefallene Pods oder Container und ersetzt bzw. startet sie automatisch neu."
+        },
+        {
+          "fachbegriff": "Single Point of Failure (SPOF)",
+          "bedeutung": "Eine einzelne Komponente, deren Ausfall das gesamte System lahmlegen kann. Ein Cluster soll solche Einzelabhängigkeiten möglichst vermeiden."
+        }
+      ]
+    },
+    {
+      "id": "K-02",
+      "titel": "Kubernetes-Cluster aufsetzen & kubectl",
+      "anzahl_kernbegriffe": 10,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "minikube",
+          "bedeutung": "Werkzeug, mit dem sich ein Kubernetes-Cluster lokal auf einem PC oder Laptop für Entwicklung und Lernen starten lässt."
+        },
+        {
+          "fachbegriff": "kubectl",
+          "bedeutung": "Kommandozeilenwerkzeug zur Verwaltung eines Kubernetes-Clusters. Damit werden Ressourcen angezeigt, erstellt, geändert oder gelöscht."
+        },
+        {
+          "fachbegriff": "kubeconfig",
+          "bedeutung": "Konfigurationsdatei, in der kubectl Informationen zu Clustern, Benutzern und Kontexten speichert."
+        },
+        {
+          "fachbegriff": "Context",
+          "bedeutung": "Ein Eintrag in der kubeconfig, der festlegt, mit welchem Cluster, Benutzer und meist welchem Namespace kubectl arbeitet."
+        },
+        {
+          "fachbegriff": "Namespace",
+          "bedeutung": "Logischer Bereich innerhalb eines Clusters, mit dem Ressourcen getrennt und organisiert werden können, zum Beispiel dev, staging und prod."
+        },
+        {
+          "fachbegriff": "Node",
+          "bedeutung": "Ein Rechner oder eine virtuelle Maschine, die Teil eines Kubernetes-Clusters ist."
+        },
+        {
+          "fachbegriff": "Multi-Node-Cluster",
+          "bedeutung": "Kubernetes-Cluster mit mehreren Nodes. Dadurch können Pods verteilt werden und ein einzelner Node ist nicht die einzige Ausführungsplattform."
+        },
+        {
+          "fachbegriff": "Ready-Status",
+          "bedeutung": "Zeigt, dass ein Node funktionsfähig ist und Pods darauf eingeplant werden können."
+        },
+        {
+          "fachbegriff": "Capacity / Allocatable",
+          "bedeutung": "Capacity ist die gesamte Ressourcenkapazität eines Nodes. Allocatable ist der Teil davon, den Kubernetes tatsächlich für Pods verwenden kann."
+        },
+        {
+          "fachbegriff": "kube-system",
+          "bedeutung": "Standard-Namespace für wichtige Kubernetes-Systemkomponenten wie CoreDNS oder andere Cluster-Dienste."
+        }
+      ]
+    },
+    {
+      "id": "K-03",
+      "titel": "Pods, ReplicaSets & Deployments",
+      "anzahl_kernbegriffe": 16,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Kubernetes-Manifest",
+          "bedeutung": "YAML-Datei, in der der gewünschte Zustand einer Kubernetes-Ressource beschrieben wird."
+        },
+        {
+          "fachbegriff": "apiVersion / kind / metadata / spec",
+          "bedeutung": "Die vier grundlegenden Bereiche eines Manifests: API-Version, Ressourcentyp, Angaben wie Name und Labels sowie die gewünschte Konfiguration."
+        },
+        {
+          "fachbegriff": "Label",
+          "bedeutung": "Schlüssel-Wert-Paar zur Kennzeichnung und Gruppierung von Kubernetes-Ressourcen, zum Beispiel app=api."
+        },
+        {
+          "fachbegriff": "Selector",
+          "bedeutung": "Regel, mit der Kubernetes anhand von Labels die passenden Pods oder andere Ressourcen auswählt."
+        },
+        {
+          "fachbegriff": "Pod",
+          "bedeutung": "Kleinste ausführbare Einheit in Kubernetes. Ein Pod enthält einen oder mehrere Container, die Netzwerk und teilweise Storage teilen."
+        },
+        {
+          "fachbegriff": "Pod-Lifecycle",
+          "bedeutung": "Lebenszyklus eines Pods mit Zuständen wie Pending, Running, Succeeded oder Failed."
+        },
+        {
+          "fachbegriff": "Resource Requests",
+          "bedeutung": "CPU- und RAM-Menge, die Kubernetes für einen Container einplant und bei der Platzierung berücksichtigt."
+        },
+        {
+          "fachbegriff": "Resource Limits",
+          "bedeutung": "Maximale CPU- oder RAM-Menge, die ein Container verwenden darf."
+        },
+        {
+          "fachbegriff": "Liveness Probe",
+          "bedeutung": "Health-Check, der prüft, ob eine Anwendung noch lebt. Bei wiederholtem Fehler kann Kubernetes den Container neu starten."
+        },
+        {
+          "fachbegriff": "Readiness Probe",
+          "bedeutung": "Health-Check, der prüft, ob ein Pod aktuell Anfragen verarbeiten kann. Ist er nicht bereit, erhält er keinen Service-Traffic."
+        },
+        {
+          "fachbegriff": "Sidecar-Pattern",
+          "bedeutung": "Zusätzlicher Container im selben Pod, der den Hauptcontainer unterstützt, zum Beispiel beim Logging oder bei einem Proxy."
+        },
+        {
+          "fachbegriff": "ReplicaSet",
+          "bedeutung": "Stellt sicher, dass immer die festgelegte Anzahl identischer Pods läuft."
+        },
+        {
+          "fachbegriff": "Deployment",
+          "bedeutung": "Verwaltet ReplicaSets und Pods und ermöglicht unter anderem skalierbare Deployments, Rolling Updates und Rollbacks."
+        },
+        {
+          "fachbegriff": "Desired State",
+          "bedeutung": "Der gewünschte Soll-Zustand, den man Kubernetes vorgibt. Controller versuchen den tatsächlichen Zustand ständig daran anzugleichen."
+        },
+        {
+          "fachbegriff": "Rolling Update",
+          "bedeutung": "Neue Version wird schrittweise ausgerollt, während alte Pods nach und nach ersetzt werden. Dadurch kann die Anwendung verfügbar bleiben."
+        },
+        {
+          "fachbegriff": "Rollback",
+          "bedeutung": "Rückkehr zu einer vorherigen funktionierenden Version, wenn ein neues Deployment Probleme verursacht."
+        }
+      ]
+    },
+    {
+      "id": "K-04",
+      "titel": "Services & Networking",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Pod-IP",
+          "bedeutung": "IP-Adresse eines einzelnen Pods. Sie ist nicht dauerhaft und kann sich bei einem neu erstellten Pod ändern."
+        },
+        {
+          "fachbegriff": "Kubernetes Service",
+          "bedeutung": "Stabiler Netzwerkendpunkt für eine Gruppe von Pods. Der Service bleibt erreichbar, auch wenn sich die einzelnen Pod-IPs ändern."
+        },
+        {
+          "fachbegriff": "ClusterIP",
+          "bedeutung": "Standard-Service-Typ. Er stellt einen Service nur innerhalb des Kubernetes-Clusters bereit."
+        },
+        {
+          "fachbegriff": "NodePort",
+          "bedeutung": "Service-Typ, der einen festen Port auf allen Nodes öffnet und dadurch einen einfachen externen Zugriff ermöglicht."
+        },
+        {
+          "fachbegriff": "LoadBalancer",
+          "bedeutung": "Service-Typ, bei dem typischerweise ein externer Load Balancer des Cloud-Providers bereitgestellt wird."
+        },
+        {
+          "fachbegriff": "ExternalName",
+          "bedeutung": "Service-Typ, der einen Kubernetes-Namen auf einen externen DNS-Namen weiterleitet."
+        },
+        {
+          "fachbegriff": "Service Discovery",
+          "bedeutung": "Mechanismus, mit dem Anwendungen andere Dienste über stabile Namen statt über wechselnde Pod-IPs finden."
+        },
+        {
+          "fachbegriff": "CoreDNS",
+          "bedeutung": "DNS-Dienst von Kubernetes. Er erzeugt und beantwortet DNS-Einträge für Services im Cluster."
+        },
+        {
+          "fachbegriff": "DNS-Name",
+          "bedeutung": "Stabiler Name eines Kubernetes Services, über den Anwendungen einen Dienst erreichen können."
+        },
+        {
+          "fachbegriff": "Endpoint",
+          "bedeutung": "Konkrete Zieladresse hinter einem Service, normalerweise die IP und der Port eines passenden Pods."
+        },
+        {
+          "fachbegriff": "port / targetPort",
+          "bedeutung": "port ist der Port des Services. targetPort ist der Port im Ziel-Pod, an den der Service den Verkehr weiterleitet."
+        },
+        {
+          "fachbegriff": "Ingress",
+          "bedeutung": "Kubernetes-Ressource für HTTP- und HTTPS-Routing von außen zu internen Services."
+        },
+        {
+          "fachbegriff": "Ingress Controller",
+          "bedeutung": "Komponente, die Ingress-Regeln technisch umsetzt und den eingehenden HTTP- oder HTTPS-Verkehr weiterleitet."
+        },
+        {
+          "fachbegriff": "Host- / Path-basiertes Routing",
+          "bedeutung": "Weiterleitung von Anfragen abhängig vom Hostnamen oder URL-Pfad, zum Beispiel api.example.de oder /grafana."
+        }
+      ]
+    },
+    {
+      "id": "K-05",
+      "titel": "ConfigMaps, Secrets & Umgebungskonfiguration",
+      "anzahl_kernbegriffe": 12,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "12-Factor-App",
+          "bedeutung": "Methodik für moderne Anwendungen. Ein wichtiger Grundsatz ist, Konfiguration außerhalb des Anwendungscodes zu halten."
+        },
+        {
+          "fachbegriff": "Trennung von Code und Konfiguration",
+          "bedeutung": "Dasselbe Container-Image wird in mehreren Umgebungen verwendet, während sich nur die externe Konfiguration unterscheidet."
+        },
+        {
+          "fachbegriff": "ConfigMap",
+          "bedeutung": "Kubernetes-Objekt für nicht sensible Konfiguration wie Hostnamen, Log-Level oder Konfigurationsdateien."
+        },
+        {
+          "fachbegriff": "Secret",
+          "bedeutung": "Kubernetes-Objekt für sensible Werte wie Passwörter, Tokens, API-Keys oder Zertifikate."
+        },
+        {
+          "fachbegriff": "Base64",
+          "bedeutung": "Kodierung zur Darstellung von Daten als Text. Base64 ist keine Verschlüsselung und lässt sich leicht zurückrechnen."
+        },
+        {
+          "fachbegriff": "Encryption at Rest",
+          "bedeutung": "Verschlüsselung gespeicherter Daten, zum Beispiel von Secrets in etcd, damit sie auf dem Datenträger nicht im Klartext liegen."
+        },
+        {
+          "fachbegriff": "RBAC",
+          "bedeutung": "Role-Based Access Control. Berechtigungen werden anhand von Rollen vergeben, damit nur erlaubte Benutzer oder Dienste auf Ressourcen zugreifen können."
+        },
+        {
+          "fachbegriff": "Umgebungsvariable",
+          "bedeutung": "Wert, der einer Anwendung beim Start von außen übergeben wird, zum Beispiel Datenbank-Host oder Log-Level."
+        },
+        {
+          "fachbegriff": "Environment Injection",
+          "bedeutung": "ConfigMap- oder Secret-Werte werden als Umgebungsvariablen in einen Container eingebracht."
+        },
+        {
+          "fachbegriff": "Volume Mount",
+          "bedeutung": "Ein Volume oder eine Konfigurationsdatei wird in ein bestimmtes Verzeichnis des Containers eingebunden."
+        },
+        {
+          "fachbegriff": "envFrom / valueFrom",
+          "bedeutung": "Möglichkeiten im Pod-Manifest, Werte aus ConfigMaps oder Secrets als Umgebungsvariablen zu übernehmen."
+        },
+        {
+          "fachbegriff": "Secret Rotation",
+          "bedeutung": "Regelmäßiges Ersetzen sensibler Zugangsdaten, damit kompromittierte oder alte Secrets nicht dauerhaft gültig bleiben."
+        }
+      ]
+    },
+    {
+      "id": "K-06",
+      "titel": "Persistent Storage & StatefulSets",
+      "anzahl_kernbegriffe": 15,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Ephemeral Storage",
+          "bedeutung": "Flüchtiger Speicher, dessen Daten mit dem Container oder Pod verloren gehen können."
+        },
+        {
+          "fachbegriff": "Persistent Storage",
+          "bedeutung": "Dauerhafter Speicher, der einen Pod-Neustart oder eine Neuerstellung des Pods überlebt."
+        },
+        {
+          "fachbegriff": "Stateless",
+          "bedeutung": "Eine Anwendung speichert keinen wichtigen dauerhaften Zustand lokal. Instanzen können deshalb leicht ersetzt oder skaliert werden."
+        },
+        {
+          "fachbegriff": "Stateful",
+          "bedeutung": "Eine Anwendung besitzt dauerhaften Zustand oder Daten, zum Beispiel eine Datenbank."
+        },
+        {
+          "fachbegriff": "PersistentVolume (PV)",
+          "bedeutung": "Kubernetes-Ressource, die tatsächlich verfügbaren dauerhaften Speicher im Cluster beschreibt."
+        },
+        {
+          "fachbegriff": "PersistentVolumeClaim (PVC)",
+          "bedeutung": "Speicheranforderung einer Anwendung. Ein PVC fordert zum Beispiel eine bestimmte Größe und Zugriffsart an."
+        },
+        {
+          "fachbegriff": "Binding",
+          "bedeutung": "Zuordnung eines passenden PersistentVolumes zu einem PersistentVolumeClaim."
+        },
+        {
+          "fachbegriff": "StorageClass",
+          "bedeutung": "Beschreibt eine Speicherklasse und wie neuer Storage automatisch bereitgestellt werden soll, zum Beispiel SSD oder Netzwerk-Storage."
+        },
+        {
+          "fachbegriff": "Dynamische Provisionierung",
+          "bedeutung": "Kubernetes bzw. der Storage-Provider erstellt automatisch ein passendes PersistentVolume, wenn ein PVC angefordert wird."
+        },
+        {
+          "fachbegriff": "Statische Provisionierung",
+          "bedeutung": "Ein Administrator erstellt PersistentVolumes im Voraus, bevor eine Anwendung sie über einen PVC anfordert."
+        },
+        {
+          "fachbegriff": "Access Modes (RWO / ROX / RWX)",
+          "bedeutung": "Regeln, wie ein Volume genutzt werden darf: von einem Node lesend/schreibend, von mehreren nur lesend oder von mehreren lesend/schreibend."
+        },
+        {
+          "fachbegriff": "Reclaim Policy",
+          "bedeutung": "Legt fest, was mit einem PersistentVolume passiert, wenn der zugehörige PVC gelöscht wird."
+        },
+        {
+          "fachbegriff": "Retain",
+          "bedeutung": "Reclaim Policy, bei der das Volume und seine Daten nach dem Löschen des PVC erhalten bleiben."
+        },
+        {
+          "fachbegriff": "StatefulSet",
+          "bedeutung": "Kubernetes-Controller für zustandsbehaftete Anwendungen. Er bietet stabile Pod-Namen, geordnete Starts und eigenen persistenten Speicher pro Pod."
+        },
+        {
+          "fachbegriff": "volumeClaimTemplates",
+          "bedeutung": "Vorlage in einem StatefulSet, mit der für jeden Pod automatisch ein eigener PersistentVolumeClaim erzeugt wird."
+        }
+      ]
+    },
+    {
+      "id": "K-07",
+      "titel": "Helm Charts & Paketmanagement",
+      "anzahl_kernbegriffe": 13,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Helm",
+          "bedeutung": "Paketmanager für Kubernetes. Helm bündelt und parametrisiert Kubernetes-Manifeste und verwaltet deren Installation und Updates."
+        },
+        {
+          "fachbegriff": "Paketmanager",
+          "bedeutung": "Werkzeug, das Softwarepakete strukturiert installiert, aktualisiert und entfernt."
+        },
+        {
+          "fachbegriff": "Helm Chart",
+          "bedeutung": "Paket mit Templates, Standardwerten und Metadaten für eine Kubernetes-Anwendung."
+        },
+        {
+          "fachbegriff": "Release",
+          "bedeutung": "Eine konkrete installierte Instanz eines Helm Charts in einem Kubernetes-Cluster."
+        },
+        {
+          "fachbegriff": "Chart.yaml",
+          "bedeutung": "Datei mit Metadaten eines Charts, zum Beispiel Name, Chart-Version und Anwendungsversion."
+        },
+        {
+          "fachbegriff": "values.yaml",
+          "bedeutung": "Datei mit Standardwerten, die von den Templates eines Helm Charts verwendet werden."
+        },
+        {
+          "fachbegriff": "Values / Overrides",
+          "bedeutung": "Konfigurationswerte, mit denen ein Chart an eine Umgebung angepasst wird, ohne die Templates zu verändern."
+        },
+        {
+          "fachbegriff": "Template",
+          "bedeutung": "Vorlage für ein Kubernetes-Manifest. Helm setzt darin Werte ein und erzeugt daraus fertige YAML-Ressourcen."
+        },
+        {
+          "fachbegriff": "Helm Repository",
+          "bedeutung": "Ablage, aus der fertige Helm Charts gesucht und installiert werden können."
+        },
+        {
+          "fachbegriff": "Artifact Hub",
+          "bedeutung": "Öffentlicher Katalog, über den viele Helm Charts und andere Cloud-Native-Pakete gefunden werden können."
+        },
+        {
+          "fachbegriff": "Lifecycle-Management",
+          "bedeutung": "Verwaltung eines Releases über Installation, Upgrade, Rollback und Deinstallation."
+        },
+        {
+          "fachbegriff": "Revision",
+          "bedeutung": "Versionsstand eines Helm Releases. Jedes Upgrade erzeugt eine neue Revision, zu der bei Bedarf zurückgerollt werden kann."
+        },
+        {
+          "fachbegriff": "Subchart / Dependency",
+          "bedeutung": "Zusätzliches Chart, von dem ein anderes Chart abhängig ist, zum Beispiel eine Datenbank als Bestandteil einer Anwendung."
+        }
+      ]
+    },
+    {
+      "id": "K-08",
+      "titel": "Monitoring, Logging & Produktionsbetrieb",
+      "anzahl_kernbegriffe": 16,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Observability",
+          "bedeutung": "Beobachtbarkeit eines Systems anhand von Metriken, Logs und Traces, damit Fehler und Leistungsprobleme nachvollzogen werden können."
+        },
+        {
+          "fachbegriff": "Metriken",
+          "bedeutung": "Messwerte über Zeit, zum Beispiel CPU-Auslastung, Speicherverbrauch, Request-Rate oder Fehlerrate."
+        },
+        {
+          "fachbegriff": "Logs",
+          "bedeutung": "Textbasierte Ereignis- und Fehlermeldungen einer Anwendung oder Infrastruktur."
+        },
+        {
+          "fachbegriff": "Traces",
+          "bedeutung": "Nachverfolgung einer Anfrage über mehrere Dienste hinweg, um zu erkennen, wo Zeit verloren geht oder Fehler entstehen."
+        },
+        {
+          "fachbegriff": "Prometheus",
+          "bedeutung": "Monitoring-System, das Metriken sammelt, speichert und für Abfragen sowie Alerting bereitstellt."
+        },
+        {
+          "fachbegriff": "Pull-Modell",
+          "bedeutung": "Prometheus holt Metriken regelmäßig selbst von den überwachten Zielen ab, statt dass jedes Ziel sie aktiv sendet."
+        },
+        {
+          "fachbegriff": "Target",
+          "bedeutung": "Ein System oder Dienst, von dem Prometheus Metriken abfragt."
+        },
+        {
+          "fachbegriff": "Scraping",
+          "bedeutung": "Regelmäßiges Abrufen von Metriken durch Prometheus, typischerweise von einem /metrics-Endpunkt."
+        },
+        {
+          "fachbegriff": "PromQL",
+          "bedeutung": "Abfragesprache von Prometheus, mit der Metriken ausgewertet und berechnet werden."
+        },
+        {
+          "fachbegriff": "Grafana",
+          "bedeutung": "Werkzeug zur Visualisierung von Metriken und Logs in Dashboards."
+        },
+        {
+          "fachbegriff": "Alerting / Alertmanager",
+          "bedeutung": "Automatische Benachrichtigung bei definierten Problemen. Alertmanager bündelt und verteilt Prometheus-Alarme an passende Empfänger."
+        },
+        {
+          "fachbegriff": "Four Golden Signals",
+          "bedeutung": "Vier wichtige SRE-Messgrößen: Latenz, Traffic, Fehler und Sättigung. Sie geben einen schnellen Überblick über den Zustand eines Dienstes."
+        },
+        {
+          "fachbegriff": "Startup Probe",
+          "bedeutung": "Health-Check für langsam startende Anwendungen. Erst nach erfolgreichem Start greifen Liveness- und Readiness-Prüfungen normal."
+        },
+        {
+          "fachbegriff": "HorizontalPodAutoscaler (HPA)",
+          "bedeutung": "Kubernetes-Funktion, die die Anzahl von Pods automatisch anhand von Metriken wie CPU oder RAM erhöht oder verringert."
+        },
+        {
+          "fachbegriff": "Metrics Server",
+          "bedeutung": "Kubernetes-Komponente, die aktuelle CPU- und RAM-Werte bereitstellt, die unter anderem der HPA verwenden kann."
+        },
+        {
+          "fachbegriff": "Zentrales Logging",
+          "bedeutung": "Logs vieler Pods werden automatisch gesammelt und an ein zentrales System geschickt, zum Beispiel mit Fluent Bit und Loki oder einem EFK-Stack."
+        }
+      ]
+    }
+  ]
+}

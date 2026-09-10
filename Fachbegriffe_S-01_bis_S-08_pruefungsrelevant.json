@@ -1,0 +1,511 @@
+{
+  "titel": "Prüfungsrelevante Fachbegriffe S-01 bis S-08",
+  "thema": "IT-Sicherheit & Incident Response - kompakte Prüfungsvorbereitung",
+  "anzahl_kernbegriffe": 112,
+  "bereiche": [
+    {
+      "id": "S-01",
+      "titel": "Risikomanagement - Grundlagen & Prozess",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Risiko",
+          "bedeutung": "Möglichkeit, dass eine Bedrohung eine Schwachstelle ausnutzt und dadurch ein Schaden an einem schützenswerten Wert entsteht."
+        },
+        {
+          "fachbegriff": "Bedrohung (Threat)",
+          "bedeutung": "Potenziell schädigendes Ereignis oder Handlung, zum Beispiel Ransomware, Phishing, Stromausfall oder Sabotage."
+        },
+        {
+          "fachbegriff": "Schwachstelle (Vulnerability)",
+          "bedeutung": "Sicherheitslücke oder Schwäche eines Systems, die von einer Bedrohung ausgenutzt werden kann, zum Beispiel ein ungepatchter Server."
+        },
+        {
+          "fachbegriff": "Asset",
+          "bedeutung": "Schützenswerter Wert eines Unternehmens, zum Beispiel Daten, Systeme, Produktionsanlagen, Wissen oder Geschäftsprozesse."
+        },
+        {
+          "fachbegriff": "Eintrittswahrscheinlichkeit",
+          "bedeutung": "Einschätzung, wie wahrscheinlich es ist, dass ein bestimmtes Risiko tatsächlich eintritt."
+        },
+        {
+          "fachbegriff": "Schadenshöhe",
+          "bedeutung": "Ausmaß der möglichen Folgen eines Risikos, zum Beispiel Produktionsausfall, Datenverlust, Kosten oder Reputationsschaden."
+        },
+        {
+          "fachbegriff": "Bruttorisiko",
+          "bedeutung": "Risiko, das ohne vorhandene Schutzmaßnahmen bestehen würde."
+        },
+        {
+          "fachbegriff": "Nettorisiko / Restrisiko",
+          "bedeutung": "Risiko, das nach Umsetzung der Schutzmaßnahmen noch verbleibt und gegebenenfalls bewusst akzeptiert werden muss."
+        },
+        {
+          "fachbegriff": "Risikomanagement",
+          "bedeutung": "Kontinuierlicher Prozess zum Identifizieren, Analysieren, Bewerten, Behandeln und Überwachen von Risiken."
+        },
+        {
+          "fachbegriff": "Risikoregister",
+          "bedeutung": "Dokumentierte Übersicht aller bekannten Risiken mit Bewertung, Verantwortlichen, Maßnahmen und aktuellem Status."
+        },
+        {
+          "fachbegriff": "Risikomatrix",
+          "bedeutung": "Darstellung, die Eintrittswahrscheinlichkeit und Schadenshöhe kombiniert, um Risiken nach ihrer Kritikalität zu priorisieren."
+        },
+        {
+          "fachbegriff": "Qualitative Risikobewertung",
+          "bedeutung": "Bewertung mit Kategorien wie gering, mittel, hoch oder sehr hoch, wenn keine verlässlichen exakten Zahlen vorliegen."
+        },
+        {
+          "fachbegriff": "Quantitative Risikobewertung / ALE",
+          "bedeutung": "Bewertung mit Zahlen. Der Annual Loss Expectancy schätzt den erwarteten jährlichen Verlust aus Eintrittshäufigkeit und Schadenshöhe."
+        },
+        {
+          "fachbegriff": "Risikobehandlung",
+          "bedeutung": "Umgang mit einem Risiko durch Vermeidung, Reduktion, Transfer oder bewusste Akzeptanz."
+        }
+      ]
+    },
+    {
+      "id": "S-02",
+      "titel": "FMEA - Fehleranalyse und Risikopriorisierung",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "FMEA",
+          "bedeutung": "Fehlermöglichkeits- und Einflussanalyse. Methode, mit der mögliche Fehler systematisch erkannt, bewertet und durch Maßnahmen reduziert werden."
+        },
+        {
+          "fachbegriff": "Fehlermöglichkeit",
+          "bedeutung": "Beschreibung dessen, was an einem System, Prozess oder einer Maßnahme fehlschlagen kann."
+        },
+        {
+          "fachbegriff": "Fehlerfolge",
+          "bedeutung": "Auswirkung, die entsteht, wenn eine Fehlermöglichkeit tatsächlich eintritt."
+        },
+        {
+          "fachbegriff": "Fehlerursache",
+          "bedeutung": "Grund, warum eine Fehlermöglichkeit entstehen kann, zum Beispiel Fehlkonfiguration, fehlender Patch oder menschlicher Fehler."
+        },
+        {
+          "fachbegriff": "Bedeutung (B)",
+          "bedeutung": "FMEA-Bewertungswert dafür, wie schwer die Auswirkungen eines Fehlers sind. Ein hoher Wert bedeutet schwere Folgen."
+        },
+        {
+          "fachbegriff": "Auftretenswahrscheinlichkeit (A)",
+          "bedeutung": "FMEA-Bewertungswert dafür, wie wahrscheinlich eine Fehlerursache beziehungsweise ein Fehler auftritt."
+        },
+        {
+          "fachbegriff": "Entdeckbarkeit (E)",
+          "bedeutung": "FMEA-Bewertungswert dafür, wie wahrscheinlich ein Fehler vor dem Eintritt seiner Folgen erkannt wird. Ein hoher Wert bedeutet schlechte Entdeckbarkeit."
+        },
+        {
+          "fachbegriff": "Risikoprioritätszahl (RPZ)",
+          "bedeutung": "Kennzahl zur Priorisierung in der FMEA. Sie wird typischerweise als B x A x E berechnet."
+        },
+        {
+          "fachbegriff": "Präventivmaßnahme",
+          "bedeutung": "Maßnahme, die die Entstehung oder Wahrscheinlichkeit eines Fehlers verringern soll."
+        },
+        {
+          "fachbegriff": "Entdeckungsmaßnahme",
+          "bedeutung": "Kontrolle oder Überwachung, die einen Fehler möglichst früh erkennen soll, bevor großer Schaden entsteht."
+        },
+        {
+          "fachbegriff": "Neubewertung",
+          "bedeutung": "Erneute FMEA-Bewertung nach Umsetzung von Maßnahmen, um zu prüfen, ob das Risiko tatsächlich gesunken ist."
+        },
+        {
+          "fachbegriff": "Priorisierung",
+          "bedeutung": "Reihenfolge, in der Risiken aufgrund ihrer Kritikalität zuerst behandelt werden."
+        },
+        {
+          "fachbegriff": "Ursachenanalyse",
+          "bedeutung": "Systematische Untersuchung der eigentlichen Fehlerursache, damit nicht nur das sichtbare Symptom behandelt wird."
+        },
+        {
+          "fachbegriff": "Wirksamkeitskontrolle",
+          "bedeutung": "Prüfung, ob eine umgesetzte Maßnahme das Risiko oder die RPZ wie geplant reduziert hat."
+        }
+      ]
+    },
+    {
+      "id": "S-03",
+      "titel": "IT-Sicherheitskonzepte & ISMS",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "ISMS",
+          "bedeutung": "Informationssicherheits-Managementsystem. Organisatorischer Rahmen aus Menschen, Prozessen, Technik und Dokumentation zur systematischen Informationssicherheit."
+        },
+        {
+          "fachbegriff": "CIA-Trias",
+          "bedeutung": "Die drei grundlegenden Schutzziele Vertraulichkeit, Integrität und Verfügbarkeit."
+        },
+        {
+          "fachbegriff": "Vertraulichkeit",
+          "bedeutung": "Informationen dürfen nur von Personen oder Systemen gelesen werden, die dazu berechtigt sind."
+        },
+        {
+          "fachbegriff": "Integrität",
+          "bedeutung": "Daten und Systeme dürfen nicht unbemerkt oder unberechtigt verändert werden."
+        },
+        {
+          "fachbegriff": "Verfügbarkeit",
+          "bedeutung": "Systeme, Dienste und Informationen müssen bei Bedarf zuverlässig nutzbar sein."
+        },
+        {
+          "fachbegriff": "PDCA-Zyklus",
+          "bedeutung": "Plan-Do-Check-Act. Verbesserungszyklus zum Planen, Umsetzen, Prüfen und kontinuierlichen Verbessern des ISMS."
+        },
+        {
+          "fachbegriff": "ISO/IEC 27001",
+          "bedeutung": "International anerkannte Norm mit Anforderungen an den Aufbau, Betrieb und die kontinuierliche Verbesserung eines ISMS."
+        },
+        {
+          "fachbegriff": "Annex A",
+          "bedeutung": "Anhang der ISO/IEC 27001 mit einem Katalog möglicher Sicherheitsmaßnahmen beziehungsweise Controls."
+        },
+        {
+          "fachbegriff": "Statement of Applicability (SoA)",
+          "bedeutung": "Dokument, das festhält, welche ISO-27001-Controls angewendet oder ausgeschlossen werden und warum."
+        },
+        {
+          "fachbegriff": "BSI IT-Grundschutz",
+          "bedeutung": "Methodik des BSI mit konkreten Bausteinen und Anforderungen für den systematischen Schutz typischer IT-Systeme und Prozesse."
+        },
+        {
+          "fachbegriff": "IT-Grundschutz-Baustein",
+          "bedeutung": "Thematischer Baustein des BSI-Kompendiums mit Sicherheitsanforderungen für bestimmte Systeme oder Prozesse."
+        },
+        {
+          "fachbegriff": "Sicherheitsleitlinie",
+          "bedeutung": "Übergeordnetes, von der Leitung getragenes Dokument mit Sicherheitszielen, Geltungsbereich und grundsätzlichen Verantwortlichkeiten."
+        },
+        {
+          "fachbegriff": "Richtlinie",
+          "bedeutung": "Verbindliche Regel für einen bestimmten Sicherheitsbereich, zum Beispiel Passwort-, Zugriffs- oder Backup-Richtlinie."
+        },
+        {
+          "fachbegriff": "Arbeitsanweisung / Sicherheitskonzept",
+          "bedeutung": "Konkrete Beschreibung, wie eine Sicherheitsrichtlinie technisch oder organisatorisch umgesetzt wird."
+        }
+      ]
+    },
+    {
+      "id": "S-04",
+      "titel": "Sicherheitsvorfälle erkennen und bewerten (SIEM)",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Event",
+          "bedeutung": "Beobachtbares Ereignis in einem System, zum Beispiel ein fehlgeschlagener Login. Ein Event ist nicht automatisch ein Sicherheitsvorfall."
+        },
+        {
+          "fachbegriff": "Incident",
+          "bedeutung": "Sicherheitsvorfall, bei dem ein oder mehrere Events auf eine tatsächliche oder versuchte Verletzung von Schutzzielen hindeuten."
+        },
+        {
+          "fachbegriff": "Indicator of Compromise (IoC)",
+          "bedeutung": "Technisches oder organisatorisches Anzeichen dafür, dass ein System möglicherweise kompromittiert wurde."
+        },
+        {
+          "fachbegriff": "Brute-Force-Angriff",
+          "bedeutung": "Viele automatisierte Anmeldeversuche, mit denen Passwörter oder Zugangsdaten erraten werden sollen."
+        },
+        {
+          "fachbegriff": "Privilege Escalation",
+          "bedeutung": "Unberechtigte Erweiterung von Zugriffsrechten, zum Beispiel vom normalen Benutzer zum Administrator."
+        },
+        {
+          "fachbegriff": "Command and Control (C2)",
+          "bedeutung": "Kommunikationskanal, über den ein Angreifer kompromittierte Systeme steuert oder Befehle übermittelt."
+        },
+        {
+          "fachbegriff": "SIEM",
+          "bedeutung": "Security Information and Event Management. System, das Sicherheitslogs zentral sammelt, auswertet, korreliert und Alarme erzeugt."
+        },
+        {
+          "fachbegriff": "Logquelle",
+          "bedeutung": "System, das sicherheitsrelevante Ereignisse protokolliert, zum Beispiel Server, Firewall, VPN, Active Directory, Cloud oder OT-System."
+        },
+        {
+          "fachbegriff": "Normalisierung",
+          "bedeutung": "Umwandlung unterschiedlicher Logformate in ein einheitliches Schema, damit Ereignisse gemeinsam ausgewertet werden können."
+        },
+        {
+          "fachbegriff": "Korrelation",
+          "bedeutung": "Verknüpfung mehrerer Ereignisse aus verschiedenen Quellen, um verdächtige Zusammenhänge und Angriffsmuster zu erkennen."
+        },
+        {
+          "fachbegriff": "Detection Rule",
+          "bedeutung": "Regel im SIEM, die bei einem definierten verdächtigen Muster einen Alarm auslöst."
+        },
+        {
+          "fachbegriff": "Severity",
+          "bedeutung": "Schweregrad eines Vorfalls, der bestimmt, wie schnell und auf welcher Eskalationsstufe reagiert werden muss."
+        },
+        {
+          "fachbegriff": "SOC",
+          "bedeutung": "Security Operations Center. Organisationseinheit, die Sicherheitsereignisse überwacht, analysiert und auf Vorfälle reagiert."
+        },
+        {
+          "fachbegriff": "Meldepflicht",
+          "bedeutung": "Gesetzliche oder vertragliche Pflicht, bestimmte Sicherheits- oder Datenschutzvorfälle innerhalb vorgegebener Fristen an zuständige Stellen zu melden."
+        }
+      ]
+    },
+    {
+      "id": "S-05",
+      "titel": "Incident Response - Sicherheitsvorfälle behandeln",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Incident Response",
+          "bedeutung": "Strukturierte Reaktion auf einen Sicherheitsvorfall mit dem Ziel, Schaden zu begrenzen, Ursache zu beseitigen und den Betrieb sicher wiederherzustellen."
+        },
+        {
+          "fachbegriff": "Incident-Response-Plan",
+          "bedeutung": "Vorab festgelegter organisatorischer Plan mit Rollen, Kommunikationswegen, Eskalationsregeln und grundsätzlichem Vorgehen im Sicherheitsvorfall."
+        },
+        {
+          "fachbegriff": "Runbook",
+          "bedeutung": "Konkrete Schritt-für-Schritt-Anweisung für wiederkehrende Vorfälle oder technische Maßnahmen."
+        },
+        {
+          "fachbegriff": "Preparation",
+          "bedeutung": "Vorbereitungsphase mit Rollen, Werkzeugen, Kontaktlisten, Backups, Runbooks und Übungen, bevor ein Vorfall eintritt."
+        },
+        {
+          "fachbegriff": "Detection & Analysis",
+          "bedeutung": "Phase, in der ein möglicher Vorfall erkannt, untersucht, bestätigt und hinsichtlich Umfang und Kritikalität bewertet wird."
+        },
+        {
+          "fachbegriff": "Lagebild",
+          "bedeutung": "Aktuelle, strukturierte Übersicht darüber, was passiert ist, welche Systeme betroffen sind und welche Auswirkungen bereits erkennbar sind."
+        },
+        {
+          "fachbegriff": "Triage",
+          "bedeutung": "Schnelle Ersteinschätzung und Priorisierung eines Vorfalls, damit kritische Fälle zuerst bearbeitet werden."
+        },
+        {
+          "fachbegriff": "Containment",
+          "bedeutung": "Eindämmung eines Vorfalls, damit sich der Angriff nicht weiter ausbreitet, zum Beispiel durch Isolation betroffener Systeme."
+        },
+        {
+          "fachbegriff": "Eradication",
+          "bedeutung": "Beseitigung der Ursache und der Angreifer-Artefakte, zum Beispiel Malware entfernen, Zugänge schließen und kompromittierte Konten bereinigen."
+        },
+        {
+          "fachbegriff": "Recovery",
+          "bedeutung": "Kontrollierte Wiederherstellung und Rückkehr in den sicheren Normalbetrieb nach der Bereinigung."
+        },
+        {
+          "fachbegriff": "Eskalation",
+          "bedeutung": "Weitergabe eines Vorfalls an höhere technische oder organisatorische Stellen, wenn Kritikalität, Umfang oder Entscheidungsbedarf dies erfordern."
+        },
+        {
+          "fachbegriff": "Krisenteam",
+          "bedeutung": "Interdisziplinäre Gruppe aus IT, Management, Kommunikation, Datenschutz und gegebenenfalls Recht, die einen schweren Vorfall koordiniert."
+        },
+        {
+          "fachbegriff": "Isolation",
+          "bedeutung": "Technische Trennung eines kompromittierten Systems oder Netzsegments, um weitere Kommunikation und Ausbreitung zu verhindern."
+        },
+        {
+          "fachbegriff": "Post-Incident Review",
+          "bedeutung": "Strukturierte Nachbereitung nach dem Vorfall, um Ablauf, Entscheidungen, Schwächen und Verbesserungsmaßnahmen festzuhalten."
+        }
+      ]
+    },
+    {
+      "id": "S-06",
+      "titel": "Beweissicherung und IT-Forensik",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "IT-Forensik",
+          "bedeutung": "Methodische Untersuchung digitaler Systeme und Daten, um Ablauf, Ursache und Verantwortlichkeit eines Sicherheitsvorfalls nachvollziehbar zu klären."
+        },
+        {
+          "fachbegriff": "Digitales Beweismittel",
+          "bedeutung": "Digitale Information, die zur Rekonstruktion eines Vorfalls beitragen kann, zum Beispiel Logs, Dateien, Speicherabbilder oder Netzwerkdaten."
+        },
+        {
+          "fachbegriff": "Beweissicherung",
+          "bedeutung": "Kontrolliertes Sichern relevanter Daten, sodass sie vollständig, unverändert und nachvollziehbar untersucht werden können."
+        },
+        {
+          "fachbegriff": "Volatile Daten",
+          "bedeutung": "Flüchtige Informationen wie RAM-Inhalte, laufende Prozesse oder Netzwerkverbindungen, die beim Ausschalten eines Systems verloren gehen können."
+        },
+        {
+          "fachbegriff": "Hashwert",
+          "bedeutung": "Kryptografischer Prüfwert einer Datei oder eines Datenträgers, mit dem spätere Veränderungen erkannt werden können."
+        },
+        {
+          "fachbegriff": "Hash-Manifest",
+          "bedeutung": "Dokumentierte Liste gesicherter Dateien oder Images zusammen mit ihren berechneten Hashwerten."
+        },
+        {
+          "fachbegriff": "Chain of Custody",
+          "bedeutung": "Lückenlose Dokumentation darüber, wer ein Beweismittel wann erhalten, bearbeitet, transportiert oder weitergegeben hat."
+        },
+        {
+          "fachbegriff": "Forensisches Image",
+          "bedeutung": "Bitgenaue Kopie eines Datenträgers, die für Untersuchungen verwendet wird, während das Original möglichst unverändert bleibt."
+        },
+        {
+          "fachbegriff": "Write Blocker",
+          "bedeutung": "Technische Schutzmaßnahme, die verhindert, dass bei der forensischen Sicherung Daten auf dem Originaldatenträger verändert werden."
+        },
+        {
+          "fachbegriff": "Timeline",
+          "bedeutung": "Chronologische Darstellung relevanter Ereignisse, mit der der Ablauf eines Angriffs rekonstruiert wird."
+        },
+        {
+          "fachbegriff": "Log-Sicherung",
+          "bedeutung": "Frühzeitiges Kopieren und Schützen relevanter Protokolldaten, bevor sie überschrieben, gelöscht oder manipuliert werden können."
+        },
+        {
+          "fachbegriff": "Integritätsnachweis",
+          "bedeutung": "Nachweis, dass ein gesichertes Beweismittel seit seiner Erfassung unverändert geblieben ist, typischerweise mit Hashwerten."
+        },
+        {
+          "fachbegriff": "Original und Arbeitskopie",
+          "bedeutung": "Das Original wird möglichst unverändert aufbewahrt; Analysen werden auf einer verifizierten Kopie durchgeführt."
+        },
+        {
+          "fachbegriff": "Forensische Dokumentation",
+          "bedeutung": "Nachvollziehbare Protokollierung aller Sicherungs- und Analyseschritte, Werkzeuge, Zeitpunkte und Ergebnisse."
+        }
+      ]
+    },
+    {
+      "id": "S-07",
+      "titel": "Prävention, Härtung und Lessons Learned",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Systemhärtung",
+          "bedeutung": "Reduzierung der Angriffsfläche eines Systems durch sichere Konfiguration, Abschalten unnötiger Dienste und Einschränken von Zugängen."
+        },
+        {
+          "fachbegriff": "Patch-Management",
+          "bedeutung": "Geplanter Prozess zum Bewerten, Testen und zeitnahen Einspielen von Sicherheits- und Softwareupdates."
+        },
+        {
+          "fachbegriff": "Vulnerability Management",
+          "bedeutung": "Kontinuierlicher Prozess zum Erkennen, Bewerten, Priorisieren und Beheben technischer Schwachstellen."
+        },
+        {
+          "fachbegriff": "CVE",
+          "bedeutung": "Standardisierte Kennung für eine öffentlich bekannte Schwachstelle in Software oder Hardware."
+        },
+        {
+          "fachbegriff": "CVSS",
+          "bedeutung": "Bewertungssystem, das die technische Schwere einer Schwachstelle mit einem standardisierten Score beschreibt."
+        },
+        {
+          "fachbegriff": "Least Privilege",
+          "bedeutung": "Prinzip, nach dem Benutzer und Systeme nur die Berechtigungen erhalten, die sie für ihre Aufgabe tatsächlich benötigen."
+        },
+        {
+          "fachbegriff": "Multi-Faktor-Authentifizierung (MFA)",
+          "bedeutung": "Anmeldung mit mindestens zwei unabhängigen Faktoren, zum Beispiel Passwort und zusätzlichem Token."
+        },
+        {
+          "fachbegriff": "Netzwerksegmentierung",
+          "bedeutung": "Aufteilung eines Netzes in getrennte Bereiche, damit Angreifer sich nach einer Kompromittierung nicht ungehindert weiterbewegen können."
+        },
+        {
+          "fachbegriff": "Defense in Depth",
+          "bedeutung": "Mehrschichtiges Sicherheitsprinzip, bei dem mehrere unabhängige Schutzmaßnahmen gemeinsam eingesetzt werden."
+        },
+        {
+          "fachbegriff": "Backup- und Restore-Test",
+          "bedeutung": "Regelmäßige Prüfung, ob Backups nicht nur vorhanden, sondern tatsächlich vollständig und zuverlässig wiederherstellbar sind."
+        },
+        {
+          "fachbegriff": "Security Awareness",
+          "bedeutung": "Sensibilisierung und Schulung von Mitarbeitenden, damit sie Sicherheitsrisiken erkennen und richtig darauf reagieren."
+        },
+        {
+          "fachbegriff": "Root Cause Analysis",
+          "bedeutung": "Analyse der eigentlichen Ursache eines Vorfalls, damit nicht nur Symptome beseitigt werden."
+        },
+        {
+          "fachbegriff": "Lessons Learned",
+          "bedeutung": "Dokumentierte Erkenntnisse aus einem Vorfall darüber, was gut funktioniert hat und was dauerhaft verbessert werden muss."
+        },
+        {
+          "fachbegriff": "Kontinuierliche Verbesserung",
+          "bedeutung": "Dauerhafte Überführung der Erkenntnisse aus Vorfällen, Audits und Tests in neue oder verbesserte Sicherheitsmaßnahmen."
+        }
+      ]
+    },
+    {
+      "id": "S-08",
+      "titel": "Integrative Fallstudie - Sicherheitsvorfall end-to-end",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Ransomware",
+          "bedeutung": "Schadsoftware, die Systeme oder Daten verschlüsselt und häufig eine Lösegeldforderung stellt."
+        },
+        {
+          "fachbegriff": "Lateral Movement",
+          "bedeutung": "Seitliche Ausbreitung eines Angreifers von einem bereits kompromittierten System auf weitere Systeme im Netzwerk."
+        },
+        {
+          "fachbegriff": "Datenexfiltration",
+          "bedeutung": "Unberechtigtes Übertragen oder Abziehen von Daten aus dem Unternehmensnetz."
+        },
+        {
+          "fachbegriff": "Erstmeldung",
+          "bedeutung": "Erste strukturierte Meldung eines Vorfalls mit den wichtigsten bekannten Fakten, Auswirkungen und betroffenen Systemen."
+        },
+        {
+          "fachbegriff": "Kritikalität",
+          "bedeutung": "Bewertung, wie wichtig ein betroffenes System oder ein Geschäftsprozess für das Unternehmen ist."
+        },
+        {
+          "fachbegriff": "Severity 1",
+          "bedeutung": "Höchste Vorfallstufe für sehr kritische Ereignisse, die sofortige Eskalation und koordinierte Krisenreaktion erfordern."
+        },
+        {
+          "fachbegriff": "Sofortmaßnahme",
+          "bedeutung": "Unmittelbar notwendige Handlung zur Schadensbegrenzung, die auf dem aktuellen Lagebild basiert und dokumentiert wird."
+        },
+        {
+          "fachbegriff": "Containment und Beweissicherung parallel",
+          "bedeutung": "Wichtiger Grundsatz: Ausbreitung stoppen und gleichzeitig relevante Spuren sichern, statt die Forensik erst nach allen Sofortmaßnahmen zu beginnen."
+        },
+        {
+          "fachbegriff": "Clean Backup",
+          "bedeutung": "Überprüftes, nicht kompromittiertes Backup, aus dem Systeme nach einem Sicherheitsvorfall sicher wiederhergestellt werden können."
+        },
+        {
+          "fachbegriff": "Wiederanlauf",
+          "bedeutung": "Kontrollierte Rückkehr eines Systems oder Geschäftsprozesses in den produktiven Betrieb nach technischer Prüfung und Freigabe."
+        },
+        {
+          "fachbegriff": "Freigabeentscheidung",
+          "bedeutung": "Bewusste Entscheidung einer verantwortlichen Stelle, ob ein System nach dem Vorfall wieder produktiv genutzt werden darf."
+        },
+        {
+          "fachbegriff": "Krisenkommunikation",
+          "bedeutung": "Abgestimmte interne und externe Kommunikation während eines schweren Vorfalls, damit Informationen korrekt, konsistent und zielgruppengerecht weitergegeben werden."
+        },
+        {
+          "fachbegriff": "Risikoneubewertung",
+          "bedeutung": "Erneute Bewertung der Risiken nach einem Vorfall, weil neue Schwachstellen oder eine veränderte Bedrohungslage bekannt geworden sind."
+        },
+        {
+          "fachbegriff": "Management Summary",
+          "bedeutung": "Kurze, entscheidungsorientierte Zusammenfassung für die Geschäftsleitung mit Ursache, Auswirkungen, Reaktion, Rest-Risiken und empfohlenen Maßnahmen."
+        }
+      ]
+    }
+  ]
+}

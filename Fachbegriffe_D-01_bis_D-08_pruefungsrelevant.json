@@ -1,0 +1,507 @@
+{
+  "titel": "Prüfungsrelevante Fachbegriffe D-01 bis D-08",
+  "thema": "Docker & Container - kompakte Prüfungsvorbereitung",
+  "anzahl_kernbegriffe": 111,
+  "bereiche": [
+    {
+      "id": "D-01",
+      "titel": "Container-Grundlagen & Motivation",
+      "anzahl_kernbegriffe": 11,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Virtuelle Maschine (VM)",
+          "bedeutung": "Ein vollständig virtueller Computer mit eigenem Betriebssystem und eigenem Kernel, der auf einem echten Host läuft."
+        },
+        {
+          "fachbegriff": "Hypervisor",
+          "bedeutung": "Software, die virtuelle Maschinen erstellt und verwaltet, zum Beispiel VMware ESXi, KVM oder Hyper-V."
+        },
+        {
+          "fachbegriff": "Kernel",
+          "bedeutung": "Der Kern des Betriebssystems. Er verwaltet unter anderem Prozesse, Speicher, Geräte und Zugriffe auf Hardware."
+        },
+        {
+          "fachbegriff": "Container",
+          "bedeutung": "Eine isolierte Laufzeitumgebung für eine Anwendung. Sie enthält die Anwendung und ihre benötigten Bibliotheken, nutzt aber den Kernel des Hosts."
+        },
+        {
+          "fachbegriff": "Containerisierung",
+          "bedeutung": "Das Verpacken einer Anwendung samt benötigter Umgebung in einen Container, damit sie überall möglichst gleich läuft."
+        },
+        {
+          "fachbegriff": "Linux Namespace",
+          "bedeutung": "Kernel-Funktion, die einem Prozess nur seine eigene Sicht auf bestimmte Systemressourcen zeigt."
+        },
+        {
+          "fachbegriff": "cgroups / Control Groups",
+          "bedeutung": "Linux-Funktion, mit der CPU, RAM und andere Ressourcen für Prozesse oder Container begrenzt und gemessen werden können."
+        },
+        {
+          "fachbegriff": "Isolation",
+          "bedeutung": "Trennung von Prozessen, Netzwerk, Dateisystem und Ressourcen, damit Anwendungen sich möglichst wenig gegenseitig beeinflussen."
+        },
+        {
+          "fachbegriff": "Shared Kernel",
+          "bedeutung": "Mehrere Container verwenden denselben Kernel des Hosts. Das spart Ressourcen, ist aber weniger stark getrennt als eigene VM-Kernel."
+        },
+        {
+          "fachbegriff": "Container Runtime",
+          "bedeutung": "Software, die Container-Prozesse startet, stoppt und technisch ausführt."
+        },
+        {
+          "fachbegriff": "Open Container Initiative (OCI)",
+          "bedeutung": "Organisation, die offene Standards für Container-Images, Runtimes und deren Verteilung festlegt."
+        }
+      ]
+    },
+    {
+      "id": "D-02",
+      "titel": "Docker-Installation & erste Schritte",
+      "anzahl_kernbegriffe": 11,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Docker Desktop",
+          "bedeutung": "Docker-Paket für Windows und macOS mit Docker Engine, CLI, Compose und grafischer Oberfläche. Im Hintergrund läuft dafür eine Linux-VM."
+        },
+        {
+          "fachbegriff": "Docker Engine (CE)",
+          "bedeutung": "Die eigentliche Docker-Laufzeit, besonders auf Linux. CE bedeutet Community Edition."
+        },
+        {
+          "fachbegriff": "Docker Daemon",
+          "bedeutung": "Der laufende Docker-Hintergrunddienst, der Befehle ausführt und Container sowie Images verwaltet."
+        },
+        {
+          "fachbegriff": "Docker CLI",
+          "bedeutung": "Kommandozeile, über die du Befehle wie docker run oder docker ps eingibst."
+        },
+        {
+          "fachbegriff": "Image",
+          "bedeutung": "Unveränderliche Vorlage, aus der ein Container erstellt wird."
+        },
+        {
+          "fachbegriff": "Image-Tag",
+          "bedeutung": "Lesbarer Versionsname eines Images, zum Beispiel nginx:1.25 oder :latest."
+        },
+        {
+          "fachbegriff": "Container-Lifecycle",
+          "bedeutung": "Lebenszyklus eines Containers von Created über Running oder Paused bis Stopped und Removed."
+        },
+        {
+          "fachbegriff": "Running",
+          "bedeutung": "Der Hauptprozess des Containers läuft aktiv."
+        },
+        {
+          "fachbegriff": "Stopped / Exited",
+          "bedeutung": "Der Hauptprozess ist beendet. Der Container und sein beschreibbares Dateisystem existieren aber noch."
+        },
+        {
+          "fachbegriff": "Removed",
+          "bedeutung": "Der Container wurde gelöscht. Daten im reinen Container-Dateisystem sind damit weg."
+        },
+        {
+          "fachbegriff": "Port-Mapping (-p)",
+          "bedeutung": "Verbindet einen Port des Hosts mit einem Port im Container, zum Beispiel 8080:80."
+        }
+      ]
+    },
+    {
+      "id": "D-03",
+      "titel": "Dockerfile & Image-Erstellung",
+      "anzahl_kernbegriffe": 16,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Docker-Image",
+          "bedeutung": "Unveränderliche Blaupause für Container. Es enthält Anwendung, Laufzeit, Bibliotheken und Konfiguration."
+        },
+        {
+          "fachbegriff": "Dockerfile",
+          "bedeutung": "Textdatei mit Anweisungen, aus denen Docker Schritt für Schritt ein Image baut."
+        },
+        {
+          "fachbegriff": "Build-Kontext",
+          "bedeutung": "Verzeichnis und Dateien, die Docker beim Build zur Verfügung stehen und aus denen COPY oder ADD lesen können."
+        },
+        {
+          "fachbegriff": "Layer / Image-Layer",
+          "bedeutung": "Unveränderliche Schicht eines Images, die nur die Änderungen gegenüber der vorherigen Schicht enthält."
+        },
+        {
+          "fachbegriff": "Build-Cache",
+          "bedeutung": "Docker verwendet unveränderte Build-Schritte erneut, damit ein neuer Build schneller wird."
+        },
+        {
+          "fachbegriff": "Cache-Invalidierung",
+          "bedeutung": "Wenn sich ein Build-Schritt oder seine Eingaben ändern, wird sein Cache ungültig und spätere Schichten müssen neu gebaut werden."
+        },
+        {
+          "fachbegriff": "Base-Image",
+          "bedeutung": "Ausgangsimage eines Dockerfiles, zum Beispiel python:3.11-slim. Es wird mit FROM festgelegt."
+        },
+        {
+          "fachbegriff": "FROM",
+          "bedeutung": "Dockerfile-Anweisung, die das Basisimage festlegt."
+        },
+        {
+          "fachbegriff": "RUN",
+          "bedeutung": "Führt während des Image-Builds einen Befehl aus und erzeugt normalerweise einen neuen Layer."
+        },
+        {
+          "fachbegriff": "COPY",
+          "bedeutung": "Kopiert Dateien aus dem Build-Kontext in das Image."
+        },
+        {
+          "fachbegriff": "CMD",
+          "bedeutung": "Definiert den Standardbefehl oder Standardargumente, die beim Containerstart verwendet werden."
+        },
+        {
+          "fachbegriff": "ENTRYPOINT",
+          "bedeutung": "Definiert den festen Startbefehl eines Containers. CMD kann dazu Standardargumente liefern."
+        },
+        {
+          "fachbegriff": ".dockerignore",
+          "bedeutung": "Datei, die festlegt, welche Dateien nicht in den Build-Kontext aufgenommen werden, zum Beispiel .git oder node_modules."
+        },
+        {
+          "fachbegriff": "Multi-Stage-Build",
+          "bedeutung": "Dockerfile mit mehreren Build-Stufen. Build-Werkzeuge bleiben in einer früheren Stufe und nur benötigte Ergebnisse landen im finalen Image."
+        },
+        {
+          "fachbegriff": "Non-Root-User",
+          "bedeutung": "Benutzer ohne Root-Rechte. Container sollten in Produktion möglichst mit solchen eingeschränkten Rechten laufen."
+        },
+        {
+          "fachbegriff": "Health Check",
+          "bedeutung": "Automatische Prüfung, ob ein Dienst wirklich funktioniert und nicht nur ein Prozess läuft."
+        }
+      ]
+    },
+    {
+      "id": "D-04",
+      "titel": "Volumes & Persistenz",
+      "anzahl_kernbegriffe": 11,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Persistenz",
+          "bedeutung": "Daten bleiben erhalten, auch wenn der Container gestoppt, ersetzt oder gelöscht wird."
+        },
+        {
+          "fachbegriff": "Ephemeral / flüchtig",
+          "bedeutung": "Daten existieren nur vorübergehend und dürfen beim Löschen oder Stoppen verloren gehen."
+        },
+        {
+          "fachbegriff": "Container-Dateisystem",
+          "bedeutung": "Dateisystem, das ein Container sieht. Änderungen ohne externen Speicher liegen im beschreibbaren Container-Layer."
+        },
+        {
+          "fachbegriff": "OverlayFS",
+          "bedeutung": "Linux-Union-Dateisystem, das Docker häufig für Image-Layer und die beschreibbare Container-Schicht verwendet."
+        },
+        {
+          "fachbegriff": "Writable Container Layer",
+          "bedeutung": "Beschreibbare Schicht, in der ein Container seine Laufzeitänderungen speichert. Sie wird mit dem Container gelöscht."
+        },
+        {
+          "fachbegriff": "Named Volume",
+          "bedeutung": "Von Docker verwalteter Speicherbereich, der unabhängig vom Container existiert und deshalb für dauerhafte Daten geeignet ist."
+        },
+        {
+          "fachbegriff": "Bind-Mount",
+          "bedeutung": "Bindet einen konkreten Pfad des Hosts direkt in einen Container ein."
+        },
+        {
+          "fachbegriff": "Read-only Mount (:ro)",
+          "bedeutung": "Mount, aus dem der Container lesen, aber nicht schreiben darf."
+        },
+        {
+          "fachbegriff": "tmpfs",
+          "bedeutung": "Flüchtiger Mount im RAM. Daten werden nicht dauerhaft auf die Festplatte geschrieben und verschwinden beim Stoppen."
+        },
+        {
+          "fachbegriff": "Backup",
+          "bedeutung": "Zusätzliche Sicherung von Daten, aus der sie nach Verlust wiederhergestellt werden können."
+        },
+        {
+          "fachbegriff": "Restore",
+          "bedeutung": "Wiederherstellung von Daten aus einem Backup."
+        }
+      ]
+    },
+    {
+      "id": "D-05",
+      "titel": "Netzwerke & Container-Kommunikation",
+      "anzahl_kernbegriffe": 13,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Docker-Netzwerk",
+          "bedeutung": "Virtuelles Netzwerk, über das Container miteinander oder mit anderen Systemen kommunizieren können."
+        },
+        {
+          "fachbegriff": "Bridge-Netzwerk",
+          "bedeutung": "Virtuelles Netzwerk auf einem Docker-Host, das Container untereinander verbindet und vom restlichen Host-Netz trennt."
+        },
+        {
+          "fachbegriff": "Host Network",
+          "bedeutung": "Netzwerkmodus, bei dem der Container direkt den Netzwerk-Stack des Hosts nutzt. Eigene Port-Mappings sind dann normalerweise nicht nötig."
+        },
+        {
+          "fachbegriff": "None Network",
+          "bedeutung": "Netzwerkmodus ohne externe Netzwerkverbindung. Der Container ist netzwerktechnisch weitgehend isoliert."
+        },
+        {
+          "fachbegriff": "Overlay Network",
+          "bedeutung": "Virtuelles Netzwerk über mehrere Docker-Hosts hinweg, besonders für Docker Swarm."
+        },
+        {
+          "fachbegriff": "Container-DNS",
+          "bedeutung": "Docker-eigene Namensauflösung, durch die Container andere Container oder Services per Namen finden können."
+        },
+        {
+          "fachbegriff": "Service Discovery",
+          "bedeutung": "Mechanismus, mit dem Dienste automatisch herausfinden, unter welcher Adresse andere Dienste erreichbar sind."
+        },
+        {
+          "fachbegriff": "Subnetz / Subnet",
+          "bedeutung": "Definierter IP-Adressbereich eines Netzwerks, zum Beispiel 172.20.0.0/16."
+        },
+        {
+          "fachbegriff": "CIDR",
+          "bedeutung": "Schreibweise für IP-Netzbereiche, zum Beispiel /24 oder /16. Die Zahl beschreibt, welcher Teil der Adresse das Netzwerk kennzeichnet."
+        },
+        {
+          "fachbegriff": "Gateway",
+          "bedeutung": "Netzwerkadresse, über die Geräte ein anderes Netzwerk erreichen."
+        },
+        {
+          "fachbegriff": "Port-Mapping",
+          "bedeutung": "Veröffentlicht einen Container-Port über einen Port des Hosts, damit der Dienst von außen erreichbar wird."
+        },
+        {
+          "fachbegriff": "Netzwerk-Segmentierung",
+          "bedeutung": "Aufteilung von Diensten in getrennte Netze, damit nur notwendige Kommunikationswege erlaubt sind."
+        },
+        {
+          "fachbegriff": "Netzwerk-Isolation",
+          "bedeutung": "Container in getrennten Netzen können nicht ohne Weiteres miteinander kommunizieren. Das reduziert unnötige Angriffswege."
+        }
+      ]
+    },
+    {
+      "id": "D-06",
+      "titel": "Docker Compose & Multi-Container-Anwendungen",
+      "anzahl_kernbegriffe": 13,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Docker Compose",
+          "bedeutung": "Werkzeug, mit dem mehrere zusammengehörige Container, Netzwerke und Volumes in einer YAML-Datei beschrieben und gemeinsam verwaltet werden."
+        },
+        {
+          "fachbegriff": "Multi-Container-Anwendung",
+          "bedeutung": "Anwendung, die aus mehreren Containern besteht, zum Beispiel Datenbank, API, Gateway und Grafana."
+        },
+        {
+          "fachbegriff": "Deklarativ",
+          "bedeutung": "Du beschreibst den gewünschten Endzustand. Das Werkzeug entscheidet selbst, welche Schritte dafür nötig sind."
+        },
+        {
+          "fachbegriff": "YAML",
+          "bedeutung": "Gut lesbares Textformat für strukturierte Konfiguration. Docker Compose verwendet es für die Compose-Datei."
+        },
+        {
+          "fachbegriff": "docker-compose.yml / compose.yaml",
+          "bedeutung": "Datei, in der die gewünschte Multi-Container-Anwendung beschrieben wird."
+        },
+        {
+          "fachbegriff": "services",
+          "bedeutung": "Compose-Bereich, in dem die einzelnen Anwendungsdienste beschrieben werden."
+        },
+        {
+          "fachbegriff": "networks",
+          "bedeutung": "Compose-Bereich, in dem die verwendeten Docker-Netzwerke definiert werden."
+        },
+        {
+          "fachbegriff": "volumes",
+          "bedeutung": "Compose-Bereich, in dem persistente Docker-Volumes definiert werden."
+        },
+        {
+          "fachbegriff": ".env-Datei",
+          "bedeutung": "Datei mit Variablenwerten, die Compose einlesen kann. Vertrauliche Werte sollten trotzdem mit angemessenem Secret-Management geschützt werden."
+        },
+        {
+          "fachbegriff": "depends_on",
+          "bedeutung": "Beschreibt eine Startabhängigkeit zwischen Compose-Services. Allein garantiert es noch nicht, dass der andere Dienst bereits einsatzbereit ist."
+        },
+        {
+          "fachbegriff": "Health Check",
+          "bedeutung": "Prüfung, ob ein Dienst wirklich betriebsbereit ist, nicht nur ob sein Container gestartet wurde."
+        },
+        {
+          "fachbegriff": "service_healthy",
+          "bedeutung": "Bedingung, mit der ein abhängiger Service wartet, bis der Health Check des anderen Services erfolgreich ist."
+        },
+        {
+          "fachbegriff": "Restart Policy",
+          "bedeutung": "Regel, ob und wann Docker einen beendeten Container automatisch wieder startet."
+        }
+      ]
+    },
+    {
+      "id": "D-07",
+      "titel": "Registry & Image-Distribution",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Container Registry",
+          "bedeutung": "Serverdienst zum Speichern, Versionieren und Verteilen von Container-Images."
+        },
+        {
+          "fachbegriff": "Image Repository",
+          "bedeutung": "Sammlung verschiedener Versionen beziehungsweise Tags desselben Images innerhalb einer Registry."
+        },
+        {
+          "fachbegriff": "Tag",
+          "bedeutung": "Lesbarer Bezeichner für eine Image-Version, zum Beispiel 2.1.0 oder sha-a1b2c3d."
+        },
+        {
+          "fachbegriff": ":latest",
+          "bedeutung": "Standard-Tag, wenn kein Tag angegeben wird. Er kann jederzeit auf einen anderen Inhalt zeigen und ist deshalb für reproduzierbare Produktion ungeeignet."
+        },
+        {
+          "fachbegriff": "Mutable Tag",
+          "bedeutung": "Tag, dessen Ziel später auf ein anderes Image geändert werden kann."
+        },
+        {
+          "fachbegriff": "Immutable Tag",
+          "bedeutung": "Tag, der nach dem Push nicht mehr auf einen anderen Image-Inhalt umgebogen werden darf."
+        },
+        {
+          "fachbegriff": "Semantic Versioning (SemVer)",
+          "bedeutung": "Versionsschema wie MAJOR.MINOR.PATCH, zum Beispiel 2.1.0, das Art und Umfang einer Versionsänderung verständlich macht."
+        },
+        {
+          "fachbegriff": "Image Digest",
+          "bedeutung": "Unveränderlicher Fingerabdruck des Image-Inhalts. Ein Digest zeigt immer auf exakt denselben Inhalt."
+        },
+        {
+          "fachbegriff": "Private Registry",
+          "bedeutung": "Registry mit kontrolliertem Zugriff für interne oder vertrauliche Images."
+        },
+        {
+          "fachbegriff": "Vulnerability Scanning",
+          "bedeutung": "Automatische Prüfung eines Images auf bekannte Sicherheitslücken in Betriebssystem- und Anwendungsabhängigkeiten."
+        },
+        {
+          "fachbegriff": "CVE",
+          "bedeutung": "Öffentlich bekannte Sicherheitslücke mit einer eindeutigen Kennung, zum Beispiel CVE-2026-xxxx."
+        },
+        {
+          "fachbegriff": "Security Gate",
+          "bedeutung": "Automatische Regel in der Pipeline, die einen Build oder Push stoppt, wenn Sicherheitsbedingungen nicht erfüllt sind."
+        },
+        {
+          "fachbegriff": "Image Signing",
+          "bedeutung": "Kryptografisches Signieren eines Images, damit später geprüft werden kann, von wem es stammt und ob es unverändert ist."
+        },
+        {
+          "fachbegriff": "Verification / Verifizierung",
+          "bedeutung": "Prüfung einer Signatur vor dem Deployment, um sicherzustellen, dass das erwartete vertrauenswürdige Image verwendet wird."
+        }
+      ]
+    },
+    {
+      "id": "D-08",
+      "titel": "Docker in der Produktion & Best Practices",
+      "anzahl_kernbegriffe": 22,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Memory Leak / Speicherleck",
+          "bedeutung": "Fehler, bei dem ein Prozess immer mehr RAM belegt und nicht mehr freigibt, obwohl der Speicher nicht mehr benötigt wird."
+        },
+        {
+          "fachbegriff": "Resource Limit",
+          "bedeutung": "Harte Obergrenze für Ressourcen wie CPU oder RAM, die ein Container maximal verwenden darf."
+        },
+        {
+          "fachbegriff": "OOM-Killer",
+          "bedeutung": "Linux-Mechanismus, der Prozesse beendet, wenn Arbeitsspeicher nicht mehr ausreichend verfügbar ist oder Limits überschritten werden."
+        },
+        {
+          "fachbegriff": "Exit Code 137",
+          "bedeutung": "Typischer Exit-Code, wenn ein Prozess durch SIGKILL beendet wurde, zum Beispiel durch den OOM-Killer."
+        },
+        {
+          "fachbegriff": "CPU Throttling",
+          "bedeutung": "Der Kernel bremst einen Container, wenn er sein CPU-Limit erreicht, statt ihn zwingend zu beenden."
+        },
+        {
+          "fachbegriff": "Monitoring",
+          "bedeutung": "Fortlaufendes Beobachten von Systemzuständen und Kennzahlen, damit Probleme früh erkannt werden."
+        },
+        {
+          "fachbegriff": "Security Hardening",
+          "bedeutung": "Gezieltes Einschränken und Absichern eines Systems, um unnötige Angriffsflächen zu reduzieren."
+        },
+        {
+          "fachbegriff": "Attack Surface / Angriffsfläche",
+          "bedeutung": "Alle erreichbaren Funktionen, Rechte, Pakete und Schnittstellen, die ein Angreifer möglicherweise missbrauchen könnte."
+        },
+        {
+          "fachbegriff": "Least Privilege",
+          "bedeutung": "Jeder Prozess bekommt nur die Rechte, die er für seine Aufgabe wirklich braucht."
+        },
+        {
+          "fachbegriff": "Read-only Filesystem",
+          "bedeutung": "Container-Dateisystem wird schreibgeschützt betrieben. Schreibzugriffe sind nur an bewusst freigegebenen Stellen möglich."
+        },
+        {
+          "fachbegriff": "Seccomp",
+          "bedeutung": "Linux-Sicherheitsmechanismus, der einschränkt, welche Systemaufrufe ein Prozess verwenden darf."
+        },
+        {
+          "fachbegriff": "Linux Capabilities",
+          "bedeutung": "Aufgeteilte Root-Rechte. Einem Container können nur einzelne wirklich benötigte privilegierte Fähigkeiten gegeben oder entzogen werden."
+        },
+        {
+          "fachbegriff": "Logging",
+          "bedeutung": "Aufzeichnen von Ereignissen, Fehlern und wichtigen Zuständen einer Anwendung oder eines Containers."
+        },
+        {
+          "fachbegriff": "Log Rotation",
+          "bedeutung": "Alte Logdateien werden automatisch begrenzt, archiviert oder gelöscht, damit sie nicht die Festplatte füllen."
+        },
+        {
+          "fachbegriff": "Single Point of Failure",
+          "bedeutung": "Eine einzelne Komponente, deren Ausfall das gesamte System außer Betrieb setzt, zum Beispiel ein einzelner Compose-Host."
+        },
+        {
+          "fachbegriff": "Container-Orchestrierung",
+          "bedeutung": "Automatisierte Verwaltung von Containern über mehrere Hosts, inklusive Platzierung, Skalierung, Wiederherstellung und Updates."
+        },
+        {
+          "fachbegriff": "Kubernetes",
+          "bedeutung": "Weit verbreiteter Container-Orchestrator für skalierbaren und hochverfügbaren Produktionsbetrieb."
+        },
+        {
+          "fachbegriff": "Horizontale Skalierung",
+          "bedeutung": "Mehrere zusätzliche Container-Instanzen starten, um mehr Last zu verteilen, statt nur einen Container größer zu machen."
+        },
+        {
+          "fachbegriff": "Self-Healing",
+          "bedeutung": "Das System erkennt ausgefallene Instanzen und ersetzt oder startet sie automatisch neu."
+        },
+        {
+          "fachbegriff": "Rolling Update",
+          "bedeutung": "Neue Version wird schrittweise ausgerollt, sodass nicht alle Instanzen gleichzeitig ausfallen."
+        },
+        {
+          "fachbegriff": "Secrets Management",
+          "bedeutung": "Sichere Verwaltung von Passwörtern, Tokens und Schlüsseln statt sie offen in Images oder Konfigurationsdateien abzulegen."
+        },
+        {
+          "fachbegriff": "Service vs. Container",
+          "bedeutung": "Ein Service beschreibt den gewünschten Dienst und kann mehrere Container-Instanzen erzeugen. Ein Container ist eine einzelne laufende Instanz."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,511 @@
+{
+  "titel": "Prüfungsrelevante Fachbegriffe R-01 bis R-08",
+  "thema": "Datenschutz, Risiko, Compliance & IT-Recht - kompakte Prüfungsvorbereitung",
+  "anzahl_kernbegriffe": 112,
+  "bereiche": [
+    {
+      "id": "R-01",
+      "titel": "Datenschutzrecht und DSGVO",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "DSGVO",
+          "bedeutung": "Datenschutz-Grundverordnung. Zentrales Datenschutzrecht der EU für die Verarbeitung personenbezogener Daten."
+        },
+        {
+          "fachbegriff": "Personenbezogene Daten",
+          "bedeutung": "Informationen, die sich auf eine identifizierte oder identifizierbare natürliche Person beziehen, zum Beispiel Name, E-Mail-Adresse oder IP-Adresse."
+        },
+        {
+          "fachbegriff": "Verarbeitung",
+          "bedeutung": "Jeder Vorgang mit personenbezogenen Daten, zum Beispiel Erheben, Speichern, Ändern, Abfragen, Übermitteln oder Löschen."
+        },
+        {
+          "fachbegriff": "Rechtmäßigkeit",
+          "bedeutung": "Grundsatz nach Art. 5 DSGVO: Personenbezogene Daten dürfen nur verarbeitet werden, wenn dafür eine gültige Rechtsgrundlage besteht."
+        },
+        {
+          "fachbegriff": "Zweckbindung",
+          "bedeutung": "Daten dürfen nur für festgelegte, eindeutige und legitime Zwecke verarbeitet und nicht beliebig für andere Zwecke weiterverwendet werden."
+        },
+        {
+          "fachbegriff": "Datenminimierung",
+          "bedeutung": "Es dürfen nur die personenbezogenen Daten erhoben und verarbeitet werden, die für den jeweiligen Zweck tatsächlich erforderlich sind."
+        },
+        {
+          "fachbegriff": "Richtigkeit",
+          "bedeutung": "Personenbezogene Daten müssen sachlich richtig und möglichst aktuell sein; falsche Daten sind zu berichtigen oder zu löschen."
+        },
+        {
+          "fachbegriff": "Speicherbegrenzung",
+          "bedeutung": "Personenbezogene Daten dürfen nicht länger gespeichert werden, als es für den Verarbeitungszweck oder gesetzliche Pflichten erforderlich ist."
+        },
+        {
+          "fachbegriff": "Integrität und Vertraulichkeit",
+          "bedeutung": "Grundsatz, nach dem personenbezogene Daten durch angemessene technische und organisatorische Maßnahmen vor Verlust, Veränderung und unbefugtem Zugriff geschützt werden."
+        },
+        {
+          "fachbegriff": "Rechenschaftspflicht",
+          "bedeutung": "Der Verantwortliche muss nicht nur DSGVO-konform handeln, sondern die Einhaltung auch nachvollziehbar nachweisen können."
+        },
+        {
+          "fachbegriff": "Rechtsgrundlage nach Art. 6",
+          "bedeutung": "Gesetzliche Erlaubnis für eine Verarbeitung, zum Beispiel Einwilligung, Vertragserfüllung, rechtliche Pflicht oder berechtigtes Interesse."
+        },
+        {
+          "fachbegriff": "Interessenabwägung",
+          "bedeutung": "Prüfung beim berechtigten Interesse nach Art. 6 Abs. 1 lit. f, ob die Interessen des Unternehmens die Rechte und Interessen der betroffenen Person überwiegen."
+        },
+        {
+          "fachbegriff": "Auskunftsrecht",
+          "bedeutung": "Recht nach Art. 15 DSGVO, von einem Verantwortlichen Auskunft über verarbeitete personenbezogene Daten, Zwecke, Empfänger und Speicherfristen zu verlangen."
+        },
+        {
+          "fachbegriff": "VVT",
+          "bedeutung": "Verzeichnis von Verarbeitungstätigkeiten nach Art. 30 DSGVO. Es dokumentiert unter anderem Zweck, Datenkategorien, Empfänger, Löschfristen und Schutzmaßnahmen einer Verarbeitung."
+        }
+      ]
+    },
+    {
+      "id": "R-02",
+      "titel": "Schutzbedarf und technisch-organisatorische Anforderungen",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "BSI-Standard 200-2",
+          "bedeutung": "BSI-Standard zur IT-Grundschutz-Methodik. Er beschreibt unter anderem, wie der Schutzbedarf von Prozessen, Daten und IT-Systemen festgestellt wird."
+        },
+        {
+          "fachbegriff": "Schutzbedarfsfeststellung",
+          "bedeutung": "Bewertung, wie stark Vertraulichkeit, Integrität und Verfügbarkeit für eine Verarbeitung oder ein IT-System geschützt werden müssen."
+        },
+        {
+          "fachbegriff": "Schutzbedarf normal",
+          "bedeutung": "Stufe für begrenzte und überschaubare Schadensauswirkungen, wenn ein Schutzziel verletzt wird."
+        },
+        {
+          "fachbegriff": "Schutzbedarf hoch",
+          "bedeutung": "Stufe für beträchtliche Schadensauswirkungen, zum Beispiel hohe finanzielle Verluste oder erhebliche Beeinträchtigungen des Betriebs."
+        },
+        {
+          "fachbegriff": "Schutzbedarf sehr hoch",
+          "bedeutung": "Stufe für existenzbedrohende oder katastrophale Schadensauswirkungen."
+        },
+        {
+          "fachbegriff": "Maximumprinzip",
+          "bedeutung": "Der Schutzbedarf einer gemeinsamen IT-Komponente entspricht grundsätzlich dem höchsten Schutzbedarf der von ihr unterstützten Verarbeitungen."
+        },
+        {
+          "fachbegriff": "Verteilungsprinzip",
+          "bedeutung": "Der Schutzbedarf einer einzelnen Komponente kann geringer sein, wenn ihre Funktion wirksam auf mehrere redundante Komponenten verteilt ist."
+        },
+        {
+          "fachbegriff": "Kumulationsprinzip",
+          "bedeutung": "Der Schutzbedarf einer Komponente kann steigen, wenn ihr Ausfall gleichzeitig viele eigentlich weniger kritische Verarbeitungen beeinträchtigen würde."
+        },
+        {
+          "fachbegriff": "TOM",
+          "bedeutung": "Technische und organisatorische Maßnahmen zum Schutz personenbezogener Daten und IT-Systeme, zum Beispiel Verschlüsselung, MFA, Backups oder Berechtigungskonzepte."
+        },
+        {
+          "fachbegriff": "Datenklassifizierung",
+          "bedeutung": "Einordnung von Informationen in Schutzklassen, damit Mitarbeitende erkennen können, wie Daten gespeichert, übertragen und weitergegeben werden dürfen."
+        },
+        {
+          "fachbegriff": "Öffentlich",
+          "bedeutung": "Datenklasse für Informationen, die frei zugänglich sein dürfen, zum Beispiel veröffentlichte Marketingunterlagen."
+        },
+        {
+          "fachbegriff": "Intern",
+          "bedeutung": "Datenklasse für Informationen, die nur innerhalb des Unternehmens genutzt werden sollen."
+        },
+        {
+          "fachbegriff": "Vertraulich",
+          "bedeutung": "Datenklasse für Informationen, die nur einem begrenzten berechtigten Personenkreis zugänglich sein dürfen."
+        },
+        {
+          "fachbegriff": "Streng vertraulich",
+          "bedeutung": "Höchste Datenklasse für besonders schützenswerte Informationen, die nur ausdrücklich berechtigten Personen zugänglich sein dürfen."
+        }
+      ]
+    },
+    {
+      "id": "R-03",
+      "titel": "Datensicherheitskonzepte entwickeln und prüfen",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Auftragsverarbeitung",
+          "bedeutung": "Verarbeitung personenbezogener Daten durch einen Dienstleister im Auftrag und nach Weisung des Verantwortlichen gemäß Art. 28 DSGVO."
+        },
+        {
+          "fachbegriff": "AVV",
+          "bedeutung": "Auftragsverarbeitungsvertrag. Vertrag nach Art. 28 DSGVO, der Pflichten, Weisungsbindung, Schutzmaßnahmen und Kontrollrechte bei einer Auftragsverarbeitung regelt."
+        },
+        {
+          "fachbegriff": "Weisungsbindung",
+          "bedeutung": "Der Auftragsverarbeiter darf personenbezogene Daten grundsätzlich nur nach dokumentierter Weisung des Verantwortlichen verarbeiten."
+        },
+        {
+          "fachbegriff": "Unterauftragsverarbeiter",
+          "bedeutung": "Weiterer Dienstleister, den ein Auftragsverarbeiter zur Verarbeitung einsetzt und dessen Einsatz vertraglich geregelt und kontrolliert werden muss."
+        },
+        {
+          "fachbegriff": "Kontrollrecht",
+          "bedeutung": "Recht des Verantwortlichen, die Einhaltung der vereinbarten Datenschutz- und Sicherheitsmaßnahmen beim Auftragsverarbeiter zu prüfen oder nachweisen zu lassen."
+        },
+        {
+          "fachbegriff": "Gemeinsame Verantwortlichkeit",
+          "bedeutung": "Konstellation nach Art. 26 DSGVO, bei der mehrere Stellen gemeinsam über Zweck und Mittel einer Verarbeitung entscheiden."
+        },
+        {
+          "fachbegriff": "Datensicherheitskonzept",
+          "bedeutung": "Dokument, das für eine Verarbeitung oder Plattform Schutzziele, Schutzbedarf, Schutzmaßnahmen, Restrisiken, Verantwortlichkeiten und Prüfungen zusammenfasst."
+        },
+        {
+          "fachbegriff": "Geltungsbereich",
+          "bedeutung": "Festlegung, auf welche Systeme, Daten, Prozesse, Standorte und Beteiligten sich ein Sicherheitskonzept bezieht."
+        },
+        {
+          "fachbegriff": "Gap-Analyse",
+          "bedeutung": "Vergleich zwischen gefordertem Soll-Zustand und vorhandenen Maßnahmen, um Sicherheitslücken und konkreten Handlungsbedarf zu erkennen."
+        },
+        {
+          "fachbegriff": "Maßnahmenkatalog",
+          "bedeutung": "Strukturierte Liste geplanter oder vorhandener Schutzmaßnahmen mit Priorität, Verantwortlichen, Fristen und Status."
+        },
+        {
+          "fachbegriff": "Quick Win",
+          "bedeutung": "Maßnahme mit geringem Aufwand und schnell erreichbarem Nutzen, zum Beispiel MFA aktivieren oder veraltete Verschlüsselungsverfahren deaktivieren."
+        },
+        {
+          "fachbegriff": "Restrisiko",
+          "bedeutung": "Risiko, das auch nach Umsetzung angemessener Schutzmaßnahmen verbleibt und bewusst bewertet sowie gegebenenfalls von der Leitung akzeptiert wird."
+        },
+        {
+          "fachbegriff": "Zielkonflikt",
+          "bedeutung": "Situation, in der sich Anforderungen wie Sicherheit, Kosten, Bedienbarkeit oder Wartbarkeit gegenseitig beeinflussen und abgewogen werden müssen."
+        },
+        {
+          "fachbegriff": "Wirksamkeitsprüfung",
+          "bedeutung": "Kontrolle, ob eine Schutzmaßnahme nicht nur vorhanden ist, sondern das vorgesehene Risiko tatsächlich ausreichend reduziert."
+        }
+      ]
+    },
+    {
+      "id": "R-04",
+      "titel": "Datensicherheitskonzepte umsetzen - Verschlüsselung & Zugriff",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "TLS",
+          "bedeutung": "Transport Layer Security. Protokoll zur Verschlüsselung von Daten während der Übertragung zwischen Kommunikationspartnern."
+        },
+        {
+          "fachbegriff": "Cipher Suite",
+          "bedeutung": "Festgelegte Kombination kryptografischer Verfahren, die bei einer TLS-Verbindung für Schlüsselaustausch, Authentifizierung und Verschlüsselung verwendet wird."
+        },
+        {
+          "fachbegriff": "HSTS",
+          "bedeutung": "HTTP Strict Transport Security. Mechanismus, der Browser dazu zwingt, eine Website ausschließlich über HTTPS aufzurufen."
+        },
+        {
+          "fachbegriff": "mTLS",
+          "bedeutung": "Mutual TLS. TLS-Variante, bei der sich nicht nur der Server, sondern auch der Client mit einem Zertifikat authentifiziert."
+        },
+        {
+          "fachbegriff": "Verschlüsselung at Rest",
+          "bedeutung": "Verschlüsselung gespeicherter Daten, zum Beispiel auf Festplatten, in Datenbanken, Backups oder Cloud-Speichern."
+        },
+        {
+          "fachbegriff": "Full Disk Encryption",
+          "bedeutung": "Verschlüsselung eines vollständigen Datenträgers, zum Beispiel mit LUKS oder BitLocker, um Daten bei Verlust oder Diebstahl des Mediums zu schützen."
+        },
+        {
+          "fachbegriff": "TDE",
+          "bedeutung": "Transparent Data Encryption. Verschlüsselung von Datenbankdateien auf Speicherebene, ohne dass die Anwendung ihre Zugriffe ändern muss."
+        },
+        {
+          "fachbegriff": "KMS",
+          "bedeutung": "Key Management System. Zentrale Lösung zum sicheren Erzeugen, Speichern, Verwenden, Protokollieren und Rotieren kryptografischer Schlüssel."
+        },
+        {
+          "fachbegriff": "HSM",
+          "bedeutung": "Hardware Security Module. Speziell geschützte Hardware zur sicheren Erzeugung und Aufbewahrung besonders wichtiger kryptografischer Schlüssel."
+        },
+        {
+          "fachbegriff": "Envelope Encryption",
+          "bedeutung": "Verfahren, bei dem Daten mit einem Datenschlüssel verschlüsselt werden und dieser Schlüssel wiederum mit einem übergeordneten Schlüssel geschützt wird."
+        },
+        {
+          "fachbegriff": "RBAC",
+          "bedeutung": "Role-Based Access Control. Berechtigungen werden Rollen zugeordnet und Benutzer erhalten ihre Rechte über diese Rollen statt durch Einzelvergaben."
+        },
+        {
+          "fachbegriff": "Least Privilege",
+          "bedeutung": "Prinzip der minimalen Rechte: Benutzer und technische Konten erhalten nur die Berechtigungen, die sie für ihre Aufgabe wirklich benötigen."
+        },
+        {
+          "fachbegriff": "MFA",
+          "bedeutung": "Multi-Faktor-Authentifizierung. Anmeldung mit mindestens zwei unabhängigen Faktoren, zum Beispiel Passwort und Token."
+        },
+        {
+          "fachbegriff": "Recertification",
+          "bedeutung": "Regelmäßige Überprüfung bereits vergebener Berechtigungen, damit nicht mehr benötigte oder verwaiste Rechte entfernt werden."
+        }
+      ]
+    },
+    {
+      "id": "R-05",
+      "titel": "Risikoidentifikation und -bewertung (BSI 200-3)",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "BSI 200-3 / ergänzende Risikoanalyse",
+          "bedeutung": "BSI-Standard für die ergänzende Risikoanalyse, wenn der normale IT-Grundschutz bei hohem oder sehr hohem Schutzbedarf nicht ausreicht."
+        },
+        {
+          "fachbegriff": "Risikoidentifikation",
+          "bedeutung": "Systematisches Erfassen relevanter Gefährdungen, Schwachstellen und Risiken für die betrachteten Prozesse und Systeme."
+        },
+        {
+          "fachbegriff": "Risikoanalyse",
+          "bedeutung": "Untersuchung eines identifizierten Risikos hinsichtlich Eintrittswahrscheinlichkeit und möglichem Schadensausmaß."
+        },
+        {
+          "fachbegriff": "Risikobehandlung",
+          "bedeutung": "Festlegen, wie mit einem Risiko umgegangen wird, zum Beispiel durch Vermeidung, Reduktion, Transfer oder Akzeptanz."
+        },
+        {
+          "fachbegriff": "Konsolidierung",
+          "bedeutung": "Zusammenführen der geplanten Sicherheitsmaßnahmen, Beseitigen von Überschneidungen und abschließendes Dokumentieren der verbleibenden Risiken."
+        },
+        {
+          "fachbegriff": "Spoofing",
+          "bedeutung": "STRIDE-Kategorie für das Vortäuschen einer falschen Identität, zum Beispiel durch gestohlene Zugangsdaten."
+        },
+        {
+          "fachbegriff": "Tampering",
+          "bedeutung": "STRIDE-Kategorie für die unberechtigte Veränderung von Daten, Nachrichten, Dateien oder Konfigurationen."
+        },
+        {
+          "fachbegriff": "Repudiation",
+          "bedeutung": "STRIDE-Kategorie für das Abstreiten einer Handlung, wenn ausreichende Nachweise oder Protokolle fehlen."
+        },
+        {
+          "fachbegriff": "Information Disclosure",
+          "bedeutung": "STRIDE-Kategorie für die unberechtigte Offenlegung vertraulicher Informationen."
+        },
+        {
+          "fachbegriff": "Denial of Service",
+          "bedeutung": "STRIDE-Kategorie für Angriffe oder Fehler, die die Verfügbarkeit eines Dienstes oder Systems beeinträchtigen."
+        },
+        {
+          "fachbegriff": "Elevation of Privilege",
+          "bedeutung": "STRIDE-Kategorie für die unberechtigte Erweiterung von Zugriffsrechten, zum Beispiel vom normalen Benutzer zum Administrator."
+        },
+        {
+          "fachbegriff": "STRIDE",
+          "bedeutung": "Bedrohungsmodell zur strukturierten Suche nach sechs typischen Kategorien von Sicherheitsbedrohungen in Systemen und Architekturen."
+        },
+        {
+          "fachbegriff": "Qualitative Risikobewertung",
+          "bedeutung": "Bewertung eines Risikos mit Stufen wie gering, mittel, hoch oder sehr hoch, wenn keine zuverlässigen exakten Zahlen vorliegen."
+        },
+        {
+          "fachbegriff": "Quantitative Risikobewertung / ALE",
+          "bedeutung": "Bewertung mit Zahlen. Der Annual Loss Expectancy schätzt den erwarteten jährlichen Verlust aus Eintrittshäufigkeit und Schadenshöhe."
+        }
+      ]
+    },
+    {
+      "id": "R-06",
+      "titel": "IT-Governance und IT-Compliance",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "IT-Governance",
+          "bedeutung": "Strategische Steuerung der IT durch die Unternehmensleitung: Ziele, Entscheidungswege, Verantwortung, Risiken und Erfolgskontrolle werden festgelegt."
+        },
+        {
+          "fachbegriff": "IT-Management",
+          "bedeutung": "Operative Umsetzung der vorgegebenen IT-Ziele, zum Beispiel Systeme betreiben, Projekte durchführen und Services organisieren."
+        },
+        {
+          "fachbegriff": "COBIT",
+          "bedeutung": "Governance-Framework von ISACA, das Unternehmen bei der Steuerung, Kontrolle und Messung ihrer IT unterstützt."
+        },
+        {
+          "fachbegriff": "EDM",
+          "bedeutung": "COBIT-Governance-Bereich Evaluate, Direct and Monitor: bewerten, Richtung vorgeben und Zielerreichung überwachen."
+        },
+        {
+          "fachbegriff": "APO",
+          "bedeutung": "COBIT-Management-Domäne Align, Plan and Organize für Ausrichtung, Planung und Organisation der IT."
+        },
+        {
+          "fachbegriff": "BAI",
+          "bedeutung": "COBIT-Management-Domäne Build, Acquire and Implement für Beschaffung, Entwicklung und Einführung von IT-Lösungen."
+        },
+        {
+          "fachbegriff": "DSS",
+          "bedeutung": "COBIT-Management-Domäne Deliver, Service and Support für Betrieb, Serviceerbringung und Support."
+        },
+        {
+          "fachbegriff": "MEA",
+          "bedeutung": "COBIT-Management-Domäne Monitor, Evaluate and Assess für Überwachung, Bewertung und Kontrolle."
+        },
+        {
+          "fachbegriff": "ITIL",
+          "bedeutung": "Best-Practice-Framework für IT-Service-Management, zum Beispiel Incident-, Change- und Service-Level-Management."
+        },
+        {
+          "fachbegriff": "Compliance",
+          "bedeutung": "Nachweisbare Einhaltung aller für das Unternehmen geltenden externen und internen Vorgaben, zum Beispiel Gesetze, Verträge und Richtlinien."
+        },
+        {
+          "fachbegriff": "ISO 37301",
+          "bedeutung": "Internationale Norm für Compliance-Management-Systeme und die systematische Steuerung von Compliance-Risiken und -Pflichten."
+        },
+        {
+          "fachbegriff": "Compliance-Management-System (CMS)",
+          "bedeutung": "Organisatorisches System zum Identifizieren, Umsetzen, Überwachen und kontinuierlichen Verbessern von Compliance-Anforderungen."
+        },
+        {
+          "fachbegriff": "RACI-Matrix",
+          "bedeutung": "Darstellung von Rollen und Verantwortlichkeiten mit Responsible, Accountable, Consulted und Informed für Entscheidungen und Aufgaben."
+        },
+        {
+          "fachbegriff": "Compliance-Register",
+          "bedeutung": "Lebende Übersicht über relevante Gesetze, Normen, Verträge und interne Vorgaben einschließlich Status und Verantwortlichkeit."
+        }
+      ]
+    },
+    {
+      "id": "R-07",
+      "titel": "Audits und Überwachung",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Audit",
+          "bedeutung": "Systematische, unabhängige und dokumentierte Prüfung, ob festgelegte Anforderungen, Regeln oder Standards eingehalten werden."
+        },
+        {
+          "fachbegriff": "ISO 19011",
+          "bedeutung": "Internationaler Leitfaden für das Planen, Durchführen, Dokumentieren und Nachbereiten von Managementsystem-Audits."
+        },
+        {
+          "fachbegriff": "Internes Audit",
+          "bedeutung": "Prüfung durch oder im Auftrag der eigenen Organisation, um Prozesse und Managementsysteme regelmäßig selbst zu bewerten."
+        },
+        {
+          "fachbegriff": "Kunden-Audit",
+          "bedeutung": "Audit eines Kunden beim Lieferanten, um dessen Einhaltung vereinbarter Qualitäts-, Sicherheits- oder Compliance-Anforderungen zu überprüfen."
+        },
+        {
+          "fachbegriff": "Zertifizierungsaudit",
+          "bedeutung": "Formelles Audit durch eine unabhängige Zertifizierungsstelle mit dem Ziel, die Konformität mit einer Norm nachzuweisen."
+        },
+        {
+          "fachbegriff": "Auditprogramm",
+          "bedeutung": "Übergeordnete Planung mehrerer Audits über einen Zeitraum mit Zielen, Bereichen, Zuständigkeiten und Terminen."
+        },
+        {
+          "fachbegriff": "Auditplan",
+          "bedeutung": "Konkreter Ablaufplan für ein einzelnes Audit mit Umfang, Themen, Beteiligten, Zeiten und zu prüfenden Bereichen."
+        },
+        {
+          "fachbegriff": "Auditkriterium",
+          "bedeutung": "Anforderung, Norm, Richtlinie, Vertrag oder Vorgabe, gegen die im Audit geprüft wird."
+        },
+        {
+          "fachbegriff": "Auditnachweis",
+          "bedeutung": "Nachprüfbare Information, die eine Aussage im Audit belegt, zum Beispiel Dokumente, Logs, Interviews oder Beobachtungen."
+        },
+        {
+          "fachbegriff": "Stichprobe",
+          "bedeutung": "Gezielte Auswahl einzelner Nachweise oder Vorgänge, weil ein Audit normalerweise nicht jeden Datensatz und jeden Prozess vollständig prüfen kann."
+        },
+        {
+          "fachbegriff": "Finding",
+          "bedeutung": "Feststellung aus einem Audit, die dokumentiert, was geprüft wurde und ob eine Abweichung, Beobachtung oder Verbesserungschance vorliegt."
+        },
+        {
+          "fachbegriff": "Nichtkonformität / Abweichung",
+          "bedeutung": "Festgestellte Nichterfüllung einer verbindlichen Anforderung. Je nach Schwere kann sie zum Beispiel als Major oder Minor eingestuft werden."
+        },
+        {
+          "fachbegriff": "Korrekturmaßnahme",
+          "bedeutung": "Maßnahme zur Beseitigung der Ursache einer festgestellten Abweichung, damit sie nicht erneut auftritt."
+        },
+        {
+          "fachbegriff": "Wirksamkeitsprüfung",
+          "bedeutung": "Nachprüfung, ob eine Korrekturmaßnahme vollständig umgesetzt wurde und die festgestellte Ursache tatsächlich beseitigt hat."
+        }
+      ]
+    },
+    {
+      "id": "R-08",
+      "titel": "IT-Verträge und Claim-Management",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Kaufvertrag",
+          "bedeutung": "Vertrag, bei dem Eigentum an einer Sache gegen Bezahlung übertragen wird, zum Beispiel beim Kauf von Hardware."
+        },
+        {
+          "fachbegriff": "Werkvertrag",
+          "bedeutung": "Vertrag, bei dem ein konkret vereinbarter Erfolg geschuldet wird, zum Beispiel eine funktionsfähige Individualsoftware oder Systemmigration."
+        },
+        {
+          "fachbegriff": "Dienstvertrag",
+          "bedeutung": "Vertrag, bei dem eine Tätigkeit oder Dienstleistung geschuldet wird, aber kein bestimmter Erfolg garantiert ist, zum Beispiel Beratung oder Support."
+        },
+        {
+          "fachbegriff": "Mietvertrag",
+          "bedeutung": "Vertrag, bei dem eine Sache oder Nutzungsmöglichkeit zeitweise gegen Entgelt überlassen wird; Elemente davon können auch bei SaaS vorkommen."
+        },
+        {
+          "fachbegriff": "Abnahme",
+          "bedeutung": "Bestätigung des Auftraggebers, dass ein Werk im Wesentlichen vertragsgemäß hergestellt wurde. Sie ist im Werkvertrag ein wichtiger rechtlicher Meilenstein."
+        },
+        {
+          "fachbegriff": "Gewährleistung / Mängelrechte",
+          "bedeutung": "Rechte des Auftraggebers bei einem mangelhaften Werk oder Kaufgegenstand, zum Beispiel Nacherfüllung, Minderung oder Schadensersatz."
+        },
+        {
+          "fachbegriff": "Nacherfüllung",
+          "bedeutung": "Recht, zunächst die Beseitigung eines Mangels oder die vertragsgemäße Herstellung der Leistung zu verlangen."
+        },
+        {
+          "fachbegriff": "Mängelrüge",
+          "bedeutung": "Formale Mitteilung an den Vertragspartner, dass eine Leistung einen Mangel aufweist und dieser behoben werden soll."
+        },
+        {
+          "fachbegriff": "SLA",
+          "bedeutung": "Service Level Agreement. Vereinbarung messbarer Leistungsziele wie Verfügbarkeit, Reaktionszeit oder Wiederherstellungszeit."
+        },
+        {
+          "fachbegriff": "Service Credit",
+          "bedeutung": "Vertraglich vereinbarte Gutschrift, die bei Unterschreitung bestimmter Service Levels gewährt werden kann."
+        },
+        {
+          "fachbegriff": "Konventionalstrafe",
+          "bedeutung": "Vorab vertraglich festgelegte Geldleistung, die bei bestimmten Pflichtverletzungen fällig werden kann."
+        },
+        {
+          "fachbegriff": "Haftungsbeschränkung",
+          "bedeutung": "Vertragliche Begrenzung, unter welchen Voraussetzungen und bis zu welcher Höhe ein Vertragspartner für Schäden haftet."
+        },
+        {
+          "fachbegriff": "Claim-Management",
+          "bedeutung": "Strukturierter Umgang mit Vertragsabweichungen und daraus entstehenden eigenen oder gegen das Unternehmen gerichteten Ansprüchen."
+        },
+        {
+          "fachbegriff": "Claim-Register",
+          "bedeutung": "Übersicht über Ansprüche mit Vertragspartner, Anspruchsart, Frist, Verantwortlichem, Status und Ergebnis, damit keine Rechte durch Fristversäumnis verloren gehen."
+        }
+      ]
+    }
+  ]
+}

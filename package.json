@@ -1,0 +1,1 @@
+{"name":"fachbegriffe-trainer","version":"1.0.0","private":true,"type":"module","engines":{"node":">=24.0.0"},"scripts":{"start":"node backend/server.js","dev":"node --watch backend/server.js","import":"node backend/import.js","test":"node --test","build":"node backend/build.js","frontend":"node backend/frontend-server.js"}}

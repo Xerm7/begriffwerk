@@ -1,0 +1,511 @@
+{
+  "titel": "Prüfungsrelevante Fachbegriffe Q-01 bis Q-08",
+  "thema": "Qualitätssicherung & Test - kompakte Prüfungsvorbereitung",
+  "anzahl_kernbegriffe": 112,
+  "bereiche": [
+    {
+      "id": "Q-01",
+      "titel": "Grundlagen Software- und Systemtest",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Qualitätssicherung (QS)",
+          "bedeutung": "Gesamtheit geplanter Maßnahmen, die sicherstellen sollen, dass Software die geforderte Qualität erreicht und Fehler früh erkannt werden."
+        },
+        {
+          "fachbegriff": "Teststrategie",
+          "bedeutung": "Plan, welche Tests in welchem Umfang, zu welchem Zeitpunkt, mit welchen Werkzeugen und durch wen durchgeführt werden."
+        },
+        {
+          "fachbegriff": "V-Modell",
+          "bedeutung": "Modell, das Entwicklungsphasen den passenden Teststufen gegenüberstellt, zum Beispiel Anforderungen dem Abnahmetest."
+        },
+        {
+          "fachbegriff": "Unit-Test",
+          "bedeutung": "Prüft die kleinste testbare Einheit wie Funktion, Methode oder Klasse möglichst isoliert."
+        },
+        {
+          "fachbegriff": "Integrationstest",
+          "bedeutung": "Prüft, ob mehrere Komponenten oder Schnittstellen korrekt zusammenarbeiten."
+        },
+        {
+          "fachbegriff": "Systemtest",
+          "bedeutung": "Prüft das vollständige System gegen technische und fachliche Anforderungen."
+        },
+        {
+          "fachbegriff": "Abnahmetest",
+          "bedeutung": "Formale Prüfung durch Auftraggeber oder Fachbereich, ob die vereinbarten Anforderungen erfüllt sind."
+        },
+        {
+          "fachbegriff": "Funktionaler Test",
+          "bedeutung": "Prüft, was das System tut und ob fachliche Funktionen korrekt arbeiten."
+        },
+        {
+          "fachbegriff": "Nicht-funktionaler Test",
+          "bedeutung": "Prüft, wie gut das System arbeitet, zum Beispiel Performance, Sicherheit oder Benutzbarkeit."
+        },
+        {
+          "fachbegriff": "Statisches Testen",
+          "bedeutung": "Prüft Code oder Dokumente ohne Programmausführung, zum Beispiel durch Review, Linting oder statische Analyse."
+        },
+        {
+          "fachbegriff": "Dynamisches Testen",
+          "bedeutung": "Führt Software aus und bewertet das tatsächliche Verhalten zur Laufzeit."
+        },
+        {
+          "fachbegriff": "Testpyramide",
+          "bedeutung": "Prinzip: viele schnelle Unit-Tests, weniger Integrations- und API-Tests und nur wenige langsame E2E-Tests."
+        },
+        {
+          "fachbegriff": "Verifikation",
+          "bedeutung": "Prüfung, ob das Produkt gemäß Spezifikation korrekt gebaut wurde."
+        },
+        {
+          "fachbegriff": "Validierung",
+          "bedeutung": "Prüfung, ob das gebaute Produkt die tatsächlichen Nutzer- und Geschäftsanforderungen erfüllt."
+        }
+      ]
+    },
+    {
+      "id": "Q-02",
+      "titel": "Testszenarien, Testfälle und Simulationsumgebungen",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Testszenario",
+          "bedeutung": "Fachliche Situation, die beschreibt, was grundsätzlich geprüft werden soll."
+        },
+        {
+          "fachbegriff": "Testfall",
+          "bedeutung": "Konkrete, reproduzierbare Prüfanweisung mit Eingaben, Schritten und erwartetem Ergebnis."
+        },
+        {
+          "fachbegriff": "Anforderungsbezug",
+          "bedeutung": "Verknüpfung eines Testfalls mit der Anforderung, die damit überprüft wird."
+        },
+        {
+          "fachbegriff": "Vorbedingung",
+          "bedeutung": "Zustand oder Voraussetzung, die erfüllt sein muss, bevor ein Test gestartet wird."
+        },
+        {
+          "fachbegriff": "Erwartetes Ergebnis",
+          "bedeutung": "Vorab festgelegtes Soll-Ergebnis, mit dem das tatsächliche Ergebnis verglichen wird."
+        },
+        {
+          "fachbegriff": "Äquivalenzklassenbildung",
+          "bedeutung": "Eingaben werden in Gruppen mit erwartet gleichem Verhalten eingeteilt, um die Zahl notwendiger Testfälle zu reduzieren."
+        },
+        {
+          "fachbegriff": "Grenzwertanalyse",
+          "bedeutung": "Testmethode, die Werte direkt an, knapp unter und knapp über festgelegten Grenzen prüft."
+        },
+        {
+          "fachbegriff": "Happy Path",
+          "bedeutung": "Normaler erfolgreicher Ablauf mit gültigen Eingaben und ohne Fehler."
+        },
+        {
+          "fachbegriff": "Negativtest",
+          "bedeutung": "Prüft, ob ungültige oder unerwartete Eingaben korrekt abgefangen werden."
+        },
+        {
+          "fachbegriff": "Sicherheitstest",
+          "bedeutung": "Prüft gezielt sicherheitskritische Eingaben oder Angriffsversuche wie SQL-Injection oder XSS."
+        },
+        {
+          "fachbegriff": "Testdaten",
+          "bedeutung": "Daten, die speziell für Tests verwendet werden und definierte Testfälle abdecken."
+        },
+        {
+          "fachbegriff": "Synthetische Testdaten",
+          "bedeutung": "Künstlich erzeugte, realistisch wirkende Daten ohne echte personenbezogene Informationen."
+        },
+        {
+          "fachbegriff": "Anonymisierte Produktivdaten",
+          "bedeutung": "Echte Daten, bei denen der Personenbezug so entfernt wurde, dass Personen nicht mehr identifizierbar sind."
+        },
+        {
+          "fachbegriff": "Staging-Umgebung",
+          "bedeutung": "Produktionsnahe Testumgebung für letzte Prüfungen vor einem Release, ohne direkt in Produktion zu testen."
+        }
+      ]
+    },
+    {
+      "id": "Q-03",
+      "titel": "Testautomatisierung: Unit- und Integrationstests",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Testautomatisierung",
+          "bedeutung": "Automatisches Ausführen und Auswerten von Tests, zum Beispiel bei jedem Commit in einer CI-Pipeline."
+        },
+        {
+          "fachbegriff": "AAA-Muster",
+          "bedeutung": "Arrange-Act-Assert: Testdaten vorbereiten, die zu testende Aktion ausführen und anschließend das Ergebnis prüfen."
+        },
+        {
+          "fachbegriff": "pytest",
+          "bedeutung": "Verbreitetes Python-Testframework für Testfunktionen, Assertions, Fixtures und Parametrisierung."
+        },
+        {
+          "fachbegriff": "Fixture",
+          "bedeutung": "Wiederverwendbare Testvorbereitung, zum Beispiel eine Testdatenbank, ein Testbenutzer oder ein HTTP-Client."
+        },
+        {
+          "fachbegriff": "Parametrisierter Test",
+          "bedeutung": "Derselbe Test wird automatisch mit mehreren verschiedenen Eingaben ausgeführt."
+        },
+        {
+          "fachbegriff": "Test-Double",
+          "bedeutung": "Allgemeiner Begriff für einen Ersatz einer echten Abhängigkeit innerhalb eines Tests."
+        },
+        {
+          "fachbegriff": "Stub",
+          "bedeutung": "Test-Double, das vorher definierte Rückgabewerte liefert."
+        },
+        {
+          "fachbegriff": "Mock",
+          "bedeutung": "Test-Double, das zusätzlich prüfen kann, ob und wie bestimmte Aufrufe stattgefunden haben."
+        },
+        {
+          "fachbegriff": "Fake",
+          "bedeutung": "Vereinfachte, aber funktionale Implementierung einer echten Komponente, zum Beispiel eine In-Memory-Datenbank."
+        },
+        {
+          "fachbegriff": "Mocking",
+          "bedeutung": "Ersetzen externer Abhängigkeiten durch Test-Doubles, damit Tests isolierter und schneller laufen."
+        },
+        {
+          "fachbegriff": "Testcontainers",
+          "bedeutung": "Bibliothek, die für Integrationstests echte Dienste wie PostgreSQL oder Message Broker temporär als Docker-Container startet."
+        },
+        {
+          "fachbegriff": "Code-Coverage",
+          "bedeutung": "Anteil des Programmcodes, der während eines Testlaufs tatsächlich ausgeführt wurde."
+        },
+        {
+          "fachbegriff": "Line-Coverage",
+          "bedeutung": "Anteil der Codezeilen, die während der Tests ausgeführt wurden."
+        },
+        {
+          "fachbegriff": "Branch-Coverage",
+          "bedeutung": "Anteil der möglichen Verzweigungen, zum Beispiel if/else-Pfade, die durch Tests ausgeführt wurden."
+        }
+      ]
+    },
+    {
+      "id": "Q-04",
+      "titel": "End-to-End- und Systemtests",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "End-to-End-Test (E2E)",
+          "bedeutung": "Prüft einen vollständigen Geschäftsprozess über mehrere Komponenten vom Start bis zum Endergebnis."
+        },
+        {
+          "fachbegriff": "API-Test",
+          "bedeutung": "Prüft eine Programmierschnittstelle direkt, zum Beispiel Request, Statuscode und Antwortdaten."
+        },
+        {
+          "fachbegriff": "UI-Test",
+          "bedeutung": "Prüft Funktionen über die Benutzeroberfläche aus Sicht eines Anwenders."
+        },
+        {
+          "fachbegriff": "REST-API",
+          "bedeutung": "Web-Schnittstelle, die Ressourcen typischerweise über HTTP-Methoden wie GET, POST, PUT und DELETE bereitstellt."
+        },
+        {
+          "fachbegriff": "HTTP-Statuscode",
+          "bedeutung": "Numerischer Ergebniscode einer HTTP-Anfrage, zum Beispiel 200 für erfolgreich, 400 für fehlerhafte Anfrage oder 500 für Serverfehler."
+        },
+        {
+          "fachbegriff": "Request",
+          "bedeutung": "Anfrage eines Clients an einen Service oder eine API."
+        },
+        {
+          "fachbegriff": "Response",
+          "bedeutung": "Antwort eines Services oder einer API auf einen Request."
+        },
+        {
+          "fachbegriff": "JSON",
+          "bedeutung": "Häufig verwendetes textbasiertes Datenformat für API-Anfragen und API-Antworten."
+        },
+        {
+          "fachbegriff": "Test-Client",
+          "bedeutung": "Werkzeug oder Programm, das automatisiert Anfragen an eine API oder Anwendung stellt und die Antworten prüft."
+        },
+        {
+          "fachbegriff": "Kritischer Pfad",
+          "bedeutung": "Besonders wichtiger Geschäftsablauf, dessen Ausfall großen Schaden verursachen würde und deshalb intensiv getestet wird."
+        },
+        {
+          "fachbegriff": "Smoke-Test",
+          "bedeutung": "Kurzer Test der wichtigsten Grundfunktionen, um zu prüfen, ob ein Build grundsätzlich funktions- und testfähig ist."
+        },
+        {
+          "fachbegriff": "Regressionstest",
+          "bedeutung": "Prüft nach Änderungen, ob bereits funktionierende Funktionen weiterhin korrekt arbeiten."
+        },
+        {
+          "fachbegriff": "Flaky Test",
+          "bedeutung": "Instabiler Test, der ohne echte Codeänderung manchmal erfolgreich und manchmal fehlerhaft ist."
+        },
+        {
+          "fachbegriff": "Testisolation",
+          "bedeutung": "Prinzip, dass Tests sich nicht gegenseitig beeinflussen und unabhängig voneinander ausgeführt werden können."
+        }
+      ]
+    },
+    {
+      "id": "Q-05",
+      "titel": "Last-, Performance- und Stabilitätstests",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Lasttest",
+          "bedeutung": "Prüft das System unter der erwarteten normalen oder hohen Nutzung."
+        },
+        {
+          "fachbegriff": "Stresstest",
+          "bedeutung": "Erhöht die Belastung über die erwartete Last hinaus, um Belastungsgrenze und Verhalten beim Einbruch zu ermitteln."
+        },
+        {
+          "fachbegriff": "Soak-Test",
+          "bedeutung": "Langer Dauertest unter konstanter Last, um Probleme wie Speicherlecks oder wachsende Warteschlangen zu erkennen."
+        },
+        {
+          "fachbegriff": "Spike-Test",
+          "bedeutung": "Simuliert sehr plötzliche Lastspitzen und prüft, ob das System damit umgehen kann."
+        },
+        {
+          "fachbegriff": "Latenz",
+          "bedeutung": "Zeit vom Senden einer Anfrage bis zum Erhalt der Antwort."
+        },
+        {
+          "fachbegriff": "Perzentil (P50/P95/P99)",
+          "bedeutung": "Zeigt, wie schnell ein bestimmter Anteil aller Anfragen ist, und macht Ausreißer besser sichtbar als ein Durchschnitt."
+        },
+        {
+          "fachbegriff": "Durchsatz",
+          "bedeutung": "Anzahl verarbeiteter Anfragen oder Transaktionen pro Zeiteinheit."
+        },
+        {
+          "fachbegriff": "Fehlerrate",
+          "bedeutung": "Anteil fehlgeschlagener Anfragen im Verhältnis zu allen Anfragen."
+        },
+        {
+          "fachbegriff": "Sättigung",
+          "bedeutung": "Grad der Ressourcenauslastung, zum Beispiel CPU, RAM, Threads oder Datenbankverbindungen."
+        },
+        {
+          "fachbegriff": "Service Level Indicator (SLI)",
+          "bedeutung": "Gemessene Kennzahl der Servicequalität, zum Beispiel P95-Latenz oder Verfügbarkeit."
+        },
+        {
+          "fachbegriff": "Service Level Objective (SLO)",
+          "bedeutung": "Internes Ziel für einen SLI, zum Beispiel eine P95-Latenz unter 500 Millisekunden."
+        },
+        {
+          "fachbegriff": "k6",
+          "bedeutung": "Code-basiertes Lasttest-Werkzeug mit guter CI-Integration und definierbaren Schwellenwerten."
+        },
+        {
+          "fachbegriff": "Locust",
+          "bedeutung": "Python-basiertes Lasttest-Werkzeug für realistische oder komplexe Benutzerabläufe."
+        },
+        {
+          "fachbegriff": "JMeter",
+          "bedeutung": "Leistungsfähiges Apache-Werkzeug für Last- und Protokolltests, unter anderem für HTTP, JDBC, LDAP oder MQTT."
+        }
+      ]
+    },
+    {
+      "id": "Q-06",
+      "titel": "Testdokumentation, Auswertung und Korrekturmaßnahmen",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Testbericht",
+          "bedeutung": "Zusammenfassung von Testumfang, Ergebnissen, Risiken und Release-Empfehlung."
+        },
+        {
+          "fachbegriff": "Executive Summary",
+          "bedeutung": "Kurze Management-Zusammenfassung mit den wichtigsten Ergebnissen und der Entscheidungsempfehlung."
+        },
+        {
+          "fachbegriff": "Testumfang",
+          "bedeutung": "Beschreibung, welche Funktionen, Teststufen und Testarten tatsächlich geprüft wurden."
+        },
+        {
+          "fachbegriff": "Release-Empfehlung",
+          "bedeutung": "Fachlich begründete Empfehlung, ob eine Version freigegeben werden sollte."
+        },
+        {
+          "fachbegriff": "Go / No-Go / Go mit Auflagen",
+          "bedeutung": "Typische Freigabeentscheidungen: veröffentlichen, nicht veröffentlichen oder nur unter festgelegten Bedingungen veröffentlichen."
+        },
+        {
+          "fachbegriff": "Defect-Management",
+          "bedeutung": "Prozess zum Erfassen, Klassifizieren, Priorisieren, Beheben und Verifizieren von Fehlern."
+        },
+        {
+          "fachbegriff": "Defect-Lifecycle",
+          "bedeutung": "Lebenszyklus eines Fehlers, zum Beispiel Neu, Offen, In Arbeit, Retest, Verifiziert, Geschlossen oder Reopened."
+        },
+        {
+          "fachbegriff": "Schweregrad (Severity)",
+          "bedeutung": "Technische Auswirkung eines Fehlers, zum Beispiel Critical, Major, Minor oder Cosmetic."
+        },
+        {
+          "fachbegriff": "Priorität (Priority)",
+          "bedeutung": "Geschäftliche Dringlichkeit, mit der ein Fehler behoben werden soll."
+        },
+        {
+          "fachbegriff": "Bug-Report",
+          "bedeutung": "Strukturierte Fehlerbeschreibung mit Reproduktionsschritten, Soll- und Ist-Ergebnis, Umgebung und Klassifizierung."
+        },
+        {
+          "fachbegriff": "Root-Cause-Analyse (RCA)",
+          "bedeutung": "Systematische Suche nach der eigentlichen Ursache eines Problems statt nur nach dem sichtbaren Symptom."
+        },
+        {
+          "fachbegriff": "5-Why-Methode",
+          "bedeutung": "Ursachenanalyse, bei der wiederholt „Warum?“ gefragt wird, bis die grundlegende Ursache sichtbar wird."
+        },
+        {
+          "fachbegriff": "Ishikawa-Diagramm",
+          "bedeutung": "Fischgräten-Diagramm zur strukturierten Sammlung möglicher Ursachen in mehreren Kategorien."
+        },
+        {
+          "fachbegriff": "Pareto-Analyse",
+          "bedeutung": "Auswertung nach dem 80/20-Prinzip, um die wenigen Ursachen mit dem größten Einfluss zu erkennen."
+        }
+      ]
+    },
+    {
+      "id": "Q-07",
+      "titel": "Datenanalyse und Prozessoptimierung",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "DORA-Metriken",
+          "bedeutung": "Vier Kennzahlen zur Bewertung der Leistungsfähigkeit und Zuverlässigkeit eines Software-Delivery-Prozesses."
+        },
+        {
+          "fachbegriff": "Deployment Frequency",
+          "bedeutung": "Wie häufig ein Team Änderungen erfolgreich in Produktion bereitstellt."
+        },
+        {
+          "fachbegriff": "Lead Time for Changes",
+          "bedeutung": "Zeit vom Code-Commit bis zur produktiven Bereitstellung der Änderung."
+        },
+        {
+          "fachbegriff": "Change Failure Rate",
+          "bedeutung": "Anteil der Deployments, die Fehler, Rollbacks oder Incidents verursachen."
+        },
+        {
+          "fachbegriff": "Time to Restore Service",
+          "bedeutung": "Zeit, die benötigt wird, um nach einer Störung den normalen Service wiederherzustellen."
+        },
+        {
+          "fachbegriff": "Log-Analyse",
+          "bedeutung": "Systematische Auswertung von Log-Daten, um Fehler, Trends und ungewöhnliches Verhalten zu erkennen."
+        },
+        {
+          "fachbegriff": "Fehlertrend-Analyse",
+          "bedeutung": "Betrachtet, ob Anzahl oder Art von Fehlern über die Zeit zunimmt oder abnimmt."
+        },
+        {
+          "fachbegriff": "Anomalie-Detection",
+          "bedeutung": "Erkennen ungewöhnlicher Muster oder Werte, die auf ein neues Problem hinweisen können."
+        },
+        {
+          "fachbegriff": "Kontinuierlicher Verbesserungsprozess (KVP)",
+          "bedeutung": "Regelmäßiges, schrittweises Verbessern von Prozessen auf Basis von Daten und Erfahrungen."
+        },
+        {
+          "fachbegriff": "Kaizen",
+          "bedeutung": "Grundidee kontinuierlicher kleiner Verbesserungen und eine häufig verwendete Denkweise hinter dem KVP."
+        },
+        {
+          "fachbegriff": "PDCA-Zyklus",
+          "bedeutung": "Plan-Do-Check-Act: Verbesserung planen, umsetzen, Wirkung prüfen und anschließend standardisieren oder anpassen."
+        },
+        {
+          "fachbegriff": "Goodharts Law",
+          "bedeutung": "Warnung: Wird eine Messgröße zum alleinigen Ziel, kann sie ihren Wert als zuverlässige Messgröße verlieren."
+        },
+        {
+          "fachbegriff": "KPI",
+          "bedeutung": "Key Performance Indicator: ausgewählte Kennzahl zur Bewertung eines Prozesses oder Ziels."
+        },
+        {
+          "fachbegriff": "Metrik-Bündel",
+          "bedeutung": "Mehrere Kennzahlen werden gemeinsam betrachtet, damit eine einzelne Zahl nicht zu falschen Schlussfolgerungen führt."
+        }
+      ]
+    },
+    {
+      "id": "Q-08",
+      "titel": "Integrative Fallstudie: Qualitätssicherung end-to-end",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "QS-Prozess",
+          "bedeutung": "Durchgängiger Ablauf von Testplanung und Testfällen über Durchführung und Auswertung bis zur Release-Entscheidung und Verbesserung."
+        },
+        {
+          "fachbegriff": "Risikobasiertes Testen",
+          "bedeutung": "Testaufwand wird nach Wahrscheinlichkeit und möglichem Schaden eines Fehlers priorisiert."
+        },
+        {
+          "fachbegriff": "Risikomatrix",
+          "bedeutung": "Darstellung von Risiken anhand von Eintrittswahrscheinlichkeit und Auswirkung."
+        },
+        {
+          "fachbegriff": "Hochrisiko-Bereich",
+          "bedeutung": "Funktion oder Systemteil, bei dessen Fehler besonders große technische oder geschäftliche Folgen entstehen."
+        },
+        {
+          "fachbegriff": "Testabdeckung",
+          "bedeutung": "Maß dafür, wie umfassend Anforderungen, Funktionen, Risiken oder Code durch Tests abgedeckt werden."
+        },
+        {
+          "fachbegriff": "Kritischer Geschäftsprozess",
+          "bedeutung": "Geschäftlich besonders wichtiger Ablauf, der bei Ausfall großen Schaden verursachen kann."
+        },
+        {
+          "fachbegriff": "Automatisierungsgrad",
+          "bedeutung": "Anteil der Testfälle oder QS-Schritte, die automatisch statt manuell durchgeführt werden."
+        },
+        {
+          "fachbegriff": "Regressionstest",
+          "bedeutung": "Wiederholter Test bereits funktionierender Bereiche nach Änderungen, um unbeabsichtigte Fehler zu erkennen."
+        },
+        {
+          "fachbegriff": "Management-Testbericht",
+          "bedeutung": "Kurze, entscheidungsorientierte Zusammenfassung der QS-Ergebnisse für Führungskräfte."
+        },
+        {
+          "fachbegriff": "Restrisiko",
+          "bedeutung": "Risiko, das trotz durchgeführter Maßnahmen und erfolgreicher Tests noch verbleibt."
+        },
+        {
+          "fachbegriff": "Release-Freigabe",
+          "bedeutung": "Formale Entscheidung, eine geprüfte Version für die Produktion freizugeben."
+        },
+        {
+          "fachbegriff": "Go/No-Go-Empfehlung",
+          "bedeutung": "Begründete Empfehlung, ob ein Release durchgeführt oder gestoppt werden sollte."
+        },
+        {
+          "fachbegriff": "Rollback-Plan",
+          "bedeutung": "Vorbereiteter Ablauf, um bei Problemen schnell auf eine vorherige funktionierende Version zurückzukehren."
+        },
+        {
+          "fachbegriff": "Kontinuierliche QS",
+          "bedeutung": "Qualitätssicherung findet nicht nur vor dem Release statt, sondern dauerhaft über Entwicklung, Betrieb, Metriken und Verbesserungszyklen."
+        }
+      ]
+    }
+  ]
+}

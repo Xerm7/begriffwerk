@@ -1,0 +1,511 @@
+{
+  "titel": "Prüfungsrelevante Fachbegriffe P-01 bis P-08",
+  "thema": "Projektunterstützung & -koordination - kompakte Prüfungsvorbereitung",
+  "anzahl_kernbegriffe": 112,
+  "bereiche": [
+    {
+      "id": "P-01",
+      "titel": "Projektleitung und Teilprojektmanagement",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Projekt",
+          "bedeutung": "Einmaliges Vorhaben mit klaren Zielen, begrenzter Dauer, festgelegten Ressourcen und einer eigenen Organisation."
+        },
+        {
+          "fachbegriff": "Linientätigkeit",
+          "bedeutung": "Dauerhafte und wiederkehrende Arbeit im normalen Betrieb, zum Beispiel Helpdesk, Administration oder regelmäßiges Patch-Management."
+        },
+        {
+          "fachbegriff": "Magisches Dreieck",
+          "bedeutung": "Zusammenhang zwischen Leistung beziehungsweise Qualität, Terminen und Kosten. Eine Änderung an einer Ecke beeinflusst meist die anderen beiden."
+        },
+        {
+          "fachbegriff": "Projektauftrag",
+          "bedeutung": "Formale Grundlage eines Projekts mit Zielen, Rahmenbedingungen, Budget, Verantwortlichkeiten und grobem Zeitrahmen."
+        },
+        {
+          "fachbegriff": "Reine Projektorganisation",
+          "bedeutung": "Projektform, bei der Mitarbeitende vollständig dem Projekt zugeordnet sind und die Projektleitung weitgehende Weisungsbefugnis besitzt."
+        },
+        {
+          "fachbegriff": "Matrixorganisation",
+          "bedeutung": "Projektform, bei der Mitarbeitende gleichzeitig ihrer Linie und dem Projekt zugeordnet sind. Verantwortung und Ressourcen werden geteilt."
+        },
+        {
+          "fachbegriff": "Stab-/Einflussorganisation",
+          "bedeutung": "Projektform, bei der die Projektleitung überwiegend koordiniert und berät, aber kaum eigene Weisungsbefugnis besitzt."
+        },
+        {
+          "fachbegriff": "Stakeholder",
+          "bedeutung": "Person oder Gruppe, die das Projekt beeinflussen kann oder von seinen Ergebnissen betroffen ist, zum Beispiel Geschäftsführung, Anwender oder Betriebsrat."
+        },
+        {
+          "fachbegriff": "Stakeholder-Map",
+          "bedeutung": "Darstellung von Stakeholdern nach Kriterien wie Einfluss und Betroffenheit, um passende Kommunikations- und Einbindungsstrategien abzuleiten."
+        },
+        {
+          "fachbegriff": "Teilprojekt",
+          "bedeutung": "Abgegrenzter Teil eines größeren Projekts mit eigenem Ziel, Verantwortlichen und definierten Ergebnissen."
+        },
+        {
+          "fachbegriff": "Schnittstelle",
+          "bedeutung": "Übergabepunkt zwischen Teilprojekten, Systemen oder Verantwortungsbereichen, an dem Abhängigkeiten und Missverständnisse entstehen können."
+        },
+        {
+          "fachbegriff": "Klassisches Vorgehensmodell",
+          "bedeutung": "Planorientiertes Vorgehen mit weitgehend festgelegten Phasen und Anforderungen, zum Beispiel Wasserfall. Geeignet bei stabilen Anforderungen."
+        },
+        {
+          "fachbegriff": "Agiles Vorgehensmodell",
+          "bedeutung": "Iteratives Vorgehen mit kurzen Feedback-Zyklen und flexibler Anpassung der Anforderungen, zum Beispiel Scrum."
+        },
+        {
+          "fachbegriff": "Hybrides Vorgehensmodell",
+          "bedeutung": "Kombination aus klassischen und agilen Methoden, zum Beispiel klassisches Gesamtcontrolling mit agiler Softwareentwicklung."
+        }
+      ]
+    },
+    {
+      "id": "P-02",
+      "titel": "Risikomanagement im Projekt",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Projektrisiko",
+          "bedeutung": "Unsicheres Ereignis, das Ziele des Projekts wie Termin, Kosten, Leistung oder Qualität negativ beeinflussen kann."
+        },
+        {
+          "fachbegriff": "Unternehmensrisiko",
+          "bedeutung": "Risiko, das die Organisation insgesamt betrifft und nicht nur ein einzelnes Projekt, zum Beispiel ein schwerer Cyberangriff oder Lieferantenausfall."
+        },
+        {
+          "fachbegriff": "Risikoregister",
+          "bedeutung": "Lebende Übersicht aller Projektrisiken mit Beschreibung, Bewertung, Verantwortlichem, Maßnahmen, Auslöser und aktuellem Status."
+        },
+        {
+          "fachbegriff": "Eintrittswahrscheinlichkeit",
+          "bedeutung": "Bewertung, wie wahrscheinlich ein Risiko eintritt, zum Beispiel auf einer Skala von 1 bis 4."
+        },
+        {
+          "fachbegriff": "Schadenshöhe",
+          "bedeutung": "Bewertung der möglichen Auswirkungen eines Risikos auf Zeit, Kosten, Qualität oder Leistung."
+        },
+        {
+          "fachbegriff": "Risikoscore",
+          "bedeutung": "Kennzahl zur Priorisierung eines Risikos, häufig berechnet als Eintrittswahrscheinlichkeit mal Schadenshöhe."
+        },
+        {
+          "fachbegriff": "Risikomatrix",
+          "bedeutung": "Grafische Darstellung von Risiken anhand von Wahrscheinlichkeit und Schaden, häufig mit Bereichen wie grün, gelb und rot."
+        },
+        {
+          "fachbegriff": "Top-Risiko",
+          "bedeutung": "Besonders wichtiges Risiko mit hoher Priorität, das aktiv behandelt und eng überwacht werden muss."
+        },
+        {
+          "fachbegriff": "Risikoverantwortlicher",
+          "bedeutung": "Person, die ein bestimmtes Risiko beobachtet, Maßnahmen koordiniert und bei Veränderungen informiert."
+        },
+        {
+          "fachbegriff": "Präventivmaßnahme",
+          "bedeutung": "Maßnahme, die die Wahrscheinlichkeit des Eintritts eines Risikos senken soll, zum Beispiel Cross-Training für Schlüsselpersonen."
+        },
+        {
+          "fachbegriff": "Notfallmaßnahme",
+          "bedeutung": "Vorbereitete Reaktion, die den Schaden begrenzt, wenn ein Risiko tatsächlich eintritt."
+        },
+        {
+          "fachbegriff": "Auslösekriterium / Trigger",
+          "bedeutung": "Klar definierte Bedingung, bei deren Eintritt eine geplante Notfallmaßnahme gestartet wird."
+        },
+        {
+          "fachbegriff": "Quality Gate",
+          "bedeutung": "Definierter Prüfpunkt, den ein Arbeitsergebnis bestehen muss, bevor es als fertig gilt oder die nächste Projektphase beginnt."
+        },
+        {
+          "fachbegriff": "Lessons Learned",
+          "bedeutung": "Strukturierte Auswertung von Erfahrungen aus dem Projekt, damit gute Vorgehensweisen wiederverwendet und Fehler künftig vermieden werden."
+        }
+      ]
+    },
+    {
+      "id": "P-03",
+      "titel": "Projektplanung und Projektdokumentation",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Projektstrukturplan (PSP)",
+          "bedeutung": "Hierarchische Zerlegung des gesamten Projekts in Teilprojekte, Teilaufgaben und Arbeitspakete. Er zeigt, was im Projekt zu tun ist."
+        },
+        {
+          "fachbegriff": "Strukturierungsformen des PSP",
+          "bedeutung": "Ein PSP kann objektorientiert, funktionsorientiert oder phasenorientiert aufgebaut werden, abhängig davon, wie das Projekt sinnvoll gegliedert wird."
+        },
+        {
+          "fachbegriff": "Arbeitspaket",
+          "bedeutung": "Kleinste planbare Einheit im PSP mit klarer Aufgabe, Ergebnis, Verantwortlichem, Aufwand und Termin."
+        },
+        {
+          "fachbegriff": "Netzplan",
+          "bedeutung": "Darstellung von Vorgängen und ihren Abhängigkeiten zur Berechnung von Terminen, Puffern und kritischem Pfad."
+        },
+        {
+          "fachbegriff": "Vorgang",
+          "bedeutung": "Zeitlich begrenzte Aktivität im Netzplan mit definierter Dauer sowie möglichen Vorgängern und Nachfolgern."
+        },
+        {
+          "fachbegriff": "Vorgängerbeziehung",
+          "bedeutung": "Logische Abhängigkeit zwischen Vorgängen, die festlegt, welcher Vorgang vor einem anderen abgeschlossen oder begonnen sein muss."
+        },
+        {
+          "fachbegriff": "Früheste Lage",
+          "bedeutung": "Frühestmöglicher Anfang und frühestmögliches Ende eines Vorgangs, berechnet durch Vorwärtsrechnung im Netzplan."
+        },
+        {
+          "fachbegriff": "Späteste Lage",
+          "bedeutung": "Spätestmöglicher Anfang und spätestmögliches Ende eines Vorgangs, ohne den Endtermin des Projekts zu verschieben."
+        },
+        {
+          "fachbegriff": "Pufferzeit",
+          "bedeutung": "Zeitspanne, um die sich ein Vorgang verschieben darf, ohne den Projektendtermin zu gefährden."
+        },
+        {
+          "fachbegriff": "Kritischer Pfad",
+          "bedeutung": "Längste Kette voneinander abhängiger Vorgänge ohne Puffer. Eine Verzögerung dort verschiebt direkt den Projektendtermin."
+        },
+        {
+          "fachbegriff": "Gantt-Diagramm",
+          "bedeutung": "Zeitliche Balkendarstellung von Aufgaben und Vorgängen. Es zeigt Dauer, Lage, Überschneidungen und häufig auch Abhängigkeiten."
+        },
+        {
+          "fachbegriff": "Meilenstein",
+          "bedeutung": "Wichtiger Termin oder überprüfbares Ereignis im Projekt ohne eigene Dauer, zum Beispiel Freigabe oder Go-Live."
+        },
+        {
+          "fachbegriff": "PM-Handbuch",
+          "bedeutung": "Projektmanagement-Handbuch mit Regeln, Rollen, Prozessen, Vorlagen, Berichtswegen und Dokumentationsvorgaben für das Projekt."
+        },
+        {
+          "fachbegriff": "Berichtswesen",
+          "bedeutung": "Regelmäßige und zielgruppengerechte Information über Fortschritt, Termine, Kosten, Risiken, Qualität und notwendige Entscheidungen."
+        }
+      ]
+    },
+    {
+      "id": "P-04",
+      "titel": "Aufwandsanalyse und Projektkalkulation",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Expertenschätzung",
+          "bedeutung": "Aufwandsschätzung auf Basis des Wissens erfahrener Fachleute. Sie ist schnell, aber abhängig von Erfahrung und subjektiver Einschätzung."
+        },
+        {
+          "fachbegriff": "Analogieschätzung",
+          "bedeutung": "Schätzung anhand ähnlicher früherer Projekte oder Arbeitspakete, deren tatsächlicher Aufwand bereits bekannt ist."
+        },
+        {
+          "fachbegriff": "Parametrische Schätzung",
+          "bedeutung": "Schätzung mithilfe messbarer Größen und Erfahrungswerte, zum Beispiel Aufwand pro Function Point oder pro Einheit."
+        },
+        {
+          "fachbegriff": "Function Points",
+          "bedeutung": "Methode zur Bewertung des funktionalen Umfangs einer Software anhand standardisierter Funktionen wie Eingaben, Ausgaben und Schnittstellen."
+        },
+        {
+          "fachbegriff": "PERT-Drei-Punkt-Schätzung",
+          "bedeutung": "Schätzverfahren mit optimistischem, wahrscheinlichstem und pessimistischem Wert, um Erwartungswert und Unsicherheit zu bestimmen."
+        },
+        {
+          "fachbegriff": "O / M / P",
+          "bedeutung": "Die drei PERT-Werte: optimistisch, most likely beziehungsweise wahrscheinlich und pessimistisch."
+        },
+        {
+          "fachbegriff": "PERT-Erwartungswert",
+          "bedeutung": "Gewichteter Mittelwert E = (O + 4 x M + P) / 6. Er liefert einen realistischeren Planwert als eine einzelne Schätzung."
+        },
+        {
+          "fachbegriff": "Standardabweichung bei PERT",
+          "bedeutung": "Maß für die Unsicherheit einer PERT-Schätzung, berechnet mit sigma = (P - O) / 6."
+        },
+        {
+          "fachbegriff": "Kostenarten",
+          "bedeutung": "Gliederung der Projektkosten, zum Beispiel interne Personalstunden, externe Beratung, Hardware, Lizenzen, Cloud, Schulung und Reisekosten."
+        },
+        {
+          "fachbegriff": "CapEx",
+          "bedeutung": "Capital Expenditure. Investitionsausgaben für längerfristig genutzte Vermögenswerte, zum Beispiel gekaufte Hardware."
+        },
+        {
+          "fachbegriff": "OpEx",
+          "bedeutung": "Operating Expenditure. Laufende Betriebsausgaben, zum Beispiel Cloud-Verbrauch, SaaS-Abonnements oder laufender Support."
+        },
+        {
+          "fachbegriff": "TCO",
+          "bedeutung": "Total Cost of Ownership. Gesamtkosten einer Lösung über ihren gesamten Nutzungszeitraum, nicht nur die einmaligen Projektkosten."
+        },
+        {
+          "fachbegriff": "Risikoreserve",
+          "bedeutung": "Begründete finanzielle oder zeitliche Reserve für bekannte Projektrisiken, möglichst aus Wahrscheinlichkeit und möglichem Mehraufwand abgeleitet."
+        },
+        {
+          "fachbegriff": "Szenarioanalyse",
+          "bedeutung": "Vergleich von Best Case, Expected Case und Worst Case mit dokumentierten Annahmen, um Bandbreiten und Unsicherheiten transparent zu machen."
+        }
+      ]
+    },
+    {
+      "id": "P-05",
+      "titel": "Projektcontrolling, Earned Value und Statusberichte",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Earned Value Management (EVM)",
+          "bedeutung": "Methode des Projektcontrollings, die geplanten Wert, tatsächlich erbrachten Wert und tatsächliche Kosten miteinander vergleicht."
+        },
+        {
+          "fachbegriff": "PV - Planned Value",
+          "bedeutung": "Geplanter Wert der Arbeit, die zu einem bestimmten Zeitpunkt laut Plan abgeschlossen sein sollte."
+        },
+        {
+          "fachbegriff": "EV - Earned Value",
+          "bedeutung": "Bewerteter Wert der Arbeit, die zu einem bestimmten Zeitpunkt tatsächlich fertiggestellt wurde."
+        },
+        {
+          "fachbegriff": "AC - Actual Cost",
+          "bedeutung": "Tatsächliche Kosten, die für die bisher ausgeführte Projektarbeit entstanden sind."
+        },
+        {
+          "fachbegriff": "CV - Cost Variance",
+          "bedeutung": "Kostenabweichung CV = EV - AC. Ein negativer Wert bedeutet, dass gemessen am gelieferten Wert zu viel Geld ausgegeben wurde."
+        },
+        {
+          "fachbegriff": "SV - Schedule Variance",
+          "bedeutung": "Terminabweichung SV = EV - PV. Ein negativer Wert zeigt, dass weniger Leistung erbracht wurde als geplant."
+        },
+        {
+          "fachbegriff": "CPI - Cost Performance Index",
+          "bedeutung": "Kostenleistungsindex CPI = EV / AC. Werte unter 1 zeigen eine ungünstige Kostenentwicklung."
+        },
+        {
+          "fachbegriff": "SPI - Schedule Performance Index",
+          "bedeutung": "Terminleistungsindex SPI = EV / PV. Werte unter 1 zeigen einen Rückstand gegenüber dem Plan."
+        },
+        {
+          "fachbegriff": "EAC / ETC",
+          "bedeutung": "EAC schätzt die erwarteten Gesamtkosten bei Projektende; ETC beschreibt die noch erwarteten Restkosten bis zur Fertigstellung."
+        },
+        {
+          "fachbegriff": "Meilensteintrendanalyse (MTA)",
+          "bedeutung": "Stellt geplante Meilensteintermine über mehrere Berichtszeitpunkte dar und macht Terminverschiebungen als Trend sichtbar."
+        },
+        {
+          "fachbegriff": "Kostentrendanalyse (KTA)",
+          "bedeutung": "Zeigt die Entwicklung der prognostizierten Projektkosten über die Zeit und macht Kostensteigerungen oder Einsparungen sichtbar."
+        },
+        {
+          "fachbegriff": "Burn-Down-Chart",
+          "bedeutung": "Agiles Diagramm, das zeigt, wie viel Arbeit in einem Sprint oder Projekt noch offen ist."
+        },
+        {
+          "fachbegriff": "Burn-Up-Chart",
+          "bedeutung": "Agiles Diagramm, das erledigte Arbeit und den Gesamtumfang getrennt darstellt und dadurch auch Scope-Änderungen sichtbar macht."
+        },
+        {
+          "fachbegriff": "Statusbericht",
+          "bedeutung": "Kompakte regelmäßige Übersicht über Fortschritt, Termine, Kosten, Qualität, Risiken, Probleme und notwendige Entscheidungen."
+        }
+      ]
+    },
+    {
+      "id": "P-06",
+      "titel": "Agile Methoden - Scrum und Kanban",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Agiles Manifest",
+          "bedeutung": "Grundlage agiler Arbeitsweisen mit vier Werten und zwölf Prinzipien. Im Mittelpunkt stehen Zusammenarbeit, funktionierende Ergebnisse und Reaktion auf Veränderung."
+        },
+        {
+          "fachbegriff": "Scrum",
+          "bedeutung": "Agiles Framework für komplexe Produktentwicklung mit festen Rollen, Artefakten und wiederkehrenden Events in kurzen Iterationen."
+        },
+        {
+          "fachbegriff": "Product Owner",
+          "bedeutung": "Scrum-Verantwortlicher für Produktwert und Priorisierung des Product Backlogs. Er entscheidet, was als Nächstes wichtig ist."
+        },
+        {
+          "fachbegriff": "Scrum Master",
+          "bedeutung": "Unterstützt das Scrum-Team, beseitigt Hindernisse und achtet darauf, dass Scrum verstanden und sinnvoll angewendet wird."
+        },
+        {
+          "fachbegriff": "Developers / Entwicklungsteam",
+          "bedeutung": "Mitglieder des Scrum-Teams, die innerhalb eines Sprints gemeinsam ein nutzbares Inkrement erstellen."
+        },
+        {
+          "fachbegriff": "Product Backlog",
+          "bedeutung": "Priorisierte und fortlaufend gepflegte Liste aller bekannten Anforderungen, Funktionen und Verbesserungen eines Produkts."
+        },
+        {
+          "fachbegriff": "Sprint Backlog",
+          "bedeutung": "Auswahl der für den aktuellen Sprint geplanten Backlog-Einträge plus der Plan, wie das Sprint-Ziel erreicht werden soll."
+        },
+        {
+          "fachbegriff": "Inkrement",
+          "bedeutung": "Nutzbares und integriertes Arbeitsergebnis eines Sprints, das die vereinbarte Definition of Done erfüllt."
+        },
+        {
+          "fachbegriff": "Scrum-Events",
+          "bedeutung": "Feste Ereignisse zur Steuerung und zum Feedback: Sprint, Sprint Planning, Daily Scrum, Sprint Review und Sprint Retrospektive."
+        },
+        {
+          "fachbegriff": "Definition of Done",
+          "bedeutung": "Gemeinsame Qualitätskriterien, die erfüllt sein müssen, damit ein Arbeitsergebnis als wirklich fertig gilt."
+        },
+        {
+          "fachbegriff": "Kanban",
+          "bedeutung": "Agile Methode zur Visualisierung und kontinuierlichen Steuerung des Arbeitsflusses ohne zwingend feste Sprints."
+        },
+        {
+          "fachbegriff": "WIP-Limit",
+          "bedeutung": "Begrenzung der gleichzeitig begonnenen Arbeit in einem Kanban-System, um Überlastung zu verhindern und den Fluss zu verbessern."
+        },
+        {
+          "fachbegriff": "Story Points",
+          "bedeutung": "Relative Schätzeinheit für Umfang, Komplexität und Unsicherheit einer Aufgabe. Sie sind keine direkte Angabe von Arbeitsstunden."
+        },
+        {
+          "fachbegriff": "Velocity",
+          "bedeutung": "Menge an Story Points, die ein Team durchschnittlich pro Sprint fertigstellt. Sie dient der eigenen Prognose, nicht dem Teamvergleich."
+        }
+      ]
+    },
+    {
+      "id": "P-07",
+      "titel": "Kundenberatung, Roll-out und Kommunikation",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Roll-out",
+          "bedeutung": "Geplante Einführung einer neuen Lösung bei realen Benutzern, Standorten oder Systemen einschließlich Technik, Kommunikation und Unterstützung."
+        },
+        {
+          "fachbegriff": "Big-Bang-Roll-out",
+          "bedeutung": "Alle Nutzer oder Standorte wechseln zu einem festgelegten Zeitpunkt gleichzeitig auf die neue Lösung. Schnell, aber mit hohem Einführungsrisiko."
+        },
+        {
+          "fachbegriff": "Pilotierung",
+          "bedeutung": "Einführung zunächst bei einer kleinen ausgewählten Gruppe oder einem Standort, um Erfahrungen zu sammeln und Probleme früh zu erkennen."
+        },
+        {
+          "fachbegriff": "Wellen-Roll-out / Phasing",
+          "bedeutung": "Schrittweise Einführung in mehreren Gruppen, Standorten oder Zeitabschnitten. Erkenntnisse aus frühen Wellen können später genutzt werden."
+        },
+        {
+          "fachbegriff": "Parallelbetrieb",
+          "bedeutung": "Altes und neues System laufen für eine Übergangszeit gleichzeitig. Das reduziert Ausfallrisiken, erhöht aber Aufwand und Komplexität."
+        },
+        {
+          "fachbegriff": "Stichtagsumstellung",
+          "bedeutung": "Wechsel vom alten auf das neue System zu einem fest definierten Zeitpunkt mit klarer Vorbereitung und Cutover-Planung."
+        },
+        {
+          "fachbegriff": "Kommunikationsplan",
+          "bedeutung": "Festlegung, welche Zielgruppen welche Botschaften über welche Kanäle, in welcher Frequenz und durch wen erhalten."
+        },
+        {
+          "fachbegriff": "Eskalationsmatrix",
+          "bedeutung": "Übersicht über Eskalationsstufen, Ansprechpartner, Zuständigkeiten und Reaktionszeiten für Probleme oder Konflikte."
+        },
+        {
+          "fachbegriff": "Eskalationsstufe",
+          "bedeutung": "Definiertes Niveau einer Eskalation, das bestimmt, wer informiert oder eingebunden wird und wie schnell reagiert werden muss."
+        },
+        {
+          "fachbegriff": "Kundenberatung",
+          "bedeutung": "Systematische Klärung von Anforderungen, Erwartungen, Nutzen und Problemen gemeinsam mit Kunden oder Anwendern."
+        },
+        {
+          "fachbegriff": "Anwenderbefragung",
+          "bedeutung": "Geplante Erhebung von Anforderungen und Erfahrungen der Nutzer, zum Beispiel durch Fragebogen, Interview oder Beobachtung."
+        },
+        {
+          "fachbegriff": "Wissensmanagement",
+          "bedeutung": "Strukturierter Umgang mit Wissen, damit Erfahrungen, Anleitungen und Problemlösungen verfügbar bleiben und weitergegeben werden können."
+        },
+        {
+          "fachbegriff": "Train the Trainer",
+          "bedeutung": "Multiplikatoren werden intensiv geschult und geben ihr Wissen anschließend an weitere Anwender oder Teams weiter."
+        },
+        {
+          "fachbegriff": "Hypercare",
+          "bedeutung": "Zeitlich begrenzte intensive Betreuung direkt nach dem Go-Live, damit Probleme schnell gelöst und Anwender unterstützt werden."
+        }
+      ]
+    },
+    {
+      "id": "P-08",
+      "titel": "Schulungsmaßnahmen und integrative Projektfallstudie",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Qualifikationsbedarf",
+          "bedeutung": "Differenz zwischen den für eine Aufgabe benötigten Kompetenzen und den aktuell vorhandenen Kenntnissen und Fähigkeiten."
+        },
+        {
+          "fachbegriff": "Qualifikationsmatrix",
+          "bedeutung": "Übersicht, die Rollen oder Personen mit benötigten Kompetenzen und gewünschtem Qualifikationsniveau verknüpft."
+        },
+        {
+          "fachbegriff": "Anforderungsprofil",
+          "bedeutung": "Beschreibung der Kenntnisse, Fähigkeiten und Kompetenzen, die für eine bestimmte Rolle oder Aufgabe erforderlich sind."
+        },
+        {
+          "fachbegriff": "Qualifikationskonzept",
+          "bedeutung": "Plan für Zielgruppen, Lernziele, Inhalte, Methoden, Termine, Verantwortliche und Erfolgskontrolle einer Schulungsmaßnahme."
+        },
+        {
+          "fachbegriff": "Präsenzschulung",
+          "bedeutung": "Schulung mit persönlicher Anwesenheit von Trainer und Teilnehmern. Geeignet für komplexe Inhalte und praktische Übungen."
+        },
+        {
+          "fachbegriff": "E-Learning",
+          "bedeutung": "Digitales und häufig zeitlich flexibles Lernen, besonders geeignet für standardisierte Inhalte und große Zielgruppen."
+        },
+        {
+          "fachbegriff": "Blended Learning",
+          "bedeutung": "Kombination aus digitalen Lernphasen und Präsenzformaten, um Flexibilität und persönliche Vertiefung zu verbinden."
+        },
+        {
+          "fachbegriff": "Webinar",
+          "bedeutung": "Online-Schulung in Echtzeit, bei der verteilte Teilnehmer gemeinsam Inhalte verfolgen und Fragen stellen können."
+        },
+        {
+          "fachbegriff": "Coaching am Arbeitsplatz / Floor Walking",
+          "bedeutung": "Direkte Unterstützung der Anwender während der realen Arbeit, besonders in der Einführungs- und Hypercare-Phase."
+        },
+        {
+          "fachbegriff": "Bloom-Taxonomie",
+          "bedeutung": "Modell zur Formulierung von Lernzielen auf steigenden Niveaus: Wissen, Verstehen, Anwenden, Analysieren, Bewerten und Erschaffen."
+        },
+        {
+          "fachbegriff": "Kirkpatrick-Modell",
+          "bedeutung": "Modell zur Bewertung von Schulungen über vier Ebenen: Reaktion, Lernen, Verhalten und Ergebnisse."
+        },
+        {
+          "fachbegriff": "Erfolgskontrolle",
+          "bedeutung": "Prüfung, ob die Lernziele und der gewünschte Praxistransfer einer Schulung tatsächlich erreicht wurden."
+        },
+        {
+          "fachbegriff": "Unterweisung",
+          "bedeutung": "Verbindliche Vermittlung von sicherheits- oder regelrelevantem Verhalten, zum Beispiel zu IT-Sicherheit oder Datenschutz, inklusive Dokumentation."
+        },
+        {
+          "fachbegriff": "Gesamtpräsentation / Projektschau",
+          "bedeutung": "Managementgerechte Zusammenfassung von Projektstand, Risiken, Kosten, Fortschritt, Roll-out, Qualifikation und offenen Entscheidungen."
+        }
+      ]
+    }
+  ]
+}

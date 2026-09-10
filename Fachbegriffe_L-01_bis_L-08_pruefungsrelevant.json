@@ -1,0 +1,511 @@
+{
+  "titel": "Prüfungsrelevante Fachbegriffe L-01 bis L-08",
+  "thema": "Logging & Monitoring - kompakte Prüfungsvorbereitung",
+  "anzahl_kernbegriffe": 112,
+  "bereiche": [
+    {
+      "id": "L-01",
+      "titel": "Warum Monitoring? - Vom blinden Flug zur Observability",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Monitoring",
+          "bedeutung": "Überwachung bekannter Zustände und Messwerte eines Systems, damit Probleme früh erkannt und gemeldet werden."
+        },
+        {
+          "fachbegriff": "Observability",
+          "bedeutung": "Fähigkeit, den inneren Zustand eines Systems aus Metriken, Logs und Traces zu verstehen und auch unbekannte Fehler zu analysieren."
+        },
+        {
+          "fachbegriff": "Metrik",
+          "bedeutung": "Numerischer Messwert über die Zeit, zum Beispiel CPU-Auslastung, Fehlerrate oder Antwortzeit."
+        },
+        {
+          "fachbegriff": "Log",
+          "bedeutung": "Protokolleintrag über ein Ereignis im System, zum Beispiel Start, Warnung, Fehler oder Benutzerzugriff."
+        },
+        {
+          "fachbegriff": "Trace",
+          "bedeutung": "Nachverfolgung eines einzelnen Requests durch mehrere Dienste, um zu sehen, wo Zeit verloren geht oder ein Fehler entsteht."
+        },
+        {
+          "fachbegriff": "Service Level Indicator (SLI)",
+          "bedeutung": "Messbare Kennzahl für die Servicequalität aus Nutzersicht, zum Beispiel der Anteil schneller erfolgreicher Requests."
+        },
+        {
+          "fachbegriff": "Service Level Objective (SLO)",
+          "bedeutung": "Intern festgelegter Zielwert für einen SLI, zum Beispiel 99,9 Prozent erfolgreiche Requests."
+        },
+        {
+          "fachbegriff": "Service Level Agreement (SLA)",
+          "bedeutung": "Vertragliche Vereinbarung über zugesicherte Servicequalität und mögliche Folgen bei Nichteinhaltung."
+        },
+        {
+          "fachbegriff": "Error Budget",
+          "bedeutung": "Erlaubter Fehlerspielraum zwischen 100 Prozent und dem SLO. Er zeigt, wie viel Ausfall oder Fehler noch akzeptabel ist."
+        },
+        {
+          "fachbegriff": "Golden Signals",
+          "bedeutung": "Vier zentrale Monitoring-Signale: Latenz, Traffic, Fehlerrate und Sättigung."
+        },
+        {
+          "fachbegriff": "Latenz",
+          "bedeutung": "Zeit, die ein System für die Verarbeitung einer Anfrage benötigt."
+        },
+        {
+          "fachbegriff": "Traffic",
+          "bedeutung": "Menge der Anfragen oder Daten, die ein Service pro Zeiteinheit verarbeitet."
+        },
+        {
+          "fachbegriff": "Fehlerrate",
+          "bedeutung": "Anteil oder Anzahl fehlgeschlagener Anfragen innerhalb eines Zeitraums."
+        },
+        {
+          "fachbegriff": "Sättigung",
+          "bedeutung": "Grad, zu dem eine Ressource ausgelastet ist und sich Warteschlangen oder Engpässe bilden."
+        }
+      ]
+    },
+    {
+      "id": "L-02",
+      "titel": "Metriken erfassen mit Prometheus",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Prometheus",
+          "bedeutung": "Open-Source-System zum Sammeln, Speichern und Abfragen von Metriken, besonders verbreitet bei Containern und Kubernetes."
+        },
+        {
+          "fachbegriff": "Pull-Modell",
+          "bedeutung": "Prometheus holt Metriken selbst regelmäßig von den überwachten Diensten ab."
+        },
+        {
+          "fachbegriff": "Push-Modell",
+          "bedeutung": "Die überwachten Systeme senden ihre Messwerte selbst aktiv an ein zentrales Monitoring-System."
+        },
+        {
+          "fachbegriff": "Target",
+          "bedeutung": "Ein System oder Service, dessen Metriken Prometheus regelmäßig abfragt."
+        },
+        {
+          "fachbegriff": "Scraping",
+          "bedeutung": "Regelmäßiges Abrufen der Metriken eines Targets durch Prometheus."
+        },
+        {
+          "fachbegriff": "TSDB",
+          "bedeutung": "Time Series Database: Datenbank zur Speicherung von Messwerten zusammen mit ihren Zeitstempeln."
+        },
+        {
+          "fachbegriff": "Zeitreihe",
+          "bedeutung": "Folge von Messwerten eines bestimmten Merkmals über die Zeit."
+        },
+        {
+          "fachbegriff": "Label",
+          "bedeutung": "Schlüssel-Wert-Paar an einer Prometheus-Metrik, mit dem Zeitreihen gefiltert und gruppiert werden können."
+        },
+        {
+          "fachbegriff": "Counter",
+          "bedeutung": "Metriktyp für einen Zähler, der normalerweise nur steigt, zum Beispiel die Gesamtzahl aller Requests."
+        },
+        {
+          "fachbegriff": "Gauge",
+          "bedeutung": "Metriktyp für einen aktuellen Wert, der steigen und fallen kann, zum Beispiel Speicherverbrauch oder Temperatur."
+        },
+        {
+          "fachbegriff": "Histogram",
+          "bedeutung": "Metriktyp, der Messwerte in Wertebereiche einteilt und sich gut für Perzentile und Antwortzeiten eignet."
+        },
+        {
+          "fachbegriff": "Summary",
+          "bedeutung": "Metriktyp, der Quantile bereits im überwachten Service berechnet, aber schlechter über mehrere Instanzen aggregierbar ist."
+        },
+        {
+          "fachbegriff": "PromQL",
+          "bedeutung": "Abfragesprache von Prometheus zum Filtern, Berechnen und Aggregieren von Metriken."
+        },
+        {
+          "fachbegriff": "/metrics-Endpoint",
+          "bedeutung": "HTTP-Endpunkt eines Services, über den Prometheus die bereitgestellten Metriken abruft."
+        }
+      ]
+    },
+    {
+      "id": "L-03",
+      "titel": "Dashboards und Alerting mit Grafana",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Grafana",
+          "bedeutung": "Werkzeug zur Visualisierung von Metriken, Logs und anderen Daten sowie zur Konfiguration von Alarmen."
+        },
+        {
+          "fachbegriff": "Dashboard",
+          "bedeutung": "Übersichtsseite mit mehreren Visualisierungen, die den Zustand eines Systems schnell verständlich zeigt."
+        },
+        {
+          "fachbegriff": "Panel",
+          "bedeutung": "Einzelne Visualisierung innerhalb eines Grafana-Dashboards, zum Beispiel Graph, Tabelle oder Statusanzeige."
+        },
+        {
+          "fachbegriff": "Datenquelle",
+          "bedeutung": "System, aus dem Grafana Daten abfragt, zum Beispiel Prometheus, Elasticsearch oder InfluxDB."
+        },
+        {
+          "fachbegriff": "Progressive Detailtiefe",
+          "bedeutung": "Dashboard-Prinzip: zuerst Überblick, dann bei Bedarf immer detailliertere Ansichten."
+        },
+        {
+          "fachbegriff": "USE-Methode",
+          "bedeutung": "Monitoring-Methode für Ressourcen: Utilization, Saturation und Errors werden betrachtet."
+        },
+        {
+          "fachbegriff": "RED-Methode",
+          "bedeutung": "Monitoring-Methode für Services: Rate, Errors und Duration werden betrachtet."
+        },
+        {
+          "fachbegriff": "Alert Rule",
+          "bedeutung": "Regel, die festlegt, wann aus einem Messwert automatisch ein Alarm erzeugt wird."
+        },
+        {
+          "fachbegriff": "Schwellwert",
+          "bedeutung": "Grenzwert, dessen Über- oder Unterschreitung eine Warnung oder einen Alarm auslösen kann."
+        },
+        {
+          "fachbegriff": "For-Periode",
+          "bedeutung": "Zeitspanne, die eine Alarmbedingung ununterbrochen erfüllt sein muss, bevor der Alarm ausgelöst wird."
+        },
+        {
+          "fachbegriff": "Alert Fatigue",
+          "bedeutung": "Alarm-Müdigkeit: Zu viele unnötige Alarme führen dazu, dass wichtige Warnungen übersehen oder ignoriert werden."
+        },
+        {
+          "fachbegriff": "Contact Point",
+          "bedeutung": "Ziel für Grafana-Benachrichtigungen, zum Beispiel E-Mail, Slack oder PagerDuty."
+        },
+        {
+          "fachbegriff": "Notification Policy",
+          "bedeutung": "Routing-Regel, die bestimmt, welche Alarme an welche Empfänger und Kanäle gesendet werden."
+        },
+        {
+          "fachbegriff": "No-Data-Condition",
+          "bedeutung": "Festgelegtes Verhalten eines Alarms für den Fall, dass die erwarteten Messdaten fehlen."
+        }
+      ]
+    },
+    {
+      "id": "L-04",
+      "titel": "Zentrales Logging mit dem ELK-Stack",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "ELK-Stack",
+          "bedeutung": "Kombination aus Elasticsearch, Logstash und Kibana für zentrales Sammeln, Verarbeiten, Suchen und Visualisieren von Logs."
+        },
+        {
+          "fachbegriff": "Elasticsearch",
+          "bedeutung": "Verteilte Such- und Analysemaschine, die Log-Daten speichert und sehr schnell durchsuchbar macht."
+        },
+        {
+          "fachbegriff": "Logstash",
+          "bedeutung": "Werkzeug, das eingehende Logs empfängt, verarbeitet, strukturiert und an ein Ziel wie Elasticsearch weiterleitet."
+        },
+        {
+          "fachbegriff": "Kibana",
+          "bedeutung": "Web-Oberfläche für die Suche, Analyse und Visualisierung von Daten aus Elasticsearch."
+        },
+        {
+          "fachbegriff": "Filebeat",
+          "bedeutung": "Leichtgewichtiger Agent, der Log-Dateien einsammelt und an Logstash oder Elasticsearch weiterleitet."
+        },
+        {
+          "fachbegriff": "Log-Shipper",
+          "bedeutung": "Programm, das Logs an eine zentrale Logging-Plattform überträgt."
+        },
+        {
+          "fachbegriff": "Log-Ingestion",
+          "bedeutung": "Aufnahme von Log-Daten aus verschiedenen Quellen in ein zentrales System."
+        },
+        {
+          "fachbegriff": "Logstash-Pipeline",
+          "bedeutung": "Verarbeitungskette aus Input, Filter und Output zur Bearbeitung eingehender Log-Daten."
+        },
+        {
+          "fachbegriff": "Grok-Pattern",
+          "bedeutung": "Muster, mit dem Logstash Informationen aus unstrukturierten Text-Logs herauslesen kann."
+        },
+        {
+          "fachbegriff": "Inverted Index",
+          "bedeutung": "Suchindex, der speichert, in welchen Dokumenten bestimmte Begriffe vorkommen und dadurch schnelle Volltextsuche ermöglicht."
+        },
+        {
+          "fachbegriff": "Index",
+          "bedeutung": "Logische Sammlung zusammengehöriger Dokumente in Elasticsearch."
+        },
+        {
+          "fachbegriff": "Shard",
+          "bedeutung": "Teil eines Elasticsearch-Index, der auf mehrere Cluster-Knoten verteilt werden kann."
+        },
+        {
+          "fachbegriff": "KQL",
+          "bedeutung": "Kibana Query Language: Abfragesprache zum Filtern und Suchen von Daten in Kibana."
+        },
+        {
+          "fachbegriff": "Log-Retention",
+          "bedeutung": "Festgelegte Aufbewahrungsdauer für Logs, zum Beispiel 90 Tage für Betrieb oder Compliance."
+        }
+      ]
+    },
+    {
+      "id": "L-05",
+      "titel": "Strukturiertes Logging und Log-Analyse",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Strukturiertes Logging",
+          "bedeutung": "Logs werden in festen Feldern statt als freier Text geschrieben, damit Maschinen sie zuverlässig verarbeiten können."
+        },
+        {
+          "fachbegriff": "JSON-Logging",
+          "bedeutung": "Strukturiertes Log-Format mit Schlüssel-Wert-Paaren, das sich einfach durchsuchen und auswerten lässt."
+        },
+        {
+          "fachbegriff": "Plain-Text-Logging",
+          "bedeutung": "Unstrukturiertes Logging als Freitext, das meist erst nachträglich geparst werden muss."
+        },
+        {
+          "fachbegriff": "Log-Level",
+          "bedeutung": "Einstufung der Wichtigkeit eines Log-Eintrags, damit passende Detail- und Alarmstufen verwendet werden."
+        },
+        {
+          "fachbegriff": "DEBUG",
+          "bedeutung": "Sehr detaillierte Log-Stufe für Entwicklung und gezielte Fehlersuche."
+        },
+        {
+          "fachbegriff": "INFO",
+          "bedeutung": "Log-Stufe für normalen Betriebsablauf, zum Beispiel Start, erfolgreiche Verarbeitung oder abgeschlossener Job."
+        },
+        {
+          "fachbegriff": "WARNING",
+          "bedeutung": "Log-Stufe für auffällige Situationen, die noch keinen direkten Ausfall darstellen."
+        },
+        {
+          "fachbegriff": "ERROR",
+          "bedeutung": "Log-Stufe für fehlgeschlagene Operationen, bei denen der Service meist weiterlaufen kann."
+        },
+        {
+          "fachbegriff": "CRITICAL / FATAL",
+          "bedeutung": "Höchste Log-Stufe für schwere Fehler, bei denen der Dienst nicht mehr zuverlässig funktioniert."
+        },
+        {
+          "fachbegriff": "Correlation ID / Request ID",
+          "bedeutung": "Eindeutige Kennung eines Requests, mit der zusammengehörige Logs über mehrere Services hinweg gefunden werden können."
+        },
+        {
+          "fachbegriff": "X-Request-ID",
+          "bedeutung": "HTTP-Header, über den eine Request-ID zwischen beteiligten Services weitergegeben werden kann."
+        },
+        {
+          "fachbegriff": "Error-Spike-Analyse",
+          "bedeutung": "Suche nach einem plötzlichen starken Anstieg von Fehlern zu einem bestimmten Zeitpunkt."
+        },
+        {
+          "fachbegriff": "Pattern-Erkennung",
+          "bedeutung": "Erkennen wiederkehrender oder neuer Log-Muster, um typische oder ungewöhnliche Fehler schneller zu finden."
+        },
+        {
+          "fachbegriff": "Zeitliche Korrelation",
+          "bedeutung": "Vergleich von Ereignissen aus verschiedenen Logs anhand ihrer Zeitstempel, um Ursache und Wirkung zu erkennen."
+        }
+      ]
+    },
+    {
+      "id": "L-06",
+      "titel": "Distributed Tracing mit Jaeger",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Distributed Tracing",
+          "bedeutung": "Nachverfolgung eines Requests über mehrere verteilte Services hinweg."
+        },
+        {
+          "fachbegriff": "Trace",
+          "bedeutung": "Gesamter Weg eines einzelnen Requests durch alle beteiligten Komponenten."
+        },
+        {
+          "fachbegriff": "Span",
+          "bedeutung": "Ein einzelner Arbeitsschritt innerhalb eines Traces, zum Beispiel ein API-Aufruf oder eine Datenbankabfrage."
+        },
+        {
+          "fachbegriff": "Parent-Child-Beziehung",
+          "bedeutung": "Verknüpfung von Spans, die zeigt, welcher Arbeitsschritt einen weiteren Arbeitsschritt ausgelöst hat."
+        },
+        {
+          "fachbegriff": "Trace-ID",
+          "bedeutung": "Eindeutige Kennung für einen vollständigen Trace."
+        },
+        {
+          "fachbegriff": "Span-ID",
+          "bedeutung": "Eindeutige Kennung für einen einzelnen Span innerhalb eines Traces."
+        },
+        {
+          "fachbegriff": "Context Propagation",
+          "bedeutung": "Weitergabe der Trace-Informationen zwischen Services, damit alle Spans demselben Request zugeordnet werden."
+        },
+        {
+          "fachbegriff": "OpenTelemetry",
+          "bedeutung": "Offener Standard und Werkzeugsatz zur Erzeugung und Übertragung von Metriken, Logs und besonders Traces."
+        },
+        {
+          "fachbegriff": "Jaeger",
+          "bedeutung": "Open-Source-System zum Speichern, Suchen und Visualisieren von Distributed Traces."
+        },
+        {
+          "fachbegriff": "Instrumentierung",
+          "bedeutung": "Erweiterung einer Anwendung, damit sie Observability-Daten wie Traces oder Metriken erzeugt."
+        },
+        {
+          "fachbegriff": "Auto-Instrumentierung",
+          "bedeutung": "Automatische Erfassung von Traces durch Bibliotheken oder Agenten mit wenig zusätzlichem Anwendungscode."
+        },
+        {
+          "fachbegriff": "Sampling",
+          "bedeutung": "Auswahl nur eines Teils aller Requests für das Tracing, um Speicher- und Verarbeitungskosten zu begrenzen."
+        },
+        {
+          "fachbegriff": "Trace-Timeline",
+          "bedeutung": "Zeitliche Darstellung aller Spans eines Traces, mit der langsame Schritte schnell sichtbar werden."
+        },
+        {
+          "fachbegriff": "Service-Abhängigkeit",
+          "bedeutung": "Technische Beziehung zwischen Services, die durch Traces sichtbar wird, zum Beispiel API zu Datenbank."
+        }
+      ]
+    },
+    {
+      "id": "L-07",
+      "titel": "Incident Management, Runbooks und Post-Mortems",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Incident",
+          "bedeutung": "Ungeplante Störung, die einen IT-Service beeinträchtigt oder ausfallen lässt."
+        },
+        {
+          "fachbegriff": "Incident Management",
+          "bedeutung": "Strukturierter Prozess zur Erkennung, Priorisierung, Bearbeitung, Behebung und Nachbereitung von Störungen."
+        },
+        {
+          "fachbegriff": "Triage",
+          "bedeutung": "Schnelle Ersteinschätzung eines Incidents, um Auswirkung, Dringlichkeit und nächste Schritte festzulegen."
+        },
+        {
+          "fachbegriff": "Severity",
+          "bedeutung": "Schweregrad eines Incidents, der bestimmt, wie schnell und mit welchen Rollen reagiert werden muss."
+        },
+        {
+          "fachbegriff": "Eskalation",
+          "bedeutung": "Weitergabe eines Incidents an zusätzliche oder höher verantwortliche Personen, wenn er kritisch ist oder nicht rechtzeitig gelöst wird."
+        },
+        {
+          "fachbegriff": "Incident Commander",
+          "bedeutung": "Person, die bei einem größeren Incident die Koordination und Entscheidungen zentral steuert."
+        },
+        {
+          "fachbegriff": "On-Call / Rufbereitschaft",
+          "bedeutung": "Person oder Team, das außerhalb der normalen Arbeitszeit für dringende Störungen erreichbar ist."
+        },
+        {
+          "fachbegriff": "Mean Time to Detect (MTTD)",
+          "bedeutung": "Durchschnittliche Zeit vom Beginn einer Störung bis zu ihrer Erkennung."
+        },
+        {
+          "fachbegriff": "Mean Time to Recovery (MTTR)",
+          "bedeutung": "Durchschnittliche Zeit von der Störung bis zur Wiederherstellung eines funktionierenden Services."
+        },
+        {
+          "fachbegriff": "Runbook",
+          "bedeutung": "Konkrete Schritt-für-Schritt-Anleitung für Diagnose und Behebung eines bekannten Problems."
+        },
+        {
+          "fachbegriff": "Incident-Timeline",
+          "bedeutung": "Chronologische Dokumentation der wichtigen Ereignisse und Maßnahmen während eines Incidents."
+        },
+        {
+          "fachbegriff": "Post-Mortem",
+          "bedeutung": "Strukturierte Nachbereitung eines Incidents mit Ursache, Auswirkungen, Ablauf und Verbesserungsmaßnahmen."
+        },
+        {
+          "fachbegriff": "Blameless Post-Mortem",
+          "bedeutung": "Nachbereitung ohne persönliche Schuldzuweisung. Ziel ist, Schwächen im System und Prozess zu verbessern."
+        },
+        {
+          "fachbegriff": "Root Cause Analysis (RCA)",
+          "bedeutung": "Systematische Suche nach der eigentlichen Ursache eines Problems statt nur nach dem sichtbaren Symptom."
+        }
+      ]
+    },
+    {
+      "id": "L-08",
+      "titel": "Observability-Strategie und Gesamtreflexion",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Observability-Strategie",
+          "bedeutung": "Gesamtplan, der festlegt, welche Metriken, Logs, Traces, Dashboards, Alarme und Prozesse für den Betrieb benötigt werden."
+        },
+        {
+          "fachbegriff": "Observability-Stack",
+          "bedeutung": "Gesamtheit der eingesetzten Observability-Werkzeuge, zum Beispiel Prometheus, ELK, Jaeger und Grafana."
+        },
+        {
+          "fachbegriff": "End-to-End-Observability",
+          "bedeutung": "Durchgängige Sicht auf einen Service von der Nutzeranfrage über alle beteiligten Komponenten bis zur Antwort."
+        },
+        {
+          "fachbegriff": "SLO-basiertes Monitoring",
+          "bedeutung": "Monitoring, das die tatsächliche Servicequalität und die SLO-Erfüllung statt nur technische Einzelwerte überwacht."
+        },
+        {
+          "fachbegriff": "SLO-basiertes Alerting",
+          "bedeutung": "Alarmierung bei Gefahr einer SLO-Verletzung, zum Beispiel wenn das Error Budget zu schnell verbraucht wird."
+        },
+        {
+          "fachbegriff": "Error Budget Burn Rate",
+          "bedeutung": "Kennzahl dafür, wie schnell das verfügbare Error Budget aktuell aufgebraucht wird."
+        },
+        {
+          "fachbegriff": "Symptombasiertes Alerting",
+          "bedeutung": "Alarmierung anhand einzelner technischer Symptome, zum Beispiel CPU-Auslastung über 90 Prozent."
+        },
+        {
+          "fachbegriff": "DORA-Metriken",
+          "bedeutung": "Vier Kennzahlen zur Bewertung der Leistungsfähigkeit eines Software-Delivery-Prozesses."
+        },
+        {
+          "fachbegriff": "Deployment Frequency",
+          "bedeutung": "Wie häufig ein Team Änderungen erfolgreich in Produktion ausliefert."
+        },
+        {
+          "fachbegriff": "Lead Time for Changes",
+          "bedeutung": "Zeit vom Code-Commit bis zur erfolgreichen Bereitstellung der Änderung in Produktion."
+        },
+        {
+          "fachbegriff": "Change Failure Rate",
+          "bedeutung": "Anteil der Deployments, die zu Fehlern, Rollbacks oder Incidents führen."
+        },
+        {
+          "fachbegriff": "Time to Restore Service",
+          "bedeutung": "Zeit, die benötigt wird, um nach einem Fehler den normalen Service wiederherzustellen."
+        },
+        {
+          "fachbegriff": "Unified View",
+          "bedeutung": "Gemeinsame Sicht auf Metriken, Logs und Traces in einer zentralen Oberfläche für schnellere Analyse."
+        },
+        {
+          "fachbegriff": "Kontinuierliche Verbesserung",
+          "bedeutung": "Regelmäßiges Lernen aus Metriken, Incidents und Post-Mortems, um Zuverlässigkeit und Prozesse dauerhaft zu verbessern."
+        }
+      ]
+    }
+  ]
+}

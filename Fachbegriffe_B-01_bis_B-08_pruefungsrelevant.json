@@ -1,0 +1,511 @@
+{
+  "titel": "Prüfungsrelevante Fachbegriffe B-01 bis B-08",
+  "thema": "Betrieb & IT-Resilienz - kompakte Prüfungsvorbereitung",
+  "anzahl_kernbegriffe": 112,
+  "bereiche": [
+    {
+      "id": "B-01",
+      "titel": "Backup- und Recoverystrategie vertieft",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Recovery Point Objective (RPO)",
+          "bedeutung": "Maximal akzeptabler Datenverlust bei einem Ausfall. RPO 1 Stunde bedeutet: höchstens eine Stunde Daten darf fehlen."
+        },
+        {
+          "fachbegriff": "Recovery Time Objective (RTO)",
+          "bedeutung": "Maximal akzeptable Ausfallzeit. RTO 4 Stunden bedeutet: Das System muss spätestens nach vier Stunden wieder laufen."
+        },
+        {
+          "fachbegriff": "3-2-1-Regel",
+          "bedeutung": "Drei Datenkopien auf zwei unterschiedlichen Medientypen, davon mindestens eine Kopie an einem anderen Standort."
+        },
+        {
+          "fachbegriff": "3-2-1-1-0-Regel",
+          "bedeutung": "Erweiterte Backup-Regel: zusätzlich eine offline oder unveränderbare Kopie und null Fehler beim geprüften Restore."
+        },
+        {
+          "fachbegriff": "Snapshot",
+          "bedeutung": "Zeitpunktaufnahme eines Systems oder Datenträgers. Schnell und praktisch, aber kein vollständiger Ersatz für ein echtes Backup."
+        },
+        {
+          "fachbegriff": "Image",
+          "bedeutung": "Vollständige Kopie einer Festplatte oder Partition inklusive Betriebssystem, Konfiguration und Daten."
+        },
+        {
+          "fachbegriff": "Backup",
+          "bedeutung": "Gesicherte Kopie von Daten auf einem getrennten Medium, damit sie nach Verlust oder Beschädigung wiederhergestellt werden können."
+        },
+        {
+          "fachbegriff": "Replikation",
+          "bedeutung": "Fortlaufendes Kopieren von Daten auf ein zweites System für höhere Verfügbarkeit. Sie ersetzt kein Backup."
+        },
+        {
+          "fachbegriff": "Synchrone Replikation",
+          "bedeutung": "Änderungen werden gleichzeitig auf mehreren Systemen bestätigt. Dadurch entsteht kaum oder kein Datenverlust."
+        },
+        {
+          "fachbegriff": "Asynchrone Replikation",
+          "bedeutung": "Änderungen werden zeitversetzt auf ein zweites System übertragen. Das ist schneller, kann aber etwas Datenverlust verursachen."
+        },
+        {
+          "fachbegriff": "Hot Standby",
+          "bedeutung": "Ein Ersatzsystem läuft bereits parallel und kann bei einem Ausfall sehr schnell oder automatisch übernehmen."
+        },
+        {
+          "fachbegriff": "Warm Standby",
+          "bedeutung": "Ein vorbereitetes Ersatzsystem ist teilweise aktuell und kann nach kurzer Vorbereitung den Betrieb übernehmen."
+        },
+        {
+          "fachbegriff": "Cold Standby",
+          "bedeutung": "Ersatzhardware oder Infrastruktur steht bereit, muss bei einem Ausfall aber erst eingerichtet und gestartet werden."
+        },
+        {
+          "fachbegriff": "Restore-Test",
+          "bedeutung": "Geplante Probe, ob sich ein Backup wirklich vollständig und korrekt wiederherstellen lässt."
+        }
+      ]
+    },
+    {
+      "id": "B-02",
+      "titel": "Risiken und Chancen von Virtualisierungslösungen",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Virtualisierung",
+          "bedeutung": "Technik, bei der physische Hardware in mehrere logisch getrennte virtuelle Systeme aufgeteilt und gemeinsam genutzt wird."
+        },
+        {
+          "fachbegriff": "Virtuelle Maschine (VM)",
+          "bedeutung": "Ein softwarebasierter Computer mit eigenem Betriebssystem, eigenen Ressourcen und stärkerer Isolation als ein Container."
+        },
+        {
+          "fachbegriff": "Server-Virtualisierung",
+          "bedeutung": "Mehrere virtuelle Server laufen auf einem physischen Host und teilen dessen CPU, Arbeitsspeicher und Speicher."
+        },
+        {
+          "fachbegriff": "Desktop-Virtualisierung (VDI)",
+          "bedeutung": "Arbeitsplätze laufen zentral im Rechenzentrum und werden den Benutzern über das Netzwerk bereitgestellt."
+        },
+        {
+          "fachbegriff": "Anwendungs-Virtualisierung",
+          "bedeutung": "Eine Anwendung wird isoliert ausgeführt, ohne dass dafür eine vollständige virtuelle Maschine nötig ist."
+        },
+        {
+          "fachbegriff": "Hypervisor Typ 1",
+          "bedeutung": "Virtualisierungsschicht, die direkt auf der Hardware läuft. Sie wird vor allem in Rechenzentren eingesetzt."
+        },
+        {
+          "fachbegriff": "Hypervisor Typ 2",
+          "bedeutung": "Virtualisierungssoftware, die auf einem bestehenden Betriebssystem läuft, zum Beispiel für Tests oder Entwicklung."
+        },
+        {
+          "fachbegriff": "Single Point of Failure (SPoF)",
+          "bedeutung": "Eine einzelne Komponente, deren Ausfall ein gesamtes System oder mehrere Dienste gleichzeitig lahmlegen kann."
+        },
+        {
+          "fachbegriff": "Vendor Lock-in",
+          "bedeutung": "Starke Abhängigkeit von einem Hersteller, wodurch ein Wechsel technisch, organisatorisch oder finanziell schwierig wird."
+        },
+        {
+          "fachbegriff": "Konsolidierung",
+          "bedeutung": "Mehrere bisher getrennte Server werden auf weniger leistungsfähigen Hosts zusammengeführt, um Ressourcen besser auszulasten."
+        },
+        {
+          "fachbegriff": "Provisionierung",
+          "bedeutung": "Bereitstellen eines neuen Systems mit benötigten Ressourcen, Betriebssystem und Grundkonfiguration."
+        },
+        {
+          "fachbegriff": "VM vs. Container",
+          "bedeutung": "VMs haben ein eigenes Betriebssystem und starke Isolation; Container teilen den Host-Kernel und sind leichter und schneller."
+        },
+        {
+          "fachbegriff": "Nutzwertanalyse",
+          "bedeutung": "Entscheidungsmethode, bei der mehrere Lösungen anhand gewichteter Kriterien bewertet und miteinander verglichen werden."
+        },
+        {
+          "fachbegriff": "Sensitivitätsanalyse",
+          "bedeutung": "Prüfung, wie sich eine Entscheidung verändert, wenn Annahmen, Kosten oder Gewichtungen geändert werden."
+        }
+      ]
+    },
+    {
+      "id": "B-03",
+      "titel": "Konfiguration und Programmierung: Smarthome und Energiefluss",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Lastspitze",
+          "bedeutung": "Kurzzeitig besonders hoher Leistungsbedarf. In Unternehmen kann eine einzige hohe Spitze die Stromkosten deutlich erhöhen."
+        },
+        {
+          "fachbegriff": "Leistungspreis",
+          "bedeutung": "Kostenanteil, der sich nach der höchsten benötigten elektrischen Leistung in kW innerhalb eines Zeitraums richtet."
+        },
+        {
+          "fachbegriff": "Arbeitspreis",
+          "bedeutung": "Preis für die tatsächlich verbrauchte elektrische Energie in kWh."
+        },
+        {
+          "fachbegriff": "Lastverschiebung",
+          "bedeutung": "Nicht kritische Verbraucher werden zeitlich verschoben oder gedrosselt, damit hohe gleichzeitige Lasten vermieden werden."
+        },
+        {
+          "fachbegriff": "Smart Building",
+          "bedeutung": "Gebäude, dessen technische Anlagen durch Sensoren, Aktoren und Steuerungen automatisch überwacht und geregelt werden."
+        },
+        {
+          "fachbegriff": "Node-RED",
+          "bedeutung": "Werkzeug für visuelle Ablauf- und Steuerlogik. Funktionen werden als miteinander verbundene Bausteine dargestellt."
+        },
+        {
+          "fachbegriff": "KNX",
+          "bedeutung": "Standard für Gebäudeautomation, über den Sensoren und Aktoren wie Licht, Heizung oder Lüftung miteinander kommunizieren."
+        },
+        {
+          "fachbegriff": "MQTT",
+          "bedeutung": "Leichtgewichtiges Publish-Subscribe-Protokoll, das häufig für Sensor- und IoT-Kommunikation verwendet wird."
+        },
+        {
+          "fachbegriff": "Modbus",
+          "bedeutung": "Einfaches Industrieprotokoll zur Kommunikation mit Sensoren, Messgeräten, Aktoren und Steuerungen."
+        },
+        {
+          "fachbegriff": "Schwellwert",
+          "bedeutung": "Festgelegter Grenzwert, bei dessen Über- oder Unterschreitung eine Aktion oder Warnung ausgelöst wird."
+        },
+        {
+          "fachbegriff": "Hysterese",
+          "bedeutung": "Unterschiedliche Grenzwerte für Ein- und Ausschalten verhindern, dass eine Steuerung ständig hin und her schaltet."
+        },
+        {
+          "fachbegriff": "Cooldown",
+          "bedeutung": "Mindestwartezeit zwischen zwei Schaltvorgängen, damit Geräte und Steuerung nicht durch häufiges Schalten belastet werden."
+        },
+        {
+          "fachbegriff": "Fail-Safe",
+          "bedeutung": "Sicherer Zustand, in den ein System bei Fehler, Ausfall oder fehlenden Sensordaten automatisch wechseln soll."
+        },
+        {
+          "fachbegriff": "Mitbestimmung bei Überwachung",
+          "bedeutung": "Der Betriebsrat ist einzubeziehen, wenn technische Systeme Verhalten oder Leistung von Beschäftigten erfassen können."
+        }
+      ]
+    },
+    {
+      "id": "B-04",
+      "titel": "Benachrichtigungs- und Alarmierungsstrategien",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Statischer Schwellwert",
+          "bedeutung": "Fester Grenzwert für einen Alarm, zum Beispiel CPU-Auslastung über 90 Prozent."
+        },
+        {
+          "fachbegriff": "Dynamischer Schwellwert",
+          "bedeutung": "Grenzwert, der sich an historischen Normalwerten und typischen Schwankungen des Systems orientiert."
+        },
+        {
+          "fachbegriff": "Anomalieerkennung",
+          "bedeutung": "Erkennen ungewöhnlicher Muster oder Werte, die deutlich vom normalen Verhalten eines Systems abweichen."
+        },
+        {
+          "fachbegriff": "Hysterese",
+          "bedeutung": "Getrennte Werte für Alarm und Entwarnung verhindern, dass ein Alarm bei kleinen Schwankungen ständig ein- und ausgeht."
+        },
+        {
+          "fachbegriff": "Bestätigungsintervall",
+          "bedeutung": "Eine Bedingung muss eine bestimmte Zeit bestehen, bevor wirklich ein Alarm ausgelöst wird."
+        },
+        {
+          "fachbegriff": "Severity",
+          "bedeutung": "Schweregrad eines Alarms, zum Beispiel Info, Warning, Critical oder Emergency."
+        },
+        {
+          "fachbegriff": "Alert Routing",
+          "bedeutung": "Regeln legen fest, welcher Alarm an welche Person, Gruppe oder welchen Benachrichtigungskanal gesendet wird."
+        },
+        {
+          "fachbegriff": "Eskalationskette",
+          "bedeutung": "Festgelegte Reihenfolge weiterer Ansprechpartner, wenn ein Alarm nicht rechtzeitig bestätigt oder bearbeitet wird."
+        },
+        {
+          "fachbegriff": "Rufbereitschaft",
+          "bedeutung": "Person oder Team, das außerhalb der normalen Arbeitszeit für dringende Störungen erreichbar und zuständig ist."
+        },
+        {
+          "fachbegriff": "Acknowledgement",
+          "bedeutung": "Bestätigung eines Alarms durch einen Verantwortlichen: Der Alarm wurde gesehen und wird bearbeitet."
+        },
+        {
+          "fachbegriff": "Runbook",
+          "bedeutung": "Kurze, konkrete Handlungsanleitung, die beschreibt, was bei einem bestimmten Alarm geprüft und ausgeführt werden soll."
+        },
+        {
+          "fachbegriff": "Alarm-Müdigkeit / Alert Fatigue",
+          "bedeutung": "Zu viele unnötige Alarme führen dazu, dass Menschen Warnungen weniger ernst nehmen oder wichtige Alarme übersehen."
+        },
+        {
+          "fachbegriff": "False Positive",
+          "bedeutung": "Fehlalarm: Das Monitoring meldet ein Problem, obwohl tatsächlich kein handlungsrelevanter Fehler vorliegt."
+        },
+        {
+          "fachbegriff": "Inhibition",
+          "bedeutung": "Unterdrückung nachgeordneter Alarme, wenn bereits ein übergeordneter Fehler die eigentliche Ursache erklärt."
+        }
+      ]
+    },
+    {
+      "id": "B-05",
+      "titel": "Ausfallrisiken und Wiederherstellungskonzepte / BIA",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Business Impact Analysis (BIA)",
+          "bedeutung": "Analyse der Auswirkungen eines Ausfalls auf Geschäftsprozesse, Kosten, Betrieb, Reputation und gesetzliche Pflichten."
+        },
+        {
+          "fachbegriff": "Risikoanalyse",
+          "bedeutung": "Bewertung, welche Gefahren eintreten können und wie wahrscheinlich und schwerwiegend ihre Auswirkungen sind."
+        },
+        {
+          "fachbegriff": "Scope",
+          "bedeutung": "Festgelegter Umfang einer Analyse, also welche Systeme, Prozesse oder Standorte betrachtet werden."
+        },
+        {
+          "fachbegriff": "Datenerhebung",
+          "bedeutung": "Systematisches Sammeln der benötigten Informationen, zum Beispiel durch Interviews mit Fachbereichen."
+        },
+        {
+          "fachbegriff": "Auswirkungsbewertung",
+          "bedeutung": "Bewertung, welche Folgen ein Ausfall nach einer Stunde, mehreren Stunden oder Tagen verursacht."
+        },
+        {
+          "fachbegriff": "Priorisierung",
+          "bedeutung": "Festlegen, welche Systeme oder Prozesse bei knappen Ressourcen zuerst wiederhergestellt werden müssen."
+        },
+        {
+          "fachbegriff": "Kritikalitätsklasse",
+          "bedeutung": "Kategorie für die Geschäftswichtigkeit eines Systems, aus der passende RPO-, RTO- und Recovery-Anforderungen folgen."
+        },
+        {
+          "fachbegriff": "Direkte Kosten",
+          "bedeutung": "Unmittelbar messbare Ausfallkosten, zum Beispiel Umsatzausfall, Produktionsstillstand oder zusätzliche Arbeitszeit."
+        },
+        {
+          "fachbegriff": "Opportunitätskosten",
+          "bedeutung": "Entgangener Nutzen oder Umsatz, weil eine Möglichkeit während des Ausfalls nicht genutzt werden konnte."
+        },
+        {
+          "fachbegriff": "Vertragsstrafe",
+          "bedeutung": "Vertraglich vereinbarte finanzielle Folge, wenn zugesagte Leistungen oder Service-Level nicht eingehalten werden."
+        },
+        {
+          "fachbegriff": "Reputationsschaden",
+          "bedeutung": "Verlust von Vertrauen und Ansehen bei Kunden, Partnern oder Öffentlichkeit durch Störungen oder Ausfälle."
+        },
+        {
+          "fachbegriff": "Regulatorische Auswirkung",
+          "bedeutung": "Folge eines Ausfalls in Bezug auf Gesetze, Meldepflichten, Nachweise oder behördliche Anforderungen."
+        },
+        {
+          "fachbegriff": "Recovery-Strategie",
+          "bedeutung": "Festgelegtes technisches Vorgehen zur Wiederherstellung eines Systems entsprechend seiner Kritikalität."
+        },
+        {
+          "fachbegriff": "Dependency Mapping",
+          "bedeutung": "Darstellung technischer und fachlicher Abhängigkeiten, damit bei der Wiederherstellung die richtige Reihenfolge beachtet wird."
+        }
+      ]
+    },
+    {
+      "id": "B-06",
+      "titel": "Redundante Infrastrukturen planen",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Verfügbarkeit",
+          "bedeutung": "Anteil der Zeit, in der ein System wie vorgesehen nutzbar ist, meist als Prozentwert angegeben."
+        },
+        {
+          "fachbegriff": "Ausfallzeit",
+          "bedeutung": "Zeitspanne, in der ein System oder Dienst nicht verfügbar oder nicht ausreichend funktionsfähig ist."
+        },
+        {
+          "fachbegriff": "Reihenschaltung",
+          "bedeutung": "Architektur, bei der alle beteiligten Komponenten funktionieren müssen. Jeder zusätzliche Abhängigkeitspunkt senkt die Gesamtverfügbarkeit."
+        },
+        {
+          "fachbegriff": "Parallelschaltung",
+          "bedeutung": "Redundante Architektur, bei der der Dienst weiterläuft, solange mindestens eine der parallelen Komponenten funktioniert."
+        },
+        {
+          "fachbegriff": "Redundanz",
+          "bedeutung": "Mehrfach vorhandene kritische Komponenten, damit der Ausfall einer einzelnen Komponente nicht zum Gesamtausfall führt."
+        },
+        {
+          "fachbegriff": "Aktiv-Aktiv-Cluster",
+          "bedeutung": "Mehrere Knoten arbeiten gleichzeitig. Fällt einer aus, übernehmen die übrigen seine Last."
+        },
+        {
+          "fachbegriff": "Aktiv-Passiv-Cluster",
+          "bedeutung": "Ein Knoten arbeitet aktiv, ein zweiter wartet als Ersatz und übernimmt bei einem Ausfall."
+        },
+        {
+          "fachbegriff": "Failover",
+          "bedeutung": "Automatisches oder manuelles Umschalten von einem ausgefallenen System auf ein funktionsfähiges Ersatzsystem."
+        },
+        {
+          "fachbegriff": "Availability Zone (AZ)",
+          "bedeutung": "Physisch getrenntes Rechenzentrum innerhalb einer Cloud-Region mit eigener Strom- und Netzversorgung."
+        },
+        {
+          "fachbegriff": "Multi-AZ",
+          "bedeutung": "Betrieb eines Dienstes über mehrere Availability Zones, damit der Ausfall eines Rechenzentrums abgefangen werden kann."
+        },
+        {
+          "fachbegriff": "Multi-Region",
+          "bedeutung": "Betrieb eines Dienstes in mehreren geografisch getrennten Cloud-Regionen für Schutz vor regionalen Ausfällen."
+        },
+        {
+          "fachbegriff": "USV",
+          "bedeutung": "Unterbrechungsfreie Stromversorgung, die Geräte bei Stromausfall sofort für eine begrenzte Zeit weiter mit Energie versorgt."
+        },
+        {
+          "fachbegriff": "Notstromaggregat",
+          "bedeutung": "Generator, der nach kurzer Startzeit längerfristig Strom liefert, wenn das öffentliche Netz ausgefallen ist."
+        },
+        {
+          "fachbegriff": "Geografische Redundanz",
+          "bedeutung": "Verteilung von Systemen oder Daten auf weit getrennte Standorte, damit ein Standortausfall nicht alles betrifft."
+        }
+      ]
+    },
+    {
+      "id": "B-07",
+      "titel": "Softwareverteilung und Inventarisierung",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Softwareverteilung",
+          "bedeutung": "Zentrale und möglichst automatisierte Installation, Aktualisierung oder Entfernung von Software auf vielen Geräten."
+        },
+        {
+          "fachbegriff": "Microsoft Intune",
+          "bedeutung": "Cloud-Dienst zur Verwaltung von Endgeräten, Richtlinien und Software, besonders für mobile und entfernte Geräte."
+        },
+        {
+          "fachbegriff": "MECM / SCCM",
+          "bedeutung": "Microsoft-Werkzeug für umfangreiche On-Premises-Verwaltung, Softwareverteilung, Inventarisierung und Betriebssystem-Deployment."
+        },
+        {
+          "fachbegriff": "opsi",
+          "bedeutung": "Open-Source-Werkzeug für Softwareverteilung und Client-Management, besonders für Windows- und Linux-Arbeitsplätze."
+        },
+        {
+          "fachbegriff": "Ansible",
+          "bedeutung": "Agentloses Automatisierungswerkzeug, mit dem Systeme konfiguriert und Softwarepakete reproduzierbar installiert werden können."
+        },
+        {
+          "fachbegriff": "Inventarisierung",
+          "bedeutung": "Automatisches oder manuelles Erfassen von Hardware, Software, Versionen, Patch-Stand und weiteren Gerätedaten."
+        },
+        {
+          "fachbegriff": "CMDB",
+          "bedeutung": "Zentrale Datenbank für IT-Komponenten, ihre Eigenschaften, Verantwortlichkeiten und Beziehungen untereinander."
+        },
+        {
+          "fachbegriff": "Configuration Item (CI)",
+          "bedeutung": "Ein einzelnes verwaltetes Objekt in der CMDB, zum Beispiel Server, Client, Switch, Software oder Lizenz."
+        },
+        {
+          "fachbegriff": "Wellen-Rollout",
+          "bedeutung": "Update wird schrittweise an Gruppen verteilt, damit Fehler früh erkannt werden und nicht sofort alle Geräte betreffen."
+        },
+        {
+          "fachbegriff": "Canary / Ring 0",
+          "bedeutung": "Sehr kleine erste Testgruppe eines Rollouts, an der ein Update unter realen Bedingungen geprüft wird."
+        },
+        {
+          "fachbegriff": "Soak Time",
+          "bedeutung": "Beobachtungszeit zwischen zwei Rollout-Wellen, in der geprüft wird, ob Probleme auftreten."
+        },
+        {
+          "fachbegriff": "Rollback",
+          "bedeutung": "Geplantes Zurücksetzen auf die vorherige funktionierende Version, wenn ein Update Probleme verursacht."
+        },
+        {
+          "fachbegriff": "Code Signing",
+          "bedeutung": "Digitale Signatur eines Softwarepakets, mit der Herkunft und Unverändertheit vor der Installation geprüft werden."
+        },
+        {
+          "fachbegriff": "Audit-Logging",
+          "bedeutung": "Nachvollziehbare Protokollierung, wer welche Software wann freigegeben, verteilt oder verändert hat."
+        }
+      ]
+    },
+    {
+      "id": "B-08",
+      "titel": "Business Continuity Management und IT-Resilienz",
+      "anzahl_kernbegriffe": 14,
+      "fachbegriffe": [
+        {
+          "fachbegriff": "Business Continuity Management (BCM)",
+          "bedeutung": "Organisatorischer Rahmen, damit kritische Geschäftsprozesse auch bei schweren Störungen weiterlaufen oder schnell wieder starten."
+        },
+        {
+          "fachbegriff": "IT-Disaster-Recovery (IT-DR)",
+          "bedeutung": "Technischer Teil des BCM, der beschreibt, wie IT-Systeme nach einem größeren Ausfall wiederhergestellt werden."
+        },
+        {
+          "fachbegriff": "IT-Resilienz",
+          "bedeutung": "Fähigkeit der IT, Störungen zu verkraften, sich anzupassen und den Betrieb schnell wiederherzustellen."
+        },
+        {
+          "fachbegriff": "ISO 22301",
+          "bedeutung": "Internationaler Standard für Business Continuity Management und den systematischen Umgang mit Betriebsunterbrechungen."
+        },
+        {
+          "fachbegriff": "Wiederanlaufplan",
+          "bedeutung": "Dokumentierter Plan mit Reihenfolge, Rollen und Maßnahmen zur Wiederherstellung des Betriebs nach einer Störung."
+        },
+        {
+          "fachbegriff": "Sofortmaßnahmen",
+          "bedeutung": "Erste Schritte direkt nach einem Vorfall, zum Beispiel Lage klären, Gefahren ausschließen und Krisenstab aktivieren."
+        },
+        {
+          "fachbegriff": "Wiederanlauf",
+          "bedeutung": "Phase, in der priorisierte Systeme und Prozesse kontrolliert wiederhergestellt und geprüft werden."
+        },
+        {
+          "fachbegriff": "Normalisierung",
+          "bedeutung": "Phase nach dem Wiederanlauf, in der Notlösungen beendet, alle Systeme vollständig hergestellt und Erkenntnisse ausgewertet werden."
+        },
+        {
+          "fachbegriff": "Notbetrieb",
+          "bedeutung": "Vorübergehender eingeschränkter Betrieb mit Ersatzverfahren oder Ausweichsystemen, bis der Normalbetrieb wieder möglich ist."
+        },
+        {
+          "fachbegriff": "Krisenstab",
+          "bedeutung": "Festgelegte Gruppe mit Entscheidungs- und Koordinationsverantwortung während einer schweren Störung oder Krise."
+        },
+        {
+          "fachbegriff": "Krisenkommunikation",
+          "bedeutung": "Geplante, abgestimmte Information von Mitarbeitern, Kunden, Behörden, Partnern und gegebenenfalls Öffentlichkeit."
+        },
+        {
+          "fachbegriff": "Tabletop-Exercise",
+          "bedeutung": "Planübung am Tisch: Ein Krisenszenario wird gemeinsam durchgesprochen, ohne echte Systeme zu verändern."
+        },
+        {
+          "fachbegriff": "Funktionale Übung",
+          "bedeutung": "Übung einzelner realer Notfallmaßnahmen, zum Beispiel Restore, Failover oder Alarmierung."
+        },
+        {
+          "fachbegriff": "Vollübung",
+          "bedeutung": "Umfassende realistische Übung des gesamten Ablaufs von der Alarmierung bis zur Wiederherstellung."
+        }
+      ]
+    }
+  ]
+}
