@@ -1,3 +1,8 @@
 data/*.sqlite*
 dist/
 node_modules/
+android/tools/
+android/build/
+android/signing/
+android/app/src/main/assets/
+releases/*.idsig

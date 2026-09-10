@@ -1,5 +1,7 @@
 # Begriffwerk — German IT Fachbegriffe trainer
 
+**Android APK:** `releases/Begriffwerk-1.0.0.apk` is a signed offline Android application. Copy it to your phone and open it to install. It uses native on-device SQLite and does not need the desktop server. See [Android installation and build instructions](android/README.md). Desktop and phone histories are independent.
+
 A complete local learning application using **Node.js 24+, native SQLite, and a separate HTML/CSS/JavaScript frontend communicating over REST**. No npm dependencies, external fonts, cloud services, AI-generated definitions, or accounts. This stack was selected because Node 24 is available locally and provides SQLite without native dependency installation. Python/React are not required.
 
 ## Start in this folder
