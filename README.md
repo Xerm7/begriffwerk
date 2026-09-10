@@ -7,7 +7,7 @@ A complete local learning application using **Node.js 24+, native SQLite, and a 
 ## Start in this folder
 
 ```powershell
-cd C:\Users\Admin\Downloads\Fachbegriffe
+change to Project dir
 node --version
 npm start
 ```
