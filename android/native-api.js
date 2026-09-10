@@ -1,4 +1,8 @@
 const pending=new Map();let serial=0;
+window.__androidEngineFailed=message=>{
+ for(const call of pending.values()){clearTimeout(call.timeout);call.reject(Error(message));}
+ pending.clear();
+};
 window.__androidResponse=(id,envelope)=>{
  const call=pending.get(id);if(!call)return;pending.delete(id);clearTimeout(call.timeout);
  if(envelope.ok)call.resolve(envelope.result);else call.reject(Error(envelope.error||'Lokaler Datenbankfehler.'));

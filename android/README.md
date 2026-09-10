@@ -1,6 +1,8 @@
 # Begriffwerk Android
 
-The installable application is `../releases/Begriffwerk-1.0.0.apk`.
+The current installable application is `../releases/Begriffwerk-1.0.2.apk`. **Version 1.0.2 replaces the two-WebView engine with a native Java/SQLite service. Read [the current architecture and test notes](README-native.md). The two-WebView architecture described below is historical and is no longer packaged.**
+
+Version 1.0.1 changes the engine to a single classic script, keeps its WebView active behind the UI during startup, and forwards startup errors to the interface instead of hiding them behind a timeout. Install it over 1.0.0; do not uninstall first if you want to keep data. The package name and signing certificate are unchanged. These changes pass adapter/bundle tests; Android runtime verification remains unavailable because the software emulator stalled before boot.
 
 ## Install on your phone
 
@@ -55,6 +57,6 @@ npm.cmd test
 
 The Android contract tests run the actual packaged engine and adapter against SQLite using a native-bridge emulator in Node. They cover clean import, quiz generation, answer checking, duplicate submission, progress, summaries, filters, and random-practice isolation. They do not emulate the Android Java/WebView runtime.
 
-The built APK has passed `apksigner verify` (v2/v3 signatures), `zipalign`, and manifest inspection. No Android phone was connected to the build machine; a real Android launch/touch/lifecycle test has not been performed. Firmware virtualization is disabled on this machine, so a hardware-accelerated emulator was unavailable. Device verification remains the important final compatibility check.
+The built APK has passed `apksigner verify` (v2/v3 signatures), `zipalign`, and manifest inspection. No Android phone was connected to the build machine; a real Android launch/touch/lifecycle test has not been performed. Firmware virtualization is disabled on this machine. An Android 14 software emulator was attempted but stalled before Android boot, so it could not establish the original failure's root cause or verify the repair. Device verification remains the important final compatibility check.
 
 Official platform reference: [Android local WebView content](https://developer.android.com/develop/ui/views/layout/webapps/load-local-content).

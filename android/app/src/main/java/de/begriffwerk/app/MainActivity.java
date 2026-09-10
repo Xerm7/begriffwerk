@@ -40,6 +40,7 @@ public class MainActivity extends Activity {
     private WebView engine;
     private SQLiteDatabase database;
     private boolean engineReady;
+    private String engineFailure;
     private volatile boolean destroyed;
 
     @Override public void onCreate(Bundle saved) {
@@ -60,7 +61,8 @@ public class MainActivity extends Activity {
             engine = createWebView(true);
             engine.addJavascriptInterface(new DatabaseBridge(), "NativeDatabase");
             layout.addView(engine, new FrameLayout.LayoutParams(1,1));
-            engine.setVisibility(View.INVISIBLE);
+            // Keep the engine attached/visible behind the full-size UI: some WebViews
+            // defer work for views marked INVISIBLE during their initial load.
             ui = createWebView(false);
             ui.addJavascriptInterface(new FrontendBridge(), "AndroidApp");
             layout.addView(ui,new FrameLayout.LayoutParams(-1,-1));
@@ -84,8 +86,10 @@ public class MainActivity extends Activity {
         view.getSettings().setMixedContentMode(android.webkit.WebSettings.MIXED_CONTENT_NEVER_ALLOW);
         view.setWebChromeClient(new WebChromeClient(){
             @Override public boolean onConsoleMessage(ConsoleMessage msg){
-                if(msg.messageLevel()==ConsoleMessage.MessageLevel.ERROR)
+                if(msg.messageLevel()==ConsoleMessage.MessageLevel.ERROR){
                     android.util.Log.e("Begriffwerk", (privateEngine?"Engine: ":"UI: ")+msg.message());
+                    if(privateEngine)failEngine(msg.message());
+                }
                 return true;
             }
         });
@@ -158,12 +162,13 @@ public class MainActivity extends Activity {
                 Object parsed=new org.json.JSONTokener(body).nextValue();
                 if(parsed!=JSONObject.NULL && !(parsed instanceof JSONObject))throw new Exception("Invalid request");
                 String script="window.dispatchNative("+JSONObject.quote(id)+","+JSONObject.quote(path)+","+parsed.toString()+");";
-                main.post(()->{if(destroyed)return;if(engineReady)engine.evaluateJavascript(script,null);else queued.add(script);});
+                main.post(()->{if(destroyed)return;if(engineFailure!=null){deliver(id,"{\"ok\":false,\"error\":"+JSONObject.quote(engineFailure)+"}");}else if(engineReady)engine.evaluateJavascript(script,null);else queued.add(script);});
             }catch(Exception e){deliver(id,"{\"ok\":false,\"error\":\"Ungültige Anfrage\"}");}
         }
     }
 
     public final class DatabaseBridge {
+        @JavascriptInterface public void failed(String message){failEngine(message);}
         @JavascriptInterface public String uuid(){return UUID.randomUUID().toString();}
         @JavascriptInterface public void ready(){main.post(()->{if(destroyed)return;engineReady=true;while(!queued.isEmpty())engine.evaluateJavascript(queued.remove(),null);});}
         @JavascriptInterface public void respond(String id,String envelope){deliver(id,envelope);}
@@ -215,6 +220,15 @@ public class MainActivity extends Activity {
             }
             return envelope.toString();
         }
+    }
+
+    private void failEngine(String message){
+        main.post(()->{
+            if(destroyed)return;
+            engineFailure="Lernmodul konnte nicht starten: "+message;
+            queued.clear();
+            ui.evaluateJavascript("window.__androidEngineFailed && window.__androidEngineFailed("+JSONObject.quote(engineFailure)+");",null);
+        });
     }
 
     private void deliver(String id,String envelope){

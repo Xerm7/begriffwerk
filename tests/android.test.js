@@ -4,6 +4,7 @@ import {DatabaseSync} from 'node:sqlite';
 import {readFileSync,existsSync} from 'node:fs';
 import {execFileSync} from 'node:child_process';
 import {randomUUID} from 'node:crypto';
+import {runInNewContext} from 'node:vm';
 
 // Contract-test the actual APK engine and SQLite adapter without an emulator.
 // Android's Java SQLite bridge is represented by the equivalent Node SQLite API.
@@ -56,4 +57,11 @@ test('Android filtering and free practice preserve spaced-repetition progress',(
  assert.deepEqual(db.prepare('SELECT * FROM progress WHERE term_id=?').get(stored.term_id),before);
  assert.equal(call('/api/quiz/stop',{sessionId:s.id}).result.questions_answered,1);
  assert.equal(call('/api/missing').ok,false);
+});
+test('Android classic engine bundle starts and dispatches without ES module loading',()=>{
+ const context={window:{},NativeDatabase,URL};
+ runInNewContext(readFileSync('android/app/src/main/assets/engine/bundle.js','utf8'),context);
+ const id=randomUUID();context.window.dispatchNative(id,'/api/stats',null);
+ assert.equal(replies.get(id).ok,true);assert.equal(replies.get(id).result.total,1442);
+ replies.delete(id);
 });
